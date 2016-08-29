@@ -1,0 +1,600 @@
+[2016-08-18 07:04:27.215] [INFO] appLog - Server listening on port: 3000
+[2016-08-18 07:06:41.346] [INFO] appLog - Server listening on port: 3000
+[2016-08-18 07:09:08.000] [INFO] appLog - Server listening on port: 3000
+[2016-08-18 07:09:14.618] [INFO] appLog - Server listening on port: 3000
+[2016-08-18 07:09:20.497] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:03:48.454] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:07:03.370] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:07:29.223] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:15:24.254] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:19:19.265] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:20:54.018] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:20:55.983] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:21:59.214] [INFO] appLog - Course list computed
+[2016-08-20 16:26:02.268] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:26:07.700] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:26:09.931] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:27:39.699] [INFO] appLog - registerUser: User registered successfully
+[2016-08-20 16:27:39.705] [ERROR] appLog - sendMail: Error while sending email: Error: Unsupported configuration, downgrade Nodemailer to v0.7.1 to use it
+[2016-08-20 16:28:30.030] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:28:32.849] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:28:39.736] [INFO] appLog - getUserList: user details fetched
+[2016-08-20 16:29:35.138] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:29:37.426] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:30:00.812] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:30:18.962] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:30:21.066] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:31:54.578] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:31:57.422] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:34:03.477] [ERROR] appLog - addCourse: requested user not found
+[2016-08-20 16:35:23.182] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:35:25.003] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:36:17.587] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:36:19.480] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:36:34.273] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:36:36.560] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:36:51.309] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:36:54.056] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:36:59.771] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:37:02.156] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:37:26.157] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:37:33.606] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:37:35.775] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:37:52.544] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:37:55.079] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:38:11.757] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:38:14.038] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:38:45.314] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:38:47.421] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:39:14.052] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:39:16.401] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:39:33.105] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:39:35.166] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:40:31.543] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:40:36.764] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:40:38.653] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:41:46.118] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:41:48.697] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:42:30.660] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:42:33.104] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:43:20.228] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:43:22.483] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:44:25.960] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:44:27.990] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:44:41.883] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:44:43.991] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:46:20.863] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:46:22.808] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:47:11.515] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:47:13.878] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:50:08.096] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:50:10.740] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:53:21.625] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 16:53:24.156] [INFO] appLog - Connected to MongoDB
+[2016-08-20 16:54:19.337] [INFO] appLog - addCategory: new category added successfully
+[2016-08-20 16:54:32.344] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-20 16:54:41.717] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-20 16:55:08.386] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-20 22:10:31.750] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:10:36.757] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:10:38.361] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:10:43.203] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:11:00.187] [INFO] appLog - Course list computed
+[2016-08-20 22:17:46.128] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:17:48.048] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:17:59.621] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:18:44.415] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:18:46.378] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:19:13.774] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:19:15.427] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:19:24.800] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:23:18.262] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:23:20.287] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:23:35.790] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:24:28.357] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:24:30.086] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:24:35.463] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:25:15.577] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:25:18.308] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:25:24.028] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:27:21.640] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:27:30.262] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:27:32.071] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:27:45.037] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:28:16.323] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:28:18.172] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:29:03.872] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:29:50.872] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:29:52.814] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:30:00.252] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:30:02.020] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:30:04.808] [ERROR] appLog - getAllCourses: Error in fetching all the courses
+[2016-08-20 22:30:45.311] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:30:47.499] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:30:49.659] [ERROR] appLog - getAllCourses: Error in fetching all the courses: CastError: Cast to ObjectId failed for value "1" at path "_id"
+[2016-08-20 22:35:19.524] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:35:21.517] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:35:24.393] [ERROR] appLog - addCourse: Error while inserting the course: null
+[2016-08-20 22:36:02.277] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:36:04.632] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:37:07.392] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:37:13.598] [ERROR] appLog - getAllCourses: Error in fetching all the courses: CastError: Cast to ObjectId failed for value "1" at path "_id"
+[2016-08-20 22:41:21.288] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:41:23.593] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:41:36.026] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:41:41.720] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:41:43.986] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:41:57.784] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:42:04.453] [ERROR] appLog - getAllCourses: Error in fetching all the courses: CastError: Cast to ObjectId failed for value "1" at path "_id"
+[2016-08-20 22:42:29.815] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:42:36.821] [INFO] appLog - Course list computed
+[2016-08-20 22:43:08.196] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:43:11.023] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:43:31.464] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:43:38.998] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:43:41.544] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:43:48.176] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:43:58.523] [ERROR] appLog - getAllCourses: Error in fetching all the courses: CastError: Cast to ObjectId failed for value "1" at path "_id"
+[2016-08-20 22:44:28.159] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:44:30.075] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:44:39.275] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:44:41.299] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:45:20.038] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:45:27.169] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:45:35.416] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:45:37.566] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:45:57.094] [INFO] appLog - addCourse: Course added successfully
+[2016-08-20 22:46:02.646] [INFO] appLog - Course list computed
+[2016-08-20 22:47:27.695] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:47:30.926] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:47:48.917] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:47:50.743] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:47:55.701] [INFO] appLog - Course list computed
+[2016-08-20 22:48:20.959] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:48:22.830] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:48:26.006] [INFO] appLog - Course list computed
+[2016-08-20 22:50:01.396] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:50:03.236] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:50:07.284] [INFO] appLog - Course list computed
+[2016-08-20 22:50:38.004] [INFO] appLog - Server listening on port: 3000
+[2016-08-20 22:50:39.829] [INFO] appLog - Connected to MongoDB
+[2016-08-20 22:50:43.184] [INFO] appLog - Course list computed
+[2016-08-21 06:39:24.338] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:39:25.835] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:39:38.795] [INFO] appLog - Course list computed
+[2016-08-21 06:40:39.680] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:40:44.309] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:40:49.585] [INFO] appLog - getUpcomingCourses: Upcoming courses fetched
+[2016-08-21 06:41:20.555] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:41:26.776] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:41:34.549] [INFO] appLog - getUpcomingCourses: Upcoming courses fetched
+[2016-08-21 06:42:06.489] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:42:08.508] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:42:31.476] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:42:34.281] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:42:37.004] [INFO] appLog - One time course list fetched
+[2016-08-21 06:42:59.276] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:43:01.111] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:43:14.192] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:43:16.128] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:44:12.358] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:44:14.483] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:44:17.665] [INFO] appLog - One time course list fetched
+[2016-08-21 06:44:22.341] [INFO] appLog - getUpcomingCourses: Upcoming courses fetched
+[2016-08-21 06:44:33.271] [INFO] appLog - getUpcomingCourses: Upcoming courses fetched
+[2016-08-21 06:45:03.049] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:45:05.085] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:45:13.733] [INFO] appLog - recurringCourseList: Recurring courses fetched
+[2016-08-21 06:45:42.551] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:45:44.430] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:45:50.559] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:45:52.595] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:45:59.496] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:46:01.077] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:46:14.494] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:46:16.458] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:46:17.217] [INFO] appLog - recurringCourseList: Recurring courses fetched
+[2016-08-21 06:46:23.938] [INFO] appLog - getUpcomingCourses: Upcoming courses fetched
+[2016-08-21 06:46:28.715] [INFO] appLog - recurringCourseList: Recurring courses fetched
+[2016-08-21 06:46:54.949] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:46:58.780] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:47:00.566] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:47:05.708] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:47:07.365] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:47:22.360] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:47:24.250] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:47:38.587] [INFO] appLog - One time course list fetched
+[2016-08-21 06:48:39.751] [INFO] appLog - Course list computed
+[2016-08-21 06:48:58.249] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:48:59.977] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:49:08.893] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:49:12.284] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:49:18.471] [INFO] appLog - Course list computed
+[2016-08-21 06:50:51.197] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:50:52.866] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:51:48.947] [INFO] appLog - Course list computed
+[2016-08-21 06:53:13.267] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:53:15.048] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:53:16.652] [INFO] appLog - Course list computed
+[2016-08-21 06:53:38.087] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:53:39.857] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:54:15.608] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:54:17.193] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:54:21.015] [INFO] appLog - Course list computed
+[2016-08-21 06:54:55.170] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:54:57.063] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:55:10.131] [ERROR] appLog - coursesByUser: Error while fetching courses: CastError: Cast to ObjectId failed for value "1" at path "createdUserID"
+[2016-08-21 06:56:14.303] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:56:16.181] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:56:32.948] [INFO] appLog - coursesByUser: Courses fetched by created user
+[2016-08-21 06:57:00.115] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:57:01.905] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:57:03.378] [INFO] appLog - getUserList: user details fetched
+[2016-08-21 06:57:18.455] [INFO] appLog - coursesByUser: Courses fetched by created user
+[2016-08-21 06:58:49.563] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:58:51.347] [INFO] appLog - Connected to MongoDB
+[2016-08-21 06:59:35.560] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 06:59:37.993] [INFO] appLog - Connected to MongoDB
+[2016-08-21 07:01:03.750] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 07:01:06.234] [INFO] appLog - Connected to MongoDB
+[2016-08-21 07:01:43.016] [INFO] appLog - Server listening on port: 3000
+[2016-08-21 07:01:44.996] [INFO] appLog - Connected to MongoDB
+[2016-08-22 20:06:14.527] [INFO] appLog - Server listening on port: 3000
+[2016-08-22 20:06:16.417] [INFO] appLog - Connected to MongoDB
+[2016-08-22 20:06:51.323] [INFO] appLog - Server listening on port: 3000
+[2016-08-22 20:06:52.918] [INFO] appLog - Connected to MongoDB
+[2016-08-22 20:07:08.523] [INFO] appLog - Server listening on port: 3000
+[2016-08-22 20:07:10.496] [INFO] appLog - Connected to MongoDB
+[2016-08-22 20:07:30.705] [INFO] appLog - Server listening on port: 3000
+[2016-08-22 20:07:33.090] [INFO] appLog - Connected to MongoDB
+[2016-08-22 20:07:43.856] [INFO] appLog - Server listening on port: 3000
+[2016-08-22 20:07:46.050] [INFO] appLog - Connected to MongoDB
+[2016-08-22 20:08:15.591] [INFO] appLog - Server listening on port: 3000
+[2016-08-22 20:08:22.227] [INFO] appLog - Server listening on port: 3000
+[2016-08-22 20:08:24.097] [INFO] appLog - Connected to MongoDB
+[2016-08-23 21:53:58.464] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 21:54:04.289] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 21:54:06.561] [INFO] appLog - Connected to MongoDB
+[2016-08-23 21:55:11.266] [INFO] appLog - getUserList: user details fetched
+[2016-08-23 21:57:18.986] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 21:57:21.318] [INFO] appLog - Connected to MongoDB
+[2016-08-23 21:58:13.240] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-08-23 21:59:04.924] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 21:59:07.098] [INFO] appLog - Connected to MongoDB
+[2016-08-23 21:59:10.880] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-08-23 21:59:10.880] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-08-23 21:59:56.309] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 21:59:58.386] [INFO] appLog - Connected to MongoDB
+[2016-08-23 22:00:05.150] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-08-23 22:00:05.154] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-08-23 22:00:59.513] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-08-23 22:00:59.513] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-08-23 22:09:44.336] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 22:09:46.867] [INFO] appLog - Connected to MongoDB
+[2016-08-23 22:11:05.610] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-08-23 22:11:05.614] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-08-23 22:15:58.573] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 22:16:05.695] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 22:16:08.745] [INFO] appLog - Connected to MongoDB
+[2016-08-23 22:16:13.825] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-08-23 22:16:13.829] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-08-23 22:16:27.542] [INFO] appLog - getUserList: user details fetched
+[2016-08-23 22:17:25.674] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 22:17:32.948] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 22:17:34.799] [INFO] appLog - Connected to MongoDB
+[2016-08-23 22:18:40.155] [INFO] appLog - getUserList: user details fetched
+[2016-08-23 22:19:11.632] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 22:19:13.737] [INFO] appLog - Connected to MongoDB
+[2016-08-23 22:30:58.007] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 22:30:59.786] [INFO] appLog - Connected to MongoDB
+[2016-08-23 22:32:46.429] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 22:32:48.314] [INFO] appLog - Connected to MongoDB
+[2016-08-23 22:34:11.741] [INFO] appLog - Server listening on port: 3000
+[2016-08-23 22:34:13.811] [INFO] appLog - Connected to MongoDB
+[2016-08-24 07:44:57.538] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:45:01.730] [INFO] appLog - Connected to MongoDB
+[2016-08-24 07:45:21.984] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:45:35.384] [INFO] appLog - Connected to MongoDB
+[2016-08-24 07:46:36.070] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:46:43.199] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:46:52.148] [INFO] appLog - Connected to MongoDB
+[2016-08-24 07:48:36.431] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:48:43.924] [INFO] appLog - Connected to MongoDB
+[2016-08-24 07:50:20.279] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:50:29.101] [INFO] appLog - Connected to MongoDB
+[2016-08-24 07:51:05.052] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:51:17.976] [INFO] appLog - Connected to MongoDB
+[2016-08-24 07:52:02.413] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:52:08.128] [INFO] appLog - Connected to MongoDB
+[2016-08-24 07:52:40.165] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:52:47.862] [INFO] appLog - Connected to MongoDB
+[2016-08-24 07:53:08.953] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:53:16.055] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:53:24.634] [INFO] appLog - Connected to MongoDB
+[2016-08-24 07:57:19.609] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 07:57:26.469] [INFO] appLog - Connected to MongoDB
+[2016-08-24 07:57:45.356] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-08-24 07:57:45.356] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-08-24 08:00:55.126] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:01:19.008] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:01:26.367] [INFO] appLog - Activity list computed
+[2016-08-24 08:04:00.606] [INFO] appLog - addActivity: Activity added successfully
+[2016-08-24 08:04:26.343] [INFO] appLog - Activity list computed
+[2016-08-24 08:06:04.473] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:06:20.227] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:06:38.690] [ERROR] appLog - addBookingFromUser: Booking saved successfully
+[2016-08-24 08:07:26.360] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:07:32.560] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:09:12.208] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:12:06.917] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:12:07.020] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:13:10.659] [INFO] appLog - registerUser: User registered successfully
+[2016-08-24 08:13:10.666] [ERROR] appLog - sendMail: Error while sending email: Error: Unsupported configuration, downgrade Nodemailer to v0.7.1 to use it
+[2016-08-24 08:14:00.709] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-08-24 08:14:00.709] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-08-24 08:14:29.309] [INFO] appLog - addCategory: new category added successfully
+[2016-08-24 08:14:54.176] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-24 08:15:16.440] [INFO] appLog - addCourse: Course added successfully
+[2016-08-24 08:15:36.276] [INFO] appLog - Course list computed
+[2016-08-24 08:15:54.989] [INFO] appLog - addActivity: Activity added successfully
+[2016-08-24 08:16:07.814] [INFO] appLog - Activity list computed
+[2016-08-24 08:16:41.085] [INFO] appLog - addBookingFromUser: Booking saved successfully
+[2016-08-24 08:17:54.506] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:17:54.614] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:18:21.841] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:18:21.940] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:18:57.118] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:18:57.223] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:19:23.305] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:19:23.404] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:19:36.864] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:19:36.972] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:21:53.203] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:21:53.265] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:23:08.259] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:23:08.365] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:23:28.064] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:23:28.191] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:24:05.765] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:24:05.867] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:24:38.242] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:24:38.344] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:24:41.564] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:26:28.878] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:26:28.925] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:26:32.380] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:26:52.386] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:26:52.477] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:27:12.957] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:27:13.057] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:27:18.102] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:27:48.957] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:27:49.057] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:27:52.436] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:28:09.776] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:28:09.871] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:28:17.246] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:28:56.304] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:28:56.368] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:29:04.757] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:31:45.860] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:31:46.141] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:31:52.856] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:31:52.925] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:31:56.048] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:32:49.750] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:32:49.850] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:32:52.498] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:34:25.229] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:34:25.320] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:34:54.809] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:35:47.640] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:35:47.744] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:35:55.014] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:36:14.025] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:36:14.168] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:36:22.673] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:36:22.775] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:36:32.314] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:38:18.767] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:38:18.877] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:39:01.048] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:39:01.223] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:39:05.384] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:39:05.531] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:39:16.131] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:40:23.058] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:40:23.134] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:40:26.822] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:41:10.643] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:41:10.748] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:41:33.850] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:41:33.952] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:41:35.497] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:42:23.785] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:42:23.894] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:42:32.794] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:42:32.903] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:42:35.446] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:43:10.836] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:43:10.933] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:43:12.737] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:44:15.769] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:44:15.900] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:45:31.825] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:45:31.937] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:45:35.127] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:46:20.005] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:46:20.125] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:46:32.002] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:46:32.102] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:46:38.394] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:46:38.493] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:46:45.743] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:47:49.272] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:47:49.364] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:47:54.851] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-24 08:48:16.593] [INFO] appLog - Server listening on port: 3000
+[2016-08-24 08:48:16.666] [INFO] appLog - Connected to MongoDB
+[2016-08-24 08:48:24.120] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-08-25 10:18:29.893] [INFO] appLog - Server listening on port: 3000
+[2016-08-25 10:18:34.051] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 15:23:30.634] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 15:23:31.688] [ERROR] appLog - Error in connecting to mongo DBMongoError: connect ECONNREFUSED 127.0.0.1:27017
+[2016-08-28 16:09:44.718] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 16:11:21.177] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 16:11:23.036] [INFO] appLog - Connected to MongoDB
+[2016-08-28 16:18:36.467] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:18:39.637] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:18:41.480] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:19:05.957] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:20:45.032] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 16:20:47.530] [INFO] appLog - Connected to MongoDB
+[2016-08-28 16:20:53.064] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 16:20:55.204] [INFO] appLog - Connected to MongoDB
+[2016-08-28 16:21:06.683] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:26:02.962] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:26:54.833] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:30:50.349] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:31:33.661] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:32:34.788] [INFO] appLog - addCategory: new category added successfully
+[2016-08-28 16:32:43.807] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:33:10.221] [INFO] appLog - addCategory: new category added successfully
+[2016-08-28 16:33:15.724] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:33:29.479] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:35:56.314] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:36:15.665] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:36:30.210] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 16:37:15.980] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 17:20:13.223] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 17:22:45.902] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 17:25:25.510] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 17:32:31.587] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 17:38:41.958] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 18:04:17.706] [INFO] appLog - Activity list computed
+[2016-08-28 18:43:02.263] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 18:45:41.889] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 18:45:56.533] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:02:56.452] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:03:43.295] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:05:18.729] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:08:04.803] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:14:23.315] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:15:02.191] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:15:14.858] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:15:32.321] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:15:43.580] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:41:06.854] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:41:07.234] [INFO] appLog - Activity list computed
+[2016-08-28 19:51:33.121] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:51:33.421] [INFO] appLog - Activity list computed
+[2016-08-28 19:53:04.928] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:53:05.275] [INFO] appLog - Activity list computed
+[2016-08-28 19:54:14.875] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:54:15.216] [INFO] appLog - Activity list computed
+[2016-08-28 19:54:40.812] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:54:41.117] [INFO] appLog - Activity list computed
+[2016-08-28 19:55:02.929] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:55:03.238] [INFO] appLog - Activity list computed
+[2016-08-28 19:56:53.777] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:56:54.137] [INFO] appLog - Activity list computed
+[2016-08-28 19:57:34.868] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 19:57:36.852] [INFO] appLog - Connected to MongoDB
+[2016-08-28 19:58:13.905] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 19:58:15.978] [INFO] appLog - Connected to MongoDB
+[2016-08-28 19:58:27.737] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 19:58:29.764] [INFO] appLog - Connected to MongoDB
+[2016-08-28 19:58:40.233] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:58:40.541] [INFO] appLog - Activity list computed
+[2016-08-28 19:59:11.221] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 19:59:13.199] [INFO] appLog - Connected to MongoDB
+[2016-08-28 19:59:21.806] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 19:59:22.219] [INFO] appLog - Activity list computed
+[2016-08-28 20:00:22.421] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:00:22.728] [INFO] appLog - Activity list computed
+[2016-08-28 20:00:48.842] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:00:49.145] [INFO] appLog - Activity list computed
+[2016-08-28 20:01:01.646] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:01:02.048] [INFO] appLog - Activity list computed
+[2016-08-28 20:01:48.946] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:01:49.254] [INFO] appLog - Activity list computed
+[2016-08-28 20:03:58.445] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 20:04:00.242] [INFO] appLog - Connected to MongoDB
+[2016-08-28 20:04:10.218] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 20:04:12.206] [INFO] appLog - Connected to MongoDB
+[2016-08-28 20:04:19.686] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:04:19.974] [INFO] appLog - Activity list computed
+[2016-08-28 20:04:46.613] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:04:46.918] [INFO] appLog - Activity list computed
+[2016-08-28 20:05:50.712] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 20:05:52.500] [INFO] appLog - Connected to MongoDB
+[2016-08-28 20:05:57.589] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:05:57.876] [INFO] appLog - Activity list computedundefined
+[2016-08-28 20:06:16.713] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 20:06:19.510] [INFO] appLog - Connected to MongoDB
+[2016-08-28 20:06:24.097] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:06:24.419] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM,Saturday 09.00 AM - 5.30 PM,Sunday Closed
+[2016-08-28 20:08:02.811] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:08:03.083] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM,Saturday 09.00 AM - 5.30 PM,Sunday Closed
+[2016-08-28 20:10:35.092] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 20:10:38.594] [INFO] appLog - Connected to MongoDB
+[2016-08-28 20:12:33.148] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:12:33.567] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 20:12:39.919] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:12:40.211] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 20:13:16.662] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:13:16.973] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 20:14:04.382] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:14:04.687] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 20:15:16.470] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:15:16.778] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 20:16:02.969] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:16:03.264] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 20:16:40.293] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:16:40.645] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 20:19:45.065] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:19:45.339] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 20:26:21.135] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:26:21.434] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 20:26:59.139] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 20:26:59.525] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 22:42:33.739] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 22:42:35.654] [INFO] appLog - Connected to MongoDB
+[2016-08-28 22:43:35.429] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 22:43:37.431] [INFO] appLog - Connected to MongoDB
+[2016-08-28 22:44:19.261] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 22:44:22.227] [INFO] appLog - Connected to MongoDB
+[2016-08-28 22:50:50.761] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 22:50:51.086] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 22:53:05.594] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 22:53:05.877] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 22:53:18.227] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 22:53:18.484] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 22:54:19.016] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 22:54:20.658] [INFO] appLog - Connected to MongoDB
+[2016-08-28 22:57:59.736] [INFO] appLog - Server listening on port: 3000
+[2016-08-28 22:58:02.768] [INFO] appLog - Connected to MongoDB
+[2016-08-28 22:58:46.038] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 22:58:46.350] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 23:04:27.021] [INFO] appLog - addActivity: Activity added successfully
+[2016-08-28 23:04:35.502] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 23:04:35.761] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 23:06:47.764] [INFO] appLog - addCategory: new category added successfully
+[2016-08-28 23:06:52.583] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 23:08:06.643] [INFO] appLog - addActivity: Activity added successfully
+[2016-08-28 23:08:16.125] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 23:08:16.398] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 23:13:13.228] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 23:13:13.487] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 23:13:19.765] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 23:13:20.038] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 23:15:19.111] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 23:15:19.365] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 23:16:42.250] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 23:16:42.540] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 23:17:18.678] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 23:17:18.931] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 23:18:50.475] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 23:18:50.759] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-28 23:28:51.593] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-28 23:28:52.833] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed

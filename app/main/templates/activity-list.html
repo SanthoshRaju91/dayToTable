@@ -1,0 +1,84 @@
+<section class="parallax-window" data-parallax="scroll" data-natural-width="1400" data-natural-height="470">
+  <div class="parallax-content-1">
+    <div class="animated fadeInDown">
+      <h1>Activities</h1>
+      <p>Choose from a wide list of activities of your best interest.</p>
+    </div>
+  </div>
+</section><!-- End section -->
+
+<div  class="container margin_60">
+  <div class="row">
+    <aside class="col-lg-3 col-md-3">
+		  <div class="box_style_cat">
+			  <ul id="cat_nav">
+          <li><a href="" id="active"><i class="icon_set_1_icon-95"></i> All activities</a></li>
+          <li ng-repeat = "category in categories">
+            <a href = "" ng-click="selectCategory(category.categoryID)">
+              <i class="{{category.iconClass}}"></i> {{category.categoryName}}
+            </a>
+          </li>
+  			</ul>
+		  </div>
+
+		<div id="filters_col">
+			<a data-toggle="collapse" aria-expanded="false" aria-controls="collapseFilters" id="filters_col_bt"><i class="icon_set_1_icon-65"></i>Filters</a>
+			<div class="collapse" id="collapseFilters">
+				<div class="filter_type">
+					<h6>Price</h6>
+					<input type="text" id="range" name="range" value="">
+				</div>
+			</div><!--End collapse -->
+		</div><!--End filters col-->
+
+		<div class="box_style_2">
+			<i class="icon_set_1_icon-57"></i>
+			<h4>Need <span>Help?</span></h4>
+			<a href="tel://004542344599" class="phone">+45 423 445 99</a>
+			<small>Monday to Friday 9.00am - 7.30pm</small>
+		</div>
+	 </aside><!--End aside -->
+   <div class="col-lg-9 col-md-9">
+      <div id="tools">
+         <div class="row">
+           	<div class="col-md-3 col-sm-3 col-xs-6">
+            	<div class="styled-select-filters">
+								<select name="sort_price" id="sort_price">
+									<option value="" selected>Sort by price</option>
+									<option value="lower">Lowest price</option>
+									<option value="higher">Highest price</option>
+								</select>
+				      </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="styled-select-filters">
+								<select  name="sort_rating" id="sort_rating">
+									<option value="" selected>Sort by ranking</option>
+									<option value="lower">Lowest ranking</option>
+									<option value="higher">Highest ranking</option>
+								</select>
+              </div>
+            </div>
+        	</div>
+        </div><!--/tools -->
+        <div ng-repeat="activity in activities">
+          <activity-grid data="activity"></activity-grid>
+        </div>
+
+        <span ng-if="showPagination">
+          <hr>
+          <div class="text-center">
+            <ul class="pagination">
+              <li><a href="#">Prev</a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </div>
+        </span><!-- end pagination-->
+        </div><!-- End col lg-9 -->
+    </div><!-- End row -->
+</div><!-- End container -->

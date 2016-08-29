@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Application views both admin and main view",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node server.js"
+  },
+  "author": "Santhosh Raju",
+  "license": "ISC",
+  "dependencies": {
+    "static-server": "^2.0.3"
+  }
+}

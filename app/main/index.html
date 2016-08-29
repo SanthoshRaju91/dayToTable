@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html ng-app="App">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
+    <meta name="author" content="Ansonika">
+    <title>Day Table</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- BASE CSS -->
+    <link href="vendor/css/base.css" rel="stylesheet">
+
+    <!-- @if NODE_ENV='production'-->
+    <link href="vendor/vendor.min.css" rel="stylesheet"/>
+    <script src="vendor.min.js"></script>
+    <!-- @endif-->
+    <link href="styles/app.css" rel="stylesheet"/>
+    <!-- Google web fonts -->
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <!-- REVOLUTION SLIDER CSS -->
+    <link href="vendor/css/settings.css" rel="stylesheet">
+    <link href="vendor/css/extralayers.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  </head>
+  <body>
+    <!--[if lte IE 8]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+    <![endif]-->
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+
+    <header ng-controller="MainCtrl">
+        <div id="top_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6"><i class="icon-phone"></i><strong>0045 043204434</strong></div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <ul id="top_links">
+                          <li ng-if="isAdmin">
+                            <a href=""><i class="icon-user"></i> Go to Admin Panel</a>
+                          </li>
+                          <li ng-if="!isAuthenticated">
+                            <div class="dropdown dropdown-access">
+                                <a class="dropdown-toggle" data-toggle="dropdown" id="access_link">Sign in</a>
+                                <div class="dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <a href="#" class="bt_facebook">
+                                                <i class="icon-facebook"></i>Facebook </a>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <a href="#" class="bt_paypal">
+                                                <i class="icon-twitter"></i>Twitter </a>
+                                        </div>
+                                    </div>
+                                    <div class="login-or">
+                                        <hr class="hr-or">
+                                        <span class="span-or">or</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputUsernameEmail" placeholder="Email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                                    </div>
+                                    <a id="forgot_pw" href="#">Forgot password?</a>
+                                    <input type="submit" name="Sign_in" value="Sign in" id="Sign_in" class="button_drop" ng-click="login()">
+                                    <input type="submit" name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline" ng-click="register()">
+                                </div>
+                            </div><!-- End Dropdown access -->
+                          </li>
+                          <li ng-if="isAuthenticated">
+
+                          </li>
+                        </ul>
+                    </div>
+                </div><!-- End row -->
+            </div><!-- End container-->
+        </div><!-- End top line-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/logo.png" width="160" height="34" alt="City tours" data-retina="true" class="logo_normal"></a>
+                        <a href="index.html"><img src="img/logo_sticky.png" width="160" height="34" alt="City tours" data-retina="true" class="logo_sticky"></a>
+                    </div>
+                </div>
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/logo_sticky.png" width="160" height="34" alt="City tours" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                        <ul>
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Home</a>
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Activites <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a ui-sref="activities">View all activites</a></li>
+                                    <li><a href="all_tours_grid.html">Search for an activity</a></li>
+                                </ul>
+                            </li>
+                             <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Courses <i class="icon-down-open-mini"></i></a><ul>
+                                    <li><a href="all_hotels_list.html">View all courses</a></li>
+                                    <li><a href="all_hotels_grid.html">Select courses from category</a></li>
+                                    <li><a href="all_hotels_grid.html">Search for desired course</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="all_transfer_list.html">Who we are ?</a></li>
+                                    <li><a href="all_transfer_grid.html">What we do ?</a></li>
+                                    <li><a href="single_transfer.html">How do we operate</a></li>
+                                </ul>
+                            </li>
+                              <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Contact Us <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="all_restaurants_list.html">Have an issue ?</a></li>
+                                    <li><a href="all_restaurants_grid.html">Send a request</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- End main-menu -->
+                    <ul id="top_tools">
+                        <li>
+                            <div class="dropdown dropdown-search">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i></a>
+                                <div class="dropdown-menu">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search...">
+                                            <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button" style="margin-left:0;">
+                                            <i class="icon-search"></i>
+                                            </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div><!-- container -->
+    </header><!-- End Header -->
+    <ui-view></ui-view>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-sm-offset-1 col-md-4 col-sm-3">
+                    <h3>Need help?</h3>
+                    <a href="tel://004542344599" id="phone">+45 423 445 99</a>
+                    <a href="mailto:admin@daytable.com" id="email_footer">admin@daytable.com</a>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                         <li><a href="#">Terms and condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h3>Discover</h3>
+                    <ul>
+                        <li><a href="#">Community blog</a></li>
+                        <li><a href="#">Activity & Course guide</a></li>
+                    </ul>
+                </div>
+            </div><!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-google"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                            <li><a href="#"><i class="icon-vimeo"></i></a></li>
+                            <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                        <p>© Day To Table 2016</p>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </footer><!-- End footer -->
+
+    <div id="toTop"></div><!-- Back to top button -->
+    <!-- Common scripts -->
+    <script src="vendor/js/jquery-1.11.2.min.js"></script>
+    <script src="vendor/js/common_scripts_min.js"></script>
+    <script src="vendor/js/functions.js"></script>
+
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script src="vendor/js/jquery.themepunch.tools.min.js"></script>
+    <script src="vendor/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="vendor/js/revolution_func.js"></script>
+
+    <script src="app.bundle.js"></script>
+  </body>
+</html>
