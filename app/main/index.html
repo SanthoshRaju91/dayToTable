@@ -28,7 +28,12 @@
     <script src="vendor/angular.min.js"></script>
     <script src="vendor/angular-ui-router.min.js"></script>
     <!-- @endif-->
+    <!-- @if NODE_ENV='production'-->
+    <link href="app.min.css"/ rel="stylesheet">
+    <!-- @endif-->
+    <!-- @if NODE_ENV='development'-->
     <link href="styles/app.css" rel="stylesheet"/>
+    <!-- @endif-->
     <!-- Google web fonts -->
    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
@@ -42,8 +47,10 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+    <!-- @if NODE_ENV='development'-->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!-- @endif-->
   </head>
   <body>
     <!--[if lte IE 8]>
@@ -242,7 +249,9 @@
     <script src="vendor/js/jquery.themepunch.revolution.min.js"></script>
     <script src="vendor/js/revolution_func.js"></script>
 
+    <!-- @if NODE_ENV='development' -->
     <script src="app.bundle.js"></script>
+    <!-- @endif-->
     <!-- @if NODE_ENV='production'-->
     <script src="script.min.js"></script>
     <!-- @endif-->
