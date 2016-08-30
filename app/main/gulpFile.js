@@ -12,7 +12,7 @@ var os = require('os');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var minifyCSS = require('gulp-clean-css');
-var minifyJS = require('gulp-uglify');
+var minifyJS = require('gulp-uglifyjs');
 var livereload = require('gulp-livereload');
 var preprocessor = require('gulp-preprocess')
 var del = require('del');
@@ -28,7 +28,7 @@ var APP_PATH = {
 }
 
 var BUILD_PATH_SRC = {
-  js: './**/*.js',
+  js: './app.bundle.js',
   css: './styles/*.css',
   templates: './templates/**/*.html',
   html: './index.html',
@@ -38,7 +38,7 @@ var BUILD_PATH_SRC = {
 var BUILD_PATH_DEST = {
   js: './dist',
   css: './dist',
-  templates: './templates/',
+  templates: './dist/templates/',
   html: './dist',
   assets: './dist/assets'
 };
@@ -54,6 +54,9 @@ var VENDOR_PATH = {
   }
 };
 
+var bower_files = [
+  "bower_components/angular/angular.min.js",
+  "bower_components/angular-ui-router/release/angular-ui-router.min.js"];
 
 /*
 * @task: vendor:js/
@@ -78,14 +81,20 @@ gulp.task('vendor:css', function() {
       .pipe(gulp.dest(VENDOR_PATH.dest.css));
 });
 
+gulp.task('build:bower', function() {
+  for(var i=0; i<bower_files.length; i++) {
+    gulp.src(bower_files[i])
+    .pipe(gulp.dest(VENDOR_PATH.dest.js));
+  }
+});
 /*
 * @task: build:js
 * gulp task to process dev js files and minify for production.
 */
 gulp.task('build:js', function() {
   return gulp.src(BUILD_PATH_SRC.js)
-    .pipe(minifyJS())
     .pipe(rename('script.min.js'))
+    // .pipe(minifyJS())
     .pipe(gulp.dest(BUILD_PATH_DEST.js));
 });
 
@@ -116,7 +125,7 @@ gulp.task('build:template', function() {
 gulp.task('build:html', function() {
   return gulp.src(BUILD_PATH_SRC.html)
     .pipe(preprocessor({context: {NODE_ENV: 'production', DEBUG: true}}))
-    .pipe(BUILD_PATH_DEST.html);
+    .pipe(gulp.dest(BUILD_PATH_DEST.html));
 });
 
 /*
@@ -125,7 +134,7 @@ gulp.task('build:html', function() {
 */
 gulp.task('build:assets', function() {
   return gulp.src(BUILD_PATH_SRC.assets)
-    .pipe(BUILD_PATH_DEST.assets);
+    .pipe(gulp.dest(BUILD_PATH_DEST.assets));
 });
 
 
@@ -178,6 +187,6 @@ gulp.task('open', function() {
 /*
 * Gulp prodction build task to minify JS, CSS and preprocessing index.html file to process only the production scripts and stylesheets
 */
-gulp.task('build', ['build:js', 'build:css', 'build:templates', 'build:html', 'build:assets']);
+gulp.task('build', ['build:bower', 'build:js', 'build:css', 'build:template', 'build:html', 'build:assets']);
 
 gulp.task('default', ['watch', 'open']);

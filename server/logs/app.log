@@ -598,3 +598,5 @@
 [2016-08-28 23:18:50.759] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
 [2016-08-28 23:28:51.593] [INFO] appLog - getCategoryList: category list fetched
 [2016-08-28 23:28:52.833] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-29 11:32:55.551] [INFO] appLog - Server listening on port: 3000
+[2016-08-29 11:33:18.077] [INFO] appLog - Server listening on port: 3000

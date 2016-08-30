@@ -17,8 +17,10 @@
     "gulp-preprocess": "^2.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.0.0",
+    "gulp-uglifyjs": "^0.6.2",
     "gulp-webpack": "^1.5.0",
-    "jshint": "^2.9.2"
+    "jshint": "^2.9.2",
+    "pump": "^1.0.1"
   },
   "dependencies": {
     "gulp-clean-css": "^2.0.12",

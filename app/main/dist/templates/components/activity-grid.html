@@ -1,0 +1,63 @@
+<div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.1s">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <div class="img_list">
+        <img ng-src="{{$ctrl.imageURL}}" alt="Image">
+        <div class="short_info"><i class="{{$ctrl.overlayIcon}}"></i> {{$ctrl.overlayName}} </div></a>
+      </div>
+    </div>
+    <div class="clearfix visible-xs-block"></div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="tour_list_desc">
+          <div class="rating">
+            <i ng-repeat="rating in $ctrl.ratings track by $index" class="{{rating}}"></i>            
+          </div>
+            <h3><strong>{{$ctrl.data.activityName}}</strong></h3>
+              <p>{{$ctrl.data.description}}</p>
+              <ul class="add_info">
+                <li>
+                  <div class="tooltip_styled tooltip-effect-4">
+                     <span class="tooltip-item"><i class="icon_set_1_icon-83"></i></span>
+                        <div class="tooltip-content"><h4>Schedule</h4>
+                          <div ng-repeat="schedule in $ctrl.scheduleList track by $index">
+                            <span>{{schedule}}</span><br>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="tooltip_styled tooltip-effect-4">
+                      <span class="tooltip-item"><i class="icon_set_1_icon-41"></i></span>
+                        <div class="tooltip-content"><h4>Address</h4>
+                            {{$ctrl.data.address}}<br>
+                        </div>
+                      </div>
+                   </li>
+                  <li>
+                    <div class="tooltip_styled tooltip-effect-4">
+                      <span class="tooltip-item"><i class="icon_set_1_icon-97"></i></span>
+                        <div class="tooltip-content"><h4>Languages</h4>
+                            {{$ctrl.data.languages}}
+                        </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="tooltip_styled tooltip-effect-4">
+                      <span class="tooltip-item"><i class="icon_set_1_icon-27"></i></span>
+                        <div class="tooltip-content"><h4>Parking</h4>
+                          <span ng-repeat="parking in $ctrl.data.parking track by $index">
+                            {{parking}} <br>
+                          </span>
+                        </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2">
+              <div class="price_list"><div><sup>$</sup>{{$ctrl.data.price}}*<span class="normal_price_list"></span><small >*Per person</small>
+              <p><a href="" class="btn_1">Details</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div><!--End strip -->

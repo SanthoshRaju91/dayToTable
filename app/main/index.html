@@ -25,6 +25,8 @@
     <!-- @if NODE_ENV='production'-->
     <link href="vendor/vendor.min.css" rel="stylesheet"/>
     <script src="vendor.min.js"></script>
+    <script src="vendor/angular.min.js"></script>
+    <script src="vendor/angular-ui-router.min.js"></script>
     <!-- @endif-->
     <link href="styles/app.css" rel="stylesheet"/>
     <!-- Google web fonts -->
@@ -241,5 +243,8 @@
     <script src="vendor/js/revolution_func.js"></script>
 
     <script src="app.bundle.js"></script>
+    <!-- @if NODE_ENV='production'-->
+    <script src="script.min.js"></script>
+    <!-- @endif-->
   </body>
 </html>
