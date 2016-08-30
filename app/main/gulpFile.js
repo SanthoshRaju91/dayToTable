@@ -40,53 +40,38 @@ var BUILD_PATH_DEST = {
   css: './dist',
   templates: './dist/templates/',
   html: './dist',
-  assets: './dist/assets'
+  assets: './dist/img'
 };
 
 var VENDOR_PATH = {
-  src: {
-    css: './vendor/**/*.css',
-    js: './vendor/**/*.js'
-  },
-  dest: {
-    css: './dist/vendor',
-    js: './dist/vendor'
-  }
+  src: './vendor/**/*.*',
+  dest: './dist/vendor'
 };
 
 var bower_files = [
   "bower_components/angular/angular.min.js",
   "bower_components/angular-ui-router/release/angular-ui-router.min.js"];
 
-/*
-* @task: vendor:js/
-* gulp task to process vendor js files for production dist folder
+/**
+* @task: build:bower
+* Gulp task for building bower components to dist vendor folder for production build
 */
-gulp.task('vendor:js', function() {
-  return gulp.src(VENDOR_PATH.src.js)
-    .pipe(concat('vendor.js'))
-    .pipe(minifyJS())
-    .pipe(rename('vendor.min.js'))
-    .pipe(gulp.dest(VENDOR_PATH.dest.js));
-});
-
-/*
-* @task: vendor:css
-* gulp task to process vendor css file for production dist folder
-*/
-gulp.task('vendor:css', function() {
-    return gulp.src(VENDOR_PATH.src.css)
-      .pipe(concat('vendor.css'))
-      .pipe(rename('vendor.min.css'))
-      .pipe(gulp.dest(VENDOR_PATH.dest.css));
-});
-
 gulp.task('build:bower', function() {
   for(var i=0; i<bower_files.length; i++) {
     gulp.src(bower_files[i])
-    .pipe(gulp.dest(VENDOR_PATH.dest.js));
+    .pipe(gulp.dest(VENDOR_PATH.dest));
   }
 });
+
+/**
+* @task: vendor
+* Gulp task for building the vendor files for production
+*/
+gulp.task('vendor', function() {
+  return gulp.src(VENDOR_PATH.src)
+    .pipe(gulp.dest(VENDOR_PATH.dest));
+});
+
 /*
 * @task: build:js
 * gulp task to process dev js files and minify for production.
@@ -187,6 +172,6 @@ gulp.task('open', function() {
 /*
 * Gulp prodction build task to minify JS, CSS and preprocessing index.html file to process only the production scripts and stylesheets
 */
-gulp.task('build', ['build:bower', 'build:js', 'build:css', 'build:template', 'build:html', 'build:assets']);
+gulp.task('build', ['vendor','build:bower', 'build:js', 'build:css', 'build:template', 'build:html', 'build:assets']);
 
 gulp.task('default', ['watch', 'open']);
