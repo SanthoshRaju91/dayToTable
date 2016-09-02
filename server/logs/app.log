@@ -600,3 +600,467 @@
 [2016-08-28 23:28:52.833] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
 [2016-08-29 11:32:55.551] [INFO] appLog - Server listening on port: 3000
 [2016-08-29 11:33:18.077] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:27:50.642] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:27:58.013] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:28:07.548] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:31:01.567] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:31:03.372] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:32:30.906] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:32:40.084] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:33:51.825] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:33:53.954] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:35:08.768] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:35:26.314] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:36:17.778] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:36:27.149] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:36:33.390] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:36:40.285] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:36:46.674] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:37:04.204] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:37:05.947] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:37:20.676] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:37:27.336] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:37:34.380] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:37:37.290] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:38:26.286] [ERROR] appLog - getActivitiesByCategory: Error while fetching activites for specified category: CastError: Cast to ObjectId failed for value "1" at path "categoryID"
+[2016-08-31 08:39:26.570] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:39:37.039] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:39:40.572] [ERROR] appLog - getActivitiesByCategory: Error while fetching activites for specified category: CastError: Cast to ObjectId failed for value "1" at path "categoryID"
+[2016-08-31 08:39:53.055] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:40:09.622] [ERROR] appLog - getActivitiesByCategory: Error while fetching activites for specified category: CastError: Cast to ObjectId failed for value "1" at path "categoryID"
+[2016-08-31 08:40:40.466] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:43:25.210] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:43:26.907] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:43:39.010] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:43:40.762] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:43:53.031] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:43:54.601] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:44:03.909] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:44:05.500] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:44:09.940] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:44:11.570] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:44:20.467] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-08-31 08:44:51.012] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:44:52.567] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:44:55.389] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-08-31 08:45:39.883] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:45:41.506] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:46:13.744] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:46:15.580] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:46:22.176] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 08:46:24.145] [INFO] appLog - Connected to MongoDB
+[2016-08-31 08:46:30.146] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-08-31 08:46:44.336] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:46:44.625] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:47:54.736] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:47:54.984] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:48:21.593] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:48:27.087] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:49:48.697] [ERROR] appLog - getActivitiesByCategory: Error while fetching category details: CastError: Cast to number failed for value "undefined" at path "categoryID"
+[2016-08-31 08:49:51.365] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:49:51.615] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:50:10.938] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:50:11.206] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:50:35.126] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:50:35.378] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:50:51.088] [ERROR] appLog - getActivitiesByCategory: Error while fetching category details: CastError: Cast to number failed for value "undefined" at path "categoryID"
+[2016-08-31 08:50:53.784] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:50:54.053] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:52:02.408] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:52:13.310] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:52:14.334] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:52:37.907] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:52:39.409] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:52:39.680] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:52:47.529] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:54:04.049] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:54:06.037] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 08:54:06.284] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-08-31 08:54:18.355] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-08-31 08:54:29.796] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-08-31 10:37:39.867] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:37:44.848] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:37:55.856] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:38:42.199] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:38:42.321] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:38:56.932] [INFO] appLog - addCategory: new category added successfully
+[2016-08-31 10:39:28.821] [INFO] appLog - addCategory: new category added successfully
+[2016-08-31 10:39:35.964] [INFO] appLog - addCategory: new category added successfully
+[2016-08-31 10:40:00.852] [INFO] appLog - getUserList: user details fetched
+[2016-08-31 10:40:27.844] [INFO] appLog - addActivity: Activity added successfully
+[2016-08-31 10:40:56.984] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-08-31 10:41:16.381] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 10:41:16.417] [INFO] appLog - Activity list computed1472005989653
+[2016-08-31 10:41:23.687] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-08-31 10:41:29.958] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-08-31 10:41:31.556] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-08-31 10:41:42.277] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 10:42:08.242] [INFO] appLog - Activity list computed1472005989653
+[2016-08-31 10:46:14.541] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:46:14.636] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:47:01.292] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:47:01.379] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:47:31.578] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:47:31.684] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:48:34.180] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:48:34.287] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:48:57.030] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-08-31 10:49:22.794] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:49:22.893] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:49:28.069] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-08-31 10:49:52.729] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-08-31 10:50:10.412] [INFO] appLog - getUserList: user details fetched
+[2016-08-31 10:53:26.429] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:53:26.536] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:53:35.894] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:53:36.019] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:53:40.315] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-08-31 10:54:03.959] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:54:04.019] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:54:06.108] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-08-31 10:54:43.809] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:54:43.905] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:54:46.085] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-08-31 10:55:37.938] [INFO] appLog - getUserList: user details fetched
+[2016-08-31 10:57:06.078] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:57:06.179] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:57:08.931] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-08-31 10:57:31.660] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:57:31.783] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:57:38.577] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:57:38.687] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:57:44.396] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:57:44.503] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:57:52.892] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-08-31 10:58:12.300] [INFO] appLog - getUserList: user details fetched
+[2016-08-31 10:58:43.249] [INFO] appLog - Server listening on port: 3000
+[2016-08-31 10:58:43.346] [INFO] appLog - Connected to MongoDB
+[2016-08-31 10:58:47.732] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-08-31 12:14:09.164] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-08-31 12:14:10.164] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-08-31 12:14:16.911] [INFO] appLog - getCategoryList: category list fetched
+[2016-08-31 12:14:16.934] [INFO] appLog - Activity list computed1472005989653
+[2016-09-02 08:14:42.556] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 08:14:50.737] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 09:10:50.469] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 09:10:56.886] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 09:10:58.906] [INFO] appLog - Connected to MongoDB
+[2016-09-02 09:11:40.770] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:11:41.057] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:11:47.503] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-09-02 09:11:51.558] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-09-02 09:13:02.193] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:30:01.725] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 09:30:13.711] [INFO] appLog - Connected to MongoDB
+[2016-09-02 09:30:43.907] [ERROR] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:31:11.791] [ERROR] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:31:39.663] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 09:31:41.215] [INFO] appLog - Connected to MongoDB
+[2016-09-02 09:31:48.208] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:33:00.812] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 09:33:02.465] [INFO] appLog - Connected to MongoDB
+[2016-09-02 09:33:11.530] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 09:33:13.644] [INFO] appLog - Connected to MongoDB
+[2016-09-02 09:33:20.704] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:33:35.246] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:34:22.055] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 09:34:23.915] [INFO] appLog - Connected to MongoDB
+[2016-09-02 09:34:30.842] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:34:48.865] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:36:25.153] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:36:25.412] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:37:38.644] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:37:38.921] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:40:28.765] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:40:29.020] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:41:15.134] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:41:15.408] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:41:21.055] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:41:27.140] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:48:52.758] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:48:53.014] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:49:40.368] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:49:45.037] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:50:49.089] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:50:49.343] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:51:04.487] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:51:04.773] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:52:17.275] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:52:17.523] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:52:47.758] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:52:48.033] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:52:53.185] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:52:59.125] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:55:59.288] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 09:55:59.544] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 09:56:04.865] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 09:56:18.545] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-09-02 09:56:21.171] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 10:02:16.574] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:02:16.844] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:04:04.028] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:04:04.287] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:04:47.655] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:04:47.934] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:07:02.563] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:07:02.819] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:07:36.378] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:07:36.651] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:08:00.581] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:08:00.833] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:08:36.885] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:08:37.158] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:09:02.513] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:09:02.775] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:09:14.600] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:09:14.870] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:10:06.229] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:10:06.487] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:11:21.474] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:11:22.726] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:11:28.628] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:11:29.859] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:11:41.559] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:11:44.644] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:12:24.212] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:12:25.298] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:12:43.356] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:12:43.651] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:13:05.088] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:13:05.342] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:13:27.446] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:13:27.723] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:15:20.242] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:15:20.515] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:17:59.680] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:17:59.961] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:18:17.640] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:18:17.893] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:19:04.234] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:19:04.648] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:20:32.018] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:20:32.295] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:21:07.024] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:21:07.280] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:21:42.433] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:21:42.709] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:22:29.176] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:22:29.436] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:23:05.793] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:23:06.082] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:23:41.263] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 10:23:41.533] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 10:28:21.402] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 10:29:39.938] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:30:23.758] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:31:01.396] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:31:45.126] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:31:58.978] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:32:16.011] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:34:35.220] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:34:58.721] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:35:51.371] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:36:21.213] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:36:46.996] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:37:16.886] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:37:50.335] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:38:20.655] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:39:10.083] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:40:47.380] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:41:13.574] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:41:38.982] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:42:53.584] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:44:52.579] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:45:29.945] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:46:58.452] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:47:28.107] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:49:02.097] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:50:26.504] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:51:17.148] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:51:40.410] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:55:00.615] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:55:16.777] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:56:57.973] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 10:57:25.504] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 11:00:37.193] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 11:01:05.646] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 16:23:05.101] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 16:23:07.328] [INFO] appLog - Connected to MongoDB
+[2016-09-02 16:23:42.061] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 16:27:01.158] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:27:01.426] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:27:05.717] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 16:27:19.144] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:27:19.440] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:28:28.142] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:28:28.559] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:28:32.635] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:28:32.882] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:29:05.951] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:29:06.291] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:30:12.181] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:30:12.490] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:33:03.773] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:33:04.072] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:33:28.858] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:33:29.124] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:33:40.176] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 16:34:24.788] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:34:27.169] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:34:27.442] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:34:34.603] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:35:04.456] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:35:04.747] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:36:15.191] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:36:22.757] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:36:23.062] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:36:39.434] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:36:39.755] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:39:14.768] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:39:15.113] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:39:18.948] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:39:19.245] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:43:15.202] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:43:21.890] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:43:28.163] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:43:28.420] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:43:39.705] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:43:44.696] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:43:44.999] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:43:54.278] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:43:54.619] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:44:07.299] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:44:07.608] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:44:24.490] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:44:24.721] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:46:57.514] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:46:57.831] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:51:42.417] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:51:42.720] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:52:46.413] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:52:46.723] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:54:58.517] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:54:58.821] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:55:02.218] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:55:23.734] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:55:24.042] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:56:06.443] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:56:12.910] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:56:15.516] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:56:15.762] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:57:39.179] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:57:43.480] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:57:45.835] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:57:46.246] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:57:53.759] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:57:54.008] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:57:55.909] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 16:58:11.127] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:58:11.435] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:58:22.087] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:58:22.352] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 16:58:48.299] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 16:58:48.606] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:02:29.769] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:02:30.006] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:03:11.568] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:03:11.869] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:03:15.203] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 17:03:24.349] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:03:24.602] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:04:08.335] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 17:04:35.430] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 17:04:38.199] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:04:38.508] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:05:00.446] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 17:05:00.830] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:05:01.140] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:05:04.314] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:05:04.599] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:06:21.179] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 17:06:38.316] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:06:38.625] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:09:22.945] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-02 17:09:29.792] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:09:30.098] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:10:03.631] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:10:03.941] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:10:52.590] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:10:52.838] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:11:01.592] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:13:07.717] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:17:27.745] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:18:08.991] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:20:19.052] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:20:58.575] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:23:55.323] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:24:52.666] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:25:55.034] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:26:22.989] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:26:49.586] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:27:21.660] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:28:05.635] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:29:48.400] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:29:56.284] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:30:04.170] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:30:36.013] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:30:36.341] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:30:39.700] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:31:36.094] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:34:33.174] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:35:12.084] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:37:19.640] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:41:02.976] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:42:12.619] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:42:28.182] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:43:31.158] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:44:10.394] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:44:57.675] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:45:12.341] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:45:51.745] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:47:30.387] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 17:47:32.591] [INFO] appLog - Connected to MongoDB
+[2016-09-02 17:48:51.061] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:49:15.826] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:49:43.677] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:49:54.487] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:55:40.955] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:56:16.506] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:56:25.893] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:56:53.572] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:57:33.500] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:57:33.771] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:57:36.846] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:57:42.194] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:57:42.462] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:57:44.533] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 17:58:13.053] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:58:13.304] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 17:59:00.016] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 17:59:00.308] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 18:00:40.043] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 18:00:40.302] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 18:00:42.551] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:01:46.477] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:02:26.164] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:09:22.018] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 18:09:23.859] [INFO] appLog - Connected to MongoDB
+[2016-09-02 18:09:32.478] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 18:09:32.805] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 18:09:37.390] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:10:05.755] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:10:48.585] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 18:10:50.225] [INFO] appLog - Connected to MongoDB
+[2016-09-02 18:10:52.851] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:11:04.390] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:14:35.110] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:16:06.458] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:16:22.511] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:17:02.810] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:18:19.266] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 18:18:20.937] [INFO] appLog - Connected to MongoDB
+[2016-09-02 18:18:44.517] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:20:27.647] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:20:31.361] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 18:20:31.621] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 18:20:34.294] [INFO] appLog - getActivityById: Activity fetched for the specified id

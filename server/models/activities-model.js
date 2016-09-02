@@ -69,6 +69,18 @@ var ActivitySchema = new Schema({
     type: String,
     default: 'A'
   },
+  includes: {
+    type: String
+  },
+  duration: {
+    type: String,
+    default: '1 Hour'
+  },
+  startFrom: {
+    type: String,
+    default: '',
+    required: true
+  },
   categoryID: {type: Schema.Types.ObjectId, ref: 'Category'},
   creadtedUserID: {type: Schema.Types.ObjectId, ref: 'User'}
 });

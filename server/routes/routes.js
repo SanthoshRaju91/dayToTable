@@ -41,8 +41,9 @@ router.get('/getUpcomingActivites', activityController.getUpcomingActivites);
 router.get('/oneTimeActivityForUser', activityController.oneTimeActivityForUser);
 router.get('/activitiesByUser', activityController.activitiesByUser);
 router.post('/inactivateActivity', activityController.inactivateActivity);
-router.get('/getActivitiesByCategory', activityController.getActivitiesByCategory);
-
+router.get('/getActivitiesByCategory/:categoryID', activityController.getActivitiesByCategory);
+router.get('/getActivityById/:id', activityController.getActivityById);
+router.get('/getSortedActivitiesList/:type/:sort', activityController.getSortedActivitiesList);
 // Booking specific routes
 router.post('/addBookingFromUser', bookingController.addBookingFromUser);
 router.post('/cancelBooking', bookingController.cancelBooking);

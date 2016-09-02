@@ -61,17 +61,6 @@ module.exports = {
         logger.info('getAllActivitiesForUser: No courses found');
         res.json({ status: 404, success: false, message: 'No Activites found'});
       } else {
-        // var activityList = [];
-        // _.forEach(activities, function(value) {
-        //   if(value.scheduleType === 'onetime') {
-        //     value["activityStatus"] = (moment() > moment.unix(value.schedule) && value.scheduleType === 'onetime') ? 'Closed' : 'Open';
-        //     value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-        //     activityList.push(value);
-        //   } else {
-        //     activityList.push(value);
-        //   }
-        // });
-
         logger.info('Activity list computed' + activities[0].schedule);
         res.json({ status: 200, success: true, count: activities.length, activityList: activities});
       }
@@ -163,28 +152,52 @@ module.exports = {
   * @method: getActivitiesByCategory
   */
   getActivitiesByCategory: function(req, res) {
-    Activity.find({categoryID: req.body.categoryID, status: 'A', scheduleType: 'onetime'}, function(err, activities) {
+    Category.findOne({categoryID: req.params.categoryID}, function(err, category) {
       if(err) {
-        logger.error('getActivitiesByCategory: Error while fetching activites for specified category: ' + err);
-        res.json({ status: 500, success: false, message: 'Error while fetching activities for specified category'});
-      } else if(!activities) {
-        logger.error('getActivitiesByCategory: No Activities found for the category');
-        res.json({ status: 404, success: false, message: 'No Activites found for the category'});
+        logger.error('getActivitiesByCategory: Error while fetching category details: ' + err);
+        res.json({ status: 500, success: false, message: 'Error while fetching category details'});
+      } else if(!category) {
+        logger.error('getActivitiesByCategory: No category found for the categoryID');
+        res.json({ status: 404, success: false, message: 'No category found for the categoryID'});
       } else {
-        var activitiesList = [];
-        _.forEach(activities, function(value) {
-          if(value.scheduleType === 'onetime') {
-            value["activityStatus"] = (moment() > moment.unix(value.schedule) && value.scheduleType === 'onetime') ? 'Closed' : 'Open';
-            value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-            activitiesList.push(value);
+        Activity.find({categoryID: category._id, status: 'A', scheduleType: 'onetime'}).populate('categoryID').exec(function(err1, activities) {
+          if(err1) {
+            logger.error('getActivitiesByCategory: Error while fetching activites for specified category: ' + err1);
+            res.json({ status: 500, success: false, message: 'Error while fetching activities for specified category'});
+          } else if(!activities) {
+            logger.error('getActivitiesByCategory: No Activities found for the category');
+            res.json({ status: 404, success: false, message: 'No Activites found for the category'});
+          } else {
+            logger.info('activitiesByUser: Activities fetched for the category');
+            res.json({ status: 200, success: true, count: activities.length, activityList: activities});
           }
         });
-        logger.info('activitiesByUser: Activities fetched for the category');
-        res.json({ status: 200, success: true, count: activitiesList.length, activityList: activitiesList});
+
       }
     });
   },
 
+  /**
+  * Function to get activity details by ID
+  * @method: getActivityById
+  */
+
+  getActivityById: function(req, res) {
+    var activityID = req.params.id || '';
+    var populateQuery = [{path: 'creadtedUserID'}, {path: 'categoryID'}];
+    Activity.findOne({activityID: activityID}).populate(populateQuery).exec(function(err, activity) {
+      if(err) {
+        logger.error('getActivityById: Error in fetching activity details: ' + err);
+        res.json({status: 500, success: false, message: 'Error in fetching activity details'});
+      } else if(!activity) {
+        logger.error('getActivityById: No activity found for the given id');
+        res.json({ status: 404, success: false, message: 'No record found'});
+      } else {
+        logger.info('getActivityById: Activity fetched for the specified id');
+        res.json({ status: 200, success: true, activity: activity});
+      }
+    });
+  },
   /**
   * Function to inactivate the course
   * @method: inactivateActivity
@@ -199,6 +212,25 @@ module.exports = {
         res.json({ status: 200, success: true, message: 'Activity inactivated'});
       }
     });
-  }
+  },
 
+  /**
+  * Function to get sorted list data.
+  * @method: getSortedActivitiesList
+  */
+  getSortedActivitiesList: function(req, res) {
+    var sort = (req.params.sort === 'highest') ?  "-" + req.params.type : req.params.type;
+    Activity.find({status: 'A'}).sort(sort).populate('categoryID').exec(function(err, activities) {
+      if(err) {
+        logger.error('getSortedActivitiesList: Error while fetching sorted activities list: ' + err);
+        res.json({ status: 500, success: false, message: 'Error while fetching sorted activities list'});
+      } else if(!activities) {
+        logger.error('getSortedActivitiesList: Could not find records for the applied sort');
+        res.json({ status: 404, success: false, message: 'Could not find record for the applied sort'});
+      } else {
+        logger.info('getSortedActivitiesList: List fetched for the applied sort');
+        res.json({ status: 200, success: true, count: activities.length, activityList: activities});
+      }
+    });
+  }
 }
