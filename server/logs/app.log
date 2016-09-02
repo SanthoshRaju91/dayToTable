@@ -1064,3 +1064,20 @@
 [2016-09-02 18:20:31.361] [INFO] appLog - getCategoryList: category list fetched
 [2016-09-02 18:20:31.621] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
 [2016-09-02 18:20:34.294] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:27:43.743] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 18:27:43.998] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 18:27:49.696] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:27:58.096] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 18:27:58.849] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 18:28:02.614] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-09-02 18:28:04.301] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-09-02 18:28:05.824] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-09-02 18:28:06.855] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 18:28:19.801] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 18:28:26.926] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 18:28:28.024] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-02 18:28:48.817] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:29:14.430] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 18:29:25.992] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-02 18:29:26.245] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
+[2016-09-02 18:29:41.188] [INFO] appLog - getActivityById: Activity fetched for the specified id
