@@ -1,6 +1,6 @@
 module.exports = (function() {
   var app = angular.module('app.activities-ctrl', []);
-  app.constant('REST_URL', 'http://45.55.232.197:3000/api/');
+  app.constant('REST_URL', 'http://localhost:3000/api/');
 
   app.controller('ActivtiesCtrl', ['$scope', '$http', 'REST_URL', function($scope, $http, REST_URL) {
 

@@ -44,6 +44,7 @@ router.post('/inactivateActivity', activityController.inactivateActivity);
 router.get('/getActivitiesByCategory/:categoryID', activityController.getActivitiesByCategory);
 router.get('/getActivityById/:id', activityController.getActivityById);
 router.get('/getSortedActivitiesList/:type/:sort', activityController.getSortedActivitiesList);
+router.get('/getPopularActivites', activityController.getPopularActivites)
 // Booking specific routes
 router.post('/addBookingFromUser', bookingController.addBookingFromUser);
 router.post('/cancelBooking', bookingController.cancelBooking);

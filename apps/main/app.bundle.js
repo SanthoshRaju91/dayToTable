@@ -46,19 +46,20 @@
 
 	//components scripts
 	__webpack_require__(1);
-
-	//services scripts
 	__webpack_require__(2);
 
-	//controllers scripts
+	//services scripts
 	__webpack_require__(3);
+
+	//controllers scripts
 	__webpack_require__(4);
 	__webpack_require__(5);
 	__webpack_require__(6);
+	__webpack_require__(7);
 
 	//route and main app scripts
-	__webpack_require__(7);
 	__webpack_require__(8);
+	__webpack_require__(9);
 
 
 /***/ },
@@ -102,6 +103,39 @@
 
 /***/ },
 /* 2 */
+/***/ function(module, exports) {
+
+	module.exports = (function() {
+	  var app = angular.module('app.popular-grid-component', []);
+
+	  app.component('popularGrid', {
+	    bindings: {
+	      data: '<'
+	    },
+	    replace: true,
+	    templateUrl: '../../templates/components/popular-grid.html',
+	    controller: function($location) {
+	      let iconMapper = { MUSIC: 'icon-music-4', DANCE: 'icon_set_1_icon-30', EAT: 'icon_set_1_icon-14'};
+	      this.categoryIconClass = iconMapper[this.data.category.toUpperCase()];
+	      this.ratings = [];
+	      let self = this;
+	      for(let i=0; i<this.data.ratings; i++) {
+	        self.ratings.push('icon-smile voted');
+	      }
+
+	      for(let i=0; i<(5-this.data.ratings); i++) {
+	        self.ratings.push('icon-smile');
+	      }
+	      this.goTo = function(activityId) {
+	        $location.path('activity/' + activityId);
+	      }
+	    }
+	  });
+	}());
+
+
+/***/ },
+/* 3 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -168,33 +202,40 @@
 
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
-	  angular.module('app.home-ctrl', [])
-	    .controller('MainCtrl', ['$scope', 'AuthService', '$location', function($scope, AuthService, $location) {
+	  var app = angular.module('app.home-ctrl', []);
+	  app.constant('REST_URL', 'http://localhost:3000/api/');
 
-	      $scope.isAdmin = (AuthService.getRole() == 'A') ? true : false;
-	      $scope.isAuthenticated = (AuthService.isAuthenticated()) ? true : false;
+	  app.controller('MainCtrl', ['$scope', '$http','AuthService', '$location', 'REST_URL', function($scope, $http, AuthService, $location, REST_URL) {
+	    $scope.isAdmin = (AuthService.getRole() == 'A') ? true : false;
+	    $scope.isAuthenticated = (AuthService.isAuthenticated()) ? true : false;
 
-	      $scope.login = function() {
-	        alert('Hi');
-	      }
+	    $scope.login = function() {
 
-	      $scope.register = function() {
-	        $location.path('register');
-	      }
+	    }
 
-	    }])
-	    .controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
-
-	    }]);
+	    $scope.register = function() {
+	      $location.path('register');
+	    }
+	  }]);
+	  app.controller('HomeCtrl', ['$scope', '$http', 'REST_URL', function($scope, $http, REST_URL) {
+	    $http({method: 'GET', url: REST_URL + 'getPopularActivites'})
+	      .then(function(response) {
+	        if(response.data.status === 200 || response.data.success) {
+	          $scope.popularActivityList = response.data.activityList;
+	        }
+	      }, function(errorResponse) {
+	        console.log("Error response" + errorResponse);
+	      });
+	  }]);
 	}());
 
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -207,12 +248,12 @@
 
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
 	  var app = angular.module('app.activities-ctrl', []);
-	  app.constant('REST_URL', 'http://45.55.232.197:3000/api/');
+	  app.constant('REST_URL', 'http://localhost:3000/api/');
 
 	  app.controller('ActivtiesCtrl', ['$scope', '$http', 'REST_URL', function($scope, $http, REST_URL) {
 
@@ -279,12 +320,12 @@
 
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
 	  var app = angular.module('app.single-activity', ['ui.router']);
-	  app.constant('REST_URL', 'http://45.55.232.197:3000/api/');
+	  app.constant('REST_URL', 'http://localhost:3000/api/');
 	  app.controller('singleActivityCtrl', ['$scope', '$http', '$state', '$stateParams', 'REST_URL', function($scope, $http, $state, $stateParams, REST_URL) {
 	    var activityID = $stateParams.activityId;
 	    $http({method: 'GET', url: REST_URL + '/getActivityById/' + activityID})
@@ -345,7 +386,7 @@
 
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -359,25 +400,29 @@
 	          url: '/',
 	          templateUrl: 'templates/home.html',
 	          controller: 'HomeCtrl',
-	          authenticate: false
+	          authenticate: false,
+	          show: true
 	        })
 	        .state('register', {
 	          url: '/register',
 	          templateUrl: 'templates/register.html',
 	          controller: 'RegisterCtrl',
-	          authenticate: false
+	          authenticate: false,
+	          show: false
 	        })
 	        .state('activities', {
 	          url: '/activity-list',
 	          templateUrl: 'templates/activity-list.html',
 	          controller: 'ActivtiesCtrl',
-	          authenticate: false
+	          authenticate: false,
+	          show: false
 	        }).
 	        state('activity', {
 	          url: '/activity/:activityId',
 	          templateUrl: 'templates/single-activity.html',
 	          controller: 'singleActivityCtrl',
-	          authenticate: false
+	          authenticate: false,
+	          show: false
 	        });
 	    });
 
@@ -387,6 +432,7 @@
 
 	    app.run(['$rootScope', '$state', '$window', 'AuthService', function($rootScope, $state, $window, AuthService) {
 	      $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+	        $rootScope.main = toState.show;        
 	        if(toState.authenticate && !AuthService.isAuthenticated()) {
 	          $state.transitionTo('home');
 	          event.preventDefault();
@@ -397,12 +443,12 @@
 
 
 /***/ },
-/* 8 */
+/* 9 */
 /***/ function(module, exports) {
 
 	(function() {
 	  angular.module('App', ['app.routes', 'app.auth-service', 'app.home-ctrl', 'app.register-ctrl', 'app.activities-ctrl'
-	  , 'app.activity-grid-component', 'app.single-activity']);  
+	  , 'app.activity-grid-component', 'app.single-activity', 'app.popular-grid-component']);  
 	}());
 
 

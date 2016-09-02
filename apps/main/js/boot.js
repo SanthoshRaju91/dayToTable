@@ -1,5 +1,6 @@
 //components scripts
 require('./components/activity-grid');
+require('./components/popular-grid');
 
 //services scripts
 require('./services/authService');

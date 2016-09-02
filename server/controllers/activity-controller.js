@@ -232,5 +232,36 @@ module.exports = {
         res.json({ status: 200, success: true, count: activities.length, activityList: activities});
       }
     });
+  },
+
+  /**
+  * Function to get popular activites / top 8 activites.
+  * @method: getPopularActivites
+  */
+  getPopularActivites: function(req, res) {
+    Activity.find({status: 'A'}).where('ratings').gt(2).limit(8).populate('categoryID').exec(function(err, activities) {
+      if(err) {
+        logger.error('getPopularActivites: Error while fetching popular activites data: ' + err);
+        res.json({ status: 500, success: false, message: 'Error while fetching popular activities'});
+      } else if(!activities) {
+        logger.error('getPopularActivites: No popular activities data found');
+        res.json({ status: 404, success: false, message: 'No popular activities data found'});
+      } else {
+        var responseArray = [];
+        _.forEach(activities, function(current) {
+          var response = {};
+          response['activityID'] = current.activityID;
+          response['activityName'] = current.activityName;
+          response['address'] = current.address;
+          response['category'] = current.categoryID.categoryName;
+          response['price'] = current.price;
+          response['ratings'] = current.ratings;
+          response['imageUrl'] = current.imageUrl;
+          responseArray.push(response);
+        });
+        logger.info('getPopularActivites: popular activites data fetched');
+        res.json({ status: 200, success: true, model: 'activity', activityList: responseArray});
+      }
+    });
   }
 }

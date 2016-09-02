@@ -1081,3 +1081,71 @@
 [2016-09-02 18:29:25.992] [INFO] appLog - getCategoryList: category list fetched
 [2016-09-02 18:29:26.245] [INFO] appLog - Activity list computedMonday to Friday 09.00 AM - 5.30 PM|Saturday 09.00 AM - 5.30 PM|Sunday Closed
 [2016-09-02 18:29:41.188] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-02 21:52:38.363] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 21:52:47.003] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 21:52:50.223] [INFO] appLog - Connected to MongoDB
+[2016-09-02 22:27:06.770] [INFO] appLog - Server listening on port: 3000
+[2016-09-02 22:27:09.230] [INFO] appLog - Connected to MongoDB
+[2016-09-03 00:49:28.415] [INFO] appLog - Server listening on port: 3000
+[2016-09-03 00:49:30.261] [INFO] appLog - Connected to MongoDB
+[2016-09-03 00:50:52.713] [INFO] appLog - Server listening on port: 3000
+[2016-09-03 00:50:54.668] [INFO] appLog - Connected to MongoDB
+[2016-09-03 00:51:43.239] [INFO] appLog - Server listening on port: 3000
+[2016-09-03 00:51:44.932] [INFO] appLog - Connected to MongoDB
+[2016-09-03 00:51:48.759] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 00:56:11.107] [INFO] appLog - Server listening on port: 3000
+[2016-09-03 00:56:13.113] [INFO] appLog - Connected to MongoDB
+[2016-09-03 00:56:49.714] [INFO] appLog - Server listening on port: 3000
+[2016-09-03 00:56:51.473] [INFO] appLog - Connected to MongoDB
+[2016-09-03 00:57:09.661] [INFO] appLog - Server listening on port: 3000
+[2016-09-03 00:57:11.374] [INFO] appLog - Connected to MongoDB
+[2016-09-03 00:57:32.815] [INFO] appLog - Server listening on port: 3000
+[2016-09-03 00:57:34.494] [INFO] appLog - Connected to MongoDB
+[2016-09-03 00:57:41.099] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 00:59:59.295] [INFO] appLog - Server listening on port: 3000
+[2016-09-03 01:00:01.069] [INFO] appLog - Connected to MongoDB
+[2016-09-03 01:00:04.482] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:12:30.338] [INFO] appLog - Server listening on port: 3000
+[2016-09-03 01:12:32.472] [INFO] appLog - Connected to MongoDB
+[2016-09-03 01:12:50.368] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:13:08.446] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:15:32.049] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:16:03.285] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:17:11.133] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:19:38.175] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:20:51.233] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:21:30.005] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:23:44.680] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:24:03.039] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:24:18.378] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:26:14.765] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:26:14.794] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:26:38.693] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:26:38.713] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:26:58.651] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:26:58.683] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:28:46.709] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:28:46.730] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:30:27.207] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:30:27.247] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:31:29.817] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:31:29.846] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:31:45.805] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:31:45.824] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:32:15.824] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:32:15.845] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:33:20.831] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:33:20.852] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:33:28.044] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:33:28.606] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:33:33.762] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:33:33.782] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:35:29.459] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:35:29.479] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:36:34.557] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:36:34.578] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:36:42.302] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-03 01:36:49.408] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:36:49.963] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:36:53.037] [INFO] appLog - getPopularActivites: popular activites data fetched
+[2016-09-03 01:36:53.058] [INFO] appLog - getPopularActivites: popular activites data fetched

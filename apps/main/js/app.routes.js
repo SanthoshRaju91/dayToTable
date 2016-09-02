@@ -9,25 +9,29 @@ module.exports = (function() {
           url: '/',
           templateUrl: 'templates/home.html',
           controller: 'HomeCtrl',
-          authenticate: false
+          authenticate: false,
+          show: true
         })
         .state('register', {
           url: '/register',
           templateUrl: 'templates/register.html',
           controller: 'RegisterCtrl',
-          authenticate: false
+          authenticate: false,
+          show: false
         })
         .state('activities', {
           url: '/activity-list',
           templateUrl: 'templates/activity-list.html',
           controller: 'ActivtiesCtrl',
-          authenticate: false
+          authenticate: false,
+          show: false
         }).
         state('activity', {
           url: '/activity/:activityId',
           templateUrl: 'templates/single-activity.html',
           controller: 'singleActivityCtrl',
-          authenticate: false
+          authenticate: false,
+          show: false
         });
     });
 
@@ -37,6 +41,7 @@ module.exports = (function() {
 
     app.run(['$rootScope', '$state', '$window', 'AuthService', function($rootScope, $state, $window, AuthService) {
       $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+        $rootScope.main = toState.show;        
         if(toState.authenticate && !AuthService.isAuthenticated()) {
           $state.transitionTo('home');
           event.preventDefault();

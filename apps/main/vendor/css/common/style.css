@@ -3426,7 +3426,7 @@ font-weight:400;
 /* Promo_full (v.1.7)*/
 .promo_full {
 	height:auto;
-	background: url(../img/home_bg_2.jpg) no-repeat center center;
+	background: url(../../../img/home_bg_2.jpg) no-repeat center center;
 	background-attachment:fixed;
 	background-size:cover;
 	-webkit-background-size: cover;

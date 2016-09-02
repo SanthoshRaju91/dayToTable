@@ -1,0 +1,19 @@
+<div class="col-md-3 col-sm-4 wow zoomIn">
+    <div class="tour_container">
+        <div class="img_container">
+          <a href="" ng-click="$ctrl.goTo($ctrl.data.activityID)">
+            <img ng-src="{{$ctrl.data.imageUrl}}" width="800" height="533" class="img-responsive" alt="Image">
+            <div class="ribbon top_rated"></div>
+            <div class="short_info">
+                <i class="{{$ctrl.categoryIconClass}}"></i>{{$ctrl.data.category}}<span class="price"><sup>$</sup>{{$ctrl.data.price}}</span>
+            </div>
+          </a>
+        </div>
+        <div class="tour_title">
+            <h3><strong>{{$ctrl.data.activityName}}</strong></h3>
+            <div class="rating">
+              <i ng-repeat="rating in $ctrl.ratings track by $index" class="{{rating}}"></i>
+            </div><!-- end rating -->
+        </div>
+    </div><!-- End box tour -->
+</div><!-- End col-md-4 -->
