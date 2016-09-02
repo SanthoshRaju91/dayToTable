@@ -1,6 +1,6 @@
 module.exports = (function() {
   var app = angular.module('app.home-ctrl', []);
-  app.constant('REST_URL', 'http://localhost:3000/api/');
+  app.constant('REST_URL', 'http://45.55.232.197:3000/api/');
 
   app.controller('MainCtrl', ['$scope', '$http','AuthService', '$location', 'REST_URL', function($scope, $http, AuthService, $location, REST_URL) {
     $scope.isAdmin = (AuthService.getRole() == 'A') ? true : false;
