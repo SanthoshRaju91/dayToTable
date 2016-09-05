@@ -39,7 +39,7 @@ module.exports = (function() {
       $httpProvider.interceptors.push('AuthInterceptor');
     })
 
-    app.run(['$rootScope', '$state', '$window', 'AuthService', function($rootScope, $state, $window, AuthService) {
+    app.run(['$rootScope', '$state', '$window', 'AuthService', '$window', function($rootScope, $state, $window, AuthService, $window) {
       $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
         $rootScope.main = toState.show;        
         if(toState.authenticate && !AuthService.isAuthenticated()) {

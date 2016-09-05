@@ -1,6 +1,6 @@
 module.exports = (function() {
   var app = angular.module('app.single-activity', ['ui.router']);
-  app.constant('REST_URL', 'http://45.55.232.197:3000/api/');
+  app.constant('REST_URL', 'http://localhost:3000/api/');
   app.controller('singleActivityCtrl', ['$scope', '$http', '$state', '$stateParams', 'REST_URL', function($scope, $http, $state, $stateParams, REST_URL) {
     var activityID = $stateParams.activityId;
     $http({method: 'GET', url: REST_URL + '/getActivityById/' + activityID})

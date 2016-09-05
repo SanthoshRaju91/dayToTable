@@ -221,7 +221,7 @@
 	      $location.path('register');
 	    }
 	  }]);
-	  app.controller('HomeCtrl', ['$scope', '$http', 'REST_URL', function($scope, $http, REST_URL) {
+	  app.controller('HomeCtrl', ['$scope', '$http', 'REST_URL', '$state', function($scope, $http, REST_URL, $state) {
 	    $http({method: 'GET', url: REST_URL + 'getPopularActivites'})
 	      .then(function(response) {
 	        if(response.data.status === 200 || response.data.success) {
@@ -230,6 +230,10 @@
 	      }, function(errorResponse) {
 	        console.log("Error response" + errorResponse);
 	      });
+
+	      if(window.location.hash.length > 5 && $state.current.name === 'home' && $state.current.url === '/') {
+	       window.location.reload();
+	     }
 	  }]);
 	}());
 
@@ -430,7 +434,7 @@
 	      $httpProvider.interceptors.push('AuthInterceptor');
 	    })
 
-	    app.run(['$rootScope', '$state', '$window', 'AuthService', function($rootScope, $state, $window, AuthService) {
+	    app.run(['$rootScope', '$state', '$window', 'AuthService', '$window', function($rootScope, $state, $window, AuthService, $window) {
 	      $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
 	        $rootScope.main = toState.show;        
 	        if(toState.authenticate && !AuthService.isAuthenticated()) {

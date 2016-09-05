@@ -30,10 +30,6 @@ var UserSchema = new Schema({
   contact: {
     type: Number
   },
-  gender: {
-    type: String,
-    required: true
-  },
   createDate: {
     type: Date,
     default: Date.now()

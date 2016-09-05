@@ -3,7 +3,7 @@
     'use strict';
 
     angular
-        .module('app.sample', [])
+        .module('app.activity', [])
         .config(config);
 
     /** @ngInject */
@@ -12,26 +12,26 @@
         // State
         $stateProvider
             .state('app.activity', {
-                url    : '/sample',
+                url    : '/activity',
                 views  : {
                     'content@app': {
-                        templateUrl: 'app/main/sample/sample.html',
-                        controller : 'SampleController as vm'
+                        templateUrl: 'app/main/activity/activity.html',
+                        controller : 'ActivityController as vm'
                     }
                 },
                 resolve: {
-                    SampleData: function (msApi)
+                    ActivityData: function (msApi)
                     {
-                        return msApi.resolve('sample@get');
+                        return msApi.resolve('activity@get');
                     }
                 }
             });
 
         // Translation
-        $translatePartialLoaderProvider.addPart('app/main/sample');
+        $translatePartialLoaderProvider.addPart('app/main/activity');
 
         // Api
-        msApiProvider.register('sample', ['app/data/sample/sample.json']);
+        msApiProvider.register('activity', ['app/data/activity/activity.json']);
 
         // Navigation
         msNavigationServiceProvider.saveItem('fuse', {
@@ -40,7 +40,7 @@
             weight: 1
         });
 
-        msNavigationServiceProvider.saveItem('fuse.sample', {
+        msNavigationServiceProvider.saveItem('fuse.activity', {
             title    : 'Add activity',
             icon     : 'icon-tile-four',
             state    : 'app.activity',
