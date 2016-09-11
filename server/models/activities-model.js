@@ -18,7 +18,7 @@ var ActivitySchema = new Schema({
     required: true
   },
   schedule: {
-    type: String,
+    type: Date,
     required: true
   },
   scheduleType: {

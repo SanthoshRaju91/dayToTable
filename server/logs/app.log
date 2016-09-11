@@ -2508,3 +2508,28 @@
 [2016-09-11 10:13:41.266] [INFO] appLog - getBookingById: Course fetched for the booking reference
 [2016-09-11 10:14:17.214] [INFO] appLog - getCategoryList: category list fetched
 [2016-09-11 10:14:17.514] [INFO] appLog - Course list computed
+[2016-09-11 14:53:59.218] [INFO] appLog - Server listening on port: 3000
+[2016-09-11 14:54:02.283] [INFO] appLog - Connected to MongoDB
+[2016-09-11 14:58:23.182] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-11 15:00:40.049] [INFO] appLog - Server listening on port: 3000
+[2016-09-11 15:00:41.835] [INFO] appLog - Connected to MongoDB
+[2016-09-11 15:09:42.020] [INFO] appLog - Server listening on port: 3000
+[2016-09-11 15:09:44.113] [INFO] appLog - Connected to MongoDB
+[2016-09-11 15:09:59.472] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-11 15:09:59.792] [INFO] appLog - Course list computed
+[2016-09-11 15:10:03.773] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-11 15:10:04.109] [INFO] appLog - Activity list computedundefined
+[2016-09-11 15:10:39.198] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-11 15:10:39.510] [INFO] appLog - Course list computed
+[2016-09-11 15:11:11.147] [INFO] appLog - Activity list computedundefined
+[2016-09-11 15:11:41.151] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-11 15:11:41.563] [INFO] appLog - Activity list computedundefined
+[2016-09-11 15:13:27.640] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-11 15:23:34.771] [INFO] appLog - Server listening on port: 3000
+[2016-09-11 15:23:37.212] [INFO] appLog - Connected to MongoDB
+[2016-09-11 15:23:48.762] [INFO] appLog - Server listening on port: 3000
+[2016-09-11 15:23:51.181] [INFO] appLog - Connected to MongoDB
+[2016-09-11 15:24:01.914] [INFO] appLog - Server listening on port: 3000
+[2016-09-11 15:24:04.255] [INFO] appLog - Connected to MongoDB
+[2016-09-11 15:24:10.813] [INFO] appLog - Server listening on port: 3000
+[2016-09-11 15:24:13.334] [INFO] appLog - Connected to MongoDB

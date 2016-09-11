@@ -29,24 +29,22 @@ router.post('/deleteCategory', categoryController.deleteCategory);
 router.post('/addCourse', courseController.addCourse);
 router.get('/getAllCoursesForUser', courseController.getAllCoursesForUser);
 router.get('/getUpcomingCourses', courseController.getUpcomingCourses);
-router.get('/oneTimeCourseForUser', courseController.oneTimeCourseForUser);
-router.get('/recurringCourseList', courseController.recurringCourseList);
 router.post('/coursesByUser', courseController.coursesByUser);
 router.post('/inactivateCourse', courseController.inactivateCourse);
 router.get('/getCoursesByCategory', courseController.getCoursesByCategory);
 router.get('/getSortedCoursesList/:type/:sort', courseController.getSortedCoursesList);
 router.get('/getCourseById/:id', courseController.getCourseById);
+router.get('/getPopularCourses', courseController.getPopularCourses);
+
 // Activity specific routes
 router.post('/addActivity', activityController.addActivity);
 router.get('/getAllActivitiesForUser', activityController.getAllActivitiesForUser);
 router.get('/getUpcomingActivites', activityController.getUpcomingActivites);
-router.get('/oneTimeActivityForUser', activityController.oneTimeActivityForUser);
 router.get('/activitiesByUser', activityController.activitiesByUser);
 router.post('/inactivateActivity', activityController.inactivateActivity);
 router.get('/getActivitiesByCategory/:categoryID', activityController.getActivitiesByCategory);
 router.get('/getActivityById/:id', activityController.getActivityById);
 router.get('/getSortedActivitiesList/:type/:sort', activityController.getSortedActivitiesList);
-router.get('/getPopularActivites', activityController.getPopularActivites)
 
 // Booking specific routes
 router.post('/addCourseBookingFromUser', bookingController.addCourseBookingFromUser);
@@ -54,6 +52,8 @@ router.post('/addBookingFromUser', bookingController.addBookingFromUser);
 router.post('/cancelBooking', bookingController.cancelBooking);
 router.post('/getUserBookings', bookingController.getUserBookings);
 router.get('/getBookingById/:id', bookingController.getBookingById);
+
+
 //Query / request routes
 router.post('/queryMessage', queryController.saveQuery);
 
