@@ -85,44 +85,6 @@ module.exports = {
   },
 
   /**
-  * Function to get one-time courses only for users
-  * @method: oneTimeCourseForUser
-  */
-  oneTimeCourseForUser: function(req, res) {
-    Course.find({scheduleType: 'onetime', status: 'A'}).populate('categoryID').exec(function(err, courses) {
-      if(err) {
-        logger.error('oneTimeCourseForUser: Error while getting one-time courses');
-        res.json({ status: 500, success: false, message: 'Error while gettign one-time courses'});
-      } else if(!courses) {
-        logger.error('oneTimeCourseForUser: No one-time courses found');
-        res.json({status: 404, success: false, message: 'No one-time courses found'});
-      } else {
-        logger.info('One time course list fetched');
-        res.json({ status: 200, success: true, count: courses.length, courseList: courses});
-      }
-    });
-  },
-
-  /**
-  * Function to get recurring course list
-  * @method: recurringCourseList
-  */
-  recurringCourseList: function(req, res) {
-    Course.find({scheduleType: 'recurring', status: 'A'}).populate('categoryID').exec(function(err, courses) {
-      if(err) {
-        logger.error('recurringCourseList: Error while fetching recurring course list: ' + err);
-        res.json({ status: 500, success: false, message: 'Error while fetching recurring course list'});
-      } else if(!courses) {
-        logger.error('recurringCourseList: No recurring courses found');
-        res.json({ status: 400, success: false, message: 'No recurring courses found'});
-      } else {
-        logger.info('recurringCourseList: Recurring courses fetched');
-        res.json({ status: 200, success: true, count: courses.length, courseList: courses});
-      }
-    });
-  },
-
-  /**
   * Function to courses created by admin users
   * @method: coursesByUser
   */
@@ -213,6 +175,37 @@ module.exports = {
       } else {
         logger.info('getCourseById: Course details fetched for the id');
         res.json({ status: 200, success: true, course: course});
+      }
+    });
+  },
+
+  /**
+  * Function to get popular courses.
+  * @method: getPopularCourses
+  */
+  getPopularCourses: function(req, res) {
+    Course.find({status: 'A'}).where('ratings').gt(2).limit(8).populate('categoryID').exec(function(err, courses) {
+      if(err) {
+        logger.error('getPopularCourses: Error while getting popular courses for users');
+        res.json({ status: 500, success: false, message: 'Error while getting popular courses for users'});
+      } else if(!courses) {
+        logger.error('getPopularCourses: No popular courses found');
+        res.json({ status: 404, success: false, message: 'No popular courses found'});
+      } else {
+        var popularCourseArray = [];
+        _.forEach(courses, function(course) {
+          var current = {};
+          current['courseID'] = course.courseID;
+          current['courseName'] = course.courseName;
+          current['address'] = course.address;
+          current['category'] = course.categoryID.categoryName;
+          current['price'] = course.price;
+          current['ratings'] = course.ratings;
+          current['imageUrl'] = course.imageUrl;
+          popularCourseArray.push(current);
+        });
+        logger.info('getPopularCourses: Popular courses fetched');
+        res.json({ status: 200, success: true, count: popularCourseArray.length, courseList: popularCourseArray});
       }
     });
   }

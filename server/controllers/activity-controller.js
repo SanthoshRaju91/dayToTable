@@ -61,8 +61,14 @@ module.exports = {
         logger.info('getAllActivitiesForUser: No courses found');
         res.json({ status: 404, success: false, message: 'No Activites found'});
       } else {
+        var oneTimeActivityList = [];
+        _.forEach(activities, function(value) {
+          value['activityStatus'] = (moment() > moment.unix(value.schedule)) ? 'Closed': 'Open';
+          value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
+          oneTimeActivityList.push(value);
+        });
         logger.info('Activity list computed' + activities[0].schedule);
-        res.json({ status: 200, success: true, count: activities.length, activityList: activities});
+        res.json({ status: 200, success: true, count: oneTimeActivityList.length, activityList: oneTimeActivityList});
       }
     });
   },
@@ -93,30 +99,6 @@ module.exports = {
     });
   },
 
-  /**
-  * Function to get one-time courses only for users
-  * @method: oneTimeActivityForUser
-  */
-  oneTimeActivityForUser:function(req, res) {
-    Activity.find({scheduleType: 'onetime', status: 'A'}).populate('categoryID').exec(function(err, activities) {
-      if(err) {
-        logger.error('oneTimeActivityForUser: Error while getting one-time activities');
-        res.json({ status: 500, success: false, message: 'Error while getting one-time activities'});
-      } else if(!activities) {
-        logger.error('oneTimeActivityForUser: No one-time activities found');
-        res.json({status: 404, success: false, message: 'No one-time activities found'});
-      } else {
-        var oneTimeActivityList = [];
-        _.forEach(activities, function(value) {
-          value['activityStatus'] = (moment() > moment.unix(value.schedule)) ? 'Closed': 'Open';
-          value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-          oneTimeActivityList.push(value);
-        });
-        logger.info('One time activities list fetched');
-        res.json({ status: 200, success: true, count: oneTimeActivityList.length, activityList: oneTimeActivityList});
-      }
-    });
-  },
 
   /**
   * Function to activities created by admin users
@@ -168,8 +150,14 @@ module.exports = {
             logger.error('getActivitiesByCategory: No Activities found for the category');
             res.json({ status: 404, success: false, message: 'No Activites found for the category'});
           } else {
+            var oneTimeActivityList = [];
+            _.forEach(activities, function(value) {
+              value['activityStatus'] = (moment() > moment.unix(value.schedule)) ? 'Closed': 'Open';
+              value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
+              oneTimeActivityList.push(value);
+            });
             logger.info('activitiesByUser: Activities fetched for the category');
-            res.json({ status: 200, success: true, count: activities.length, activityList: activities});
+            res.json({ status: 200, success: true, count: activities.length, activityList: oneTimeActivityList});
           }
         });
 
@@ -193,8 +181,12 @@ module.exports = {
         logger.error('getActivityById: No activity found for the given id');
         res.json({ status: 404, success: false, message: 'No record found'});
       } else {
+        var responseObject = {};
+        activity['activityStatus'] = (moment() > moment.unix(activity.schedule)) ? 'Closed': 'Open';
+        activity['formattedSchedule'] = moment.unix(activity.schedule).format('YYYY-MM-DD HH:mm');
+
         logger.info('getActivityById: Activity fetched for the specified id');
-        res.json({ status: 200, success: true, activity: activity});
+        res.json({ status: 200, success: true, activity: responseObject});
       }
     });
   },
@@ -228,40 +220,16 @@ module.exports = {
         logger.error('getSortedActivitiesList: Could not find records for the applied sort');
         res.json({ status: 404, success: false, message: 'Could not find record for the applied sort'});
       } else {
-        logger.info('getSortedActivitiesList: List fetched for the applied sort');
-        res.json({ status: 200, success: true, count: activities.length, activityList: activities});
-      }
-    });
-  },
-
-  /**
-  * Function to get popular activites / top 8 activites.
-  * @method: getPopularActivites
-  */
-  getPopularActivites: function(req, res) {
-    Activity.find({status: 'A'}).where('ratings').gt(2).limit(8).populate('categoryID').exec(function(err, activities) {
-      if(err) {
-        logger.error('getPopularActivites: Error while fetching popular activites data: ' + err);
-        res.json({ status: 500, success: false, message: 'Error while fetching popular activities'});
-      } else if(!activities) {
-        logger.error('getPopularActivites: No popular activities data found');
-        res.json({ status: 404, success: false, message: 'No popular activities data found'});
-      } else {
-        var responseArray = [];
-        _.forEach(activities, function(current) {
-          var response = {};
-          response['activityID'] = current.activityID;
-          response['activityName'] = current.activityName;
-          response['address'] = current.address;
-          response['category'] = current.categoryID.categoryName;
-          response['price'] = current.price;
-          response['ratings'] = current.ratings;
-          response['imageUrl'] = current.imageUrl;
-          responseArray.push(response);
+        var oneTimeActivityList = [];
+        _.forEach(activities, function(value) {
+          value['activityStatus'] = (moment() > moment.unix(value.schedule)) ? 'Closed': 'Open';
+          value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
+          oneTimeActivityList.push(value);
         });
-        logger.info('getPopularActivites: popular activites data fetched');
-        res.json({ status: 200, success: true, model: 'activity', activityList: responseArray});
+        logger.info('getSortedActivitiesList: List fetched for the applied sort');
+        res.json({ status: 200, success: true, count: activities.length, activityList: oneTimeActivityList});
       }
     });
   }
+
 }
