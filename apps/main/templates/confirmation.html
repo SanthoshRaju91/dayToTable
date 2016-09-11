@@ -1,0 +1,103 @@
+<section class="confirmation">
+  <section class="parallax-window custom-window" data-parallax="scroll" data-natural-width="1400" data-natural-height="470">
+    <div class="parallax-content-1">
+      <div class="animated fadeInDown">
+        <h1>Confirmation</h1>
+        <p>Thank you for taking interest in the enrolled {{bookingReference}}</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container margin_60">
+    <div class="row">
+  		<div class="col-md-8 add_bottom_15">
+
+  			<div class="form_title">
+  				<h3><strong><i class="icon-ok"></i></strong>Thank you!</h3>
+  			</div>
+  			<div class="step">
+  				<p>
+  					Thank you so much for having a interest and enrolling for the {{bookingReference}}. We hope and except you to have a fun and awesome time while you learn.
+            <b>Please reach out to us, in case of any queries / help.</b>
+
+            <table class="table confirm">
+              <tbody>
+                <tr>
+                  <td><strong>Name: </strong></td>
+                  <td>{{reference.contactPerson}}</td>
+                </tr>
+                <tr>
+                  <td><strong>Address: </strong></td>
+                  <td>{{reference.address}}</td>
+                </tr>
+                <tr>
+                  <td><strong>Contact: </strong></td>
+                  <td>{{reference.contactNumber}}</td>
+                </tr>
+                <tr>
+                  <td><strong>Email Address: </strong></td>
+                  <td>{{reference.contactEmailAddress}}</td>
+                </tr>
+              </tbody>
+            </table>
+  				</p>
+  			</div><!--End step -->
+
+  			<div class="form_title">
+  				<h3><strong><i class="icon-tag-1"></i></strong>Booking summary</h3>
+  			</div>
+  			<div class="step">
+  				<table class="table confirm">
+  				  <tbody>
+  				    <tr>
+				        <td><strong>Name</strong></td>
+				        <td>{{booking.userID.firstName + ' ' + booking.userID.lastName}}</td>
+  				    </tr>
+  				    <tr>
+  					    <td><strong>Email Address</strong></td>
+  					    <td>{{booking.userID.emailAddress}}</td>
+  				    </tr>
+  				    <tr>
+  					    <td><strong>Scheduled Date</strong></td>
+  					    <td>{{booking.specifiedDate | date}}</td>
+  				    </tr>
+              <tr>
+      					<td><strong>Adults</strong></td>
+      					<td>{{booking.adultCount}}</td>
+      				</tr>
+              <tr>
+      					<td><strong>Children</strong></td>
+      					<td>{{booking.childrenCount}}</td>
+      				</tr>
+              <tr>
+      					<td><strong>Price of enrolled {{bookingReference}}</strong></td>
+      					<td>{{reference.price}} / person</td>
+      				</tr>
+              <tr>
+                <td><strong>TOTAL COST</strong></td>
+                <td>{{$ + '' + booking.totalPrice}}</td>
+              </tr>
+  				  </tbody>
+  				</table>
+  			</div><!--End step -->
+  		</div><!--End col-md-8 -->
+
+  		<aside class="col-md-4">
+  		<div class="box_style_1">
+  			<h3 class="inner">Thank you!</h3>
+  			<p>
+  				Nihil inimicus ex nam, in ipsum dignissim duo. Tale principes interpretaris vim ei, has posidonium definitiones ut. Duis harum fuisset ut his, duo an dolor epicuri appareat.
+  			</p>
+  			<hr>
+  			<a class="btn_full_outline" href="invoice.html" target="_blank">View your invoice</a>
+  		</div>
+  		<div class="box_style_4">
+  			<i class="icon_set_1_icon-89"></i>
+  			<h4>Have <span>questions?</span></h4>
+  			<a href="tel://004542344599" class="phone">+45 423 445 99</a>
+  			<small>Monday to Friday 9.00am - 7.30pm</small>
+  		</div>
+  		</aside>
+  	</div><!--End row -->
+  </div>
+</section>

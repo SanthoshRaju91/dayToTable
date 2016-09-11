@@ -41,6 +41,74 @@ function getBookingsList(bookings, callback) {
 
 module.exports = {
 
+
+  /**
+  * Function to make a course bookings for user.
+  * @method: addCourseBookingFromUser
+  */
+
+  addCourseBookingFromUser: function(req, res) {
+    User.findOne({emailAddress: req.body.emailAddress}, function(err, user) {
+      if(err) {
+        logger.error('addCourseBookingFromUser: error while fetching user details' + err);
+        res.json({ status: 500, success: false, message: 'Error while making a booking'});
+      } else if(!user) {
+        logger.info('addCourseBookingFromUser: New user booking proceed as guest user');
+        var user = new User({firstName: req.body.firstName, lastName: req.body.lastName, emailAddress: req.body.emailAddress, contact: req.body.telephone, status: 'P'});
+        user.save(function(err1, userObject) {
+          if(err1) {
+            logger.error('addCourseBookingFromUser: Error while creating a new guest user' + err1);
+            res.json({ status: 500, success: false, message: 'Error while making a booking'});
+          } else if(userObject) {
+            Course.findOne({courseID: req.body.courseId}, function(err3, course) {
+              if(err3) {
+                logger.error('addCourseBookingFromUser: Error while fetching course details ' + err3);
+                res.json({ status: 500, success: false, message: 'Error while making a booking'});
+              } else if(!course) {
+                logger.error('addCourseBookingFromUser: No course found for the course id');
+                res.json({ status: 404, success: false, message: 'No Course found for the course id'});
+              } else {
+                var totalPrice = (req.body.adultCount + req.body.childrenCount) * course.price;                
+                var courseBooking = new Booking({bookingType: 'recurring', reference: 'course', bookingReference: req.body.courseId, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), specifiedDate: req.body.date, totalPrice: totalPrice,userID: userObject._id});
+                courseBooking.save(function(err2, course) {
+                  if(err2) {
+                    logger.error('addCourseBookingFromUser: Error while making a guest course booking' + err2);
+                    res.json({ status: 500, success: false, message: 'Error while making a guest course booking'});
+                  } else {
+                    logger.info('addCourseBookingFromUser: Guest course booking successful');
+                    res.json({ status: 200, success: true, message: 'Guest course booking successful', course: course._id});
+                  }
+                });
+              }
+            });
+          }
+        });
+      } else {
+        Course.findOne({courseID: req.body.courseId}, function(err5, course) {
+          if(err5) {
+            logger.error('addCourseBookingFromUser: Error while fetching course details ' + err5);
+            res.json({ status: 500, success: false, message: 'Error while making a booking'});
+          } else if(!course) {
+            logger.error('addCourseBookingFromUser: No course found for the course id');
+            res.json({ status: 404, success: false, message: 'No Course found for the course id'});
+          } else {
+            var totalPrice = (req.body.adultCount + req.body.childrenCount) * course.price;
+            var courseBooking = new Booking({bookingType: 'recurring', reference: 'course', bookingReference: req.body.courseId, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), specifiedDate: req.body.date, totalPrice: totalPrice,userID: user._id});
+            courseBooking.save(function(err4, course) {
+              if(err4) {
+                logger.error('addCourseBookingFromUser: Error while making a course booking' + err4);
+                res.json({ status: 500, success: false, message: 'Error while making a guest course booking'});
+              } else {
+                logger.info('addCourseBookingFromUser: Course booking successful');
+                res.json({ status: 200, success: true, message: 'Course booking successful', course: course._id});
+              }
+            });
+          }
+        });
+      }
+    });
+  },
+
   /**
   * Funciton to add bookings from the user
   * @method: addBookingFromUser
@@ -54,7 +122,7 @@ module.exports = {
         logger.error('addBookingFromUser: Error while making a booking, no user found');
         res.json({ status: 404, success: false, message: 'Error while making a booking'});
       } else {
-        Booking.findOne({bookingReference: req.body.bookingReference, userID: user.userID}, function(err1, done) {
+        Booking.findOne({bookingReference: req.body.categoryID, userID: user.userID}, function(err1, done) {
           if(err1) {
             logger.error('addBookingFromUser: Error while making a booking: ' + err1);
             res.json({ status: 500, success: false, message: 'Error while making a booking'});
@@ -151,5 +219,62 @@ module.exports = {
   */
   getCreatedUserBookings: function(req, res) {
 
+  },
+
+
+  /**
+  * Function to get booking details by id.
+  * @method: getBookingById
+  */
+  getBookingById: function(req, res) {
+    var id = req.params.id;
+
+    Booking.findOne({_id: id}).populate('userID').exec(function(err, booking) {
+      if(err) {
+        logger.error('getBookingById: Error while fetching booking details' + err);
+        res.json({ status: 500, success: false, message: 'Error while fetching booking details'});
+      } else if(!booking) {
+        logger.error('getBookingById: No booking found for the reference');
+        res.json({ status: 404, success: false, message: 'No booking found for the reference'});
+      } else {
+        var response = {};
+        response.booking = booking;
+        if(booking.reference == 'course') {
+          Course.findOne({courseID: booking.bookingReference}).populate('categoryID').exec(function(err1, course) {
+            if(err1) {
+              logger.error('getBookingById: Error while fetching related course for booking' + err1);
+              response.reference = {};
+              res.json({ status: 200, success: true, reference: false, bookingReference: 'Course', booking: response});
+            } else if(!course) {
+              logger.error('getBookingById: No course found for the booking reference');
+              response.reference = {};
+              res.json({ status: 200, success: true, reference: false, bookingReference: 'Course', booking: response});
+            } else {
+              logger.info('getBookingById: Course fetched for the booking reference');
+              response.reference = course;
+              res.json({ status: 200, success: true, reference: true, bookingReference: 'Course', booking: response});
+            }
+          });
+        } else if(booking.reference == 'activity') {
+          var response = {};
+          response.booking = booking;
+          Activity.findOne({activityID: booking.bookingReference}).populate('categoryID').exec(function(err2, activity) {
+            if(err2) {
+              logger.error('getBookingById: Error while fetching related activity for booking' + err2);
+              response.reference = {};
+              res.json({ status: 200, success: true, reference: false, bookingReference: 'Activity', booking: response});
+            } else if(!activity) {
+              logger.error('getBookingById: No activity found for the booking reference');
+              response.reference = {};
+              res.json({ status: 200, success: true, reference: false, bookingReference: 'Activity', booking: response});
+            } else {
+              logger.info('getBookingById: Activity fetched for the booking reference');
+              response.reference = course;
+              res.json({ status: 200, success: true, reference: true, bookingReference: 'Activity', booking: response});
+            }
+          });
+        }
+      }
+    });
   }
 };

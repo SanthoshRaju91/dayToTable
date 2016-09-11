@@ -27,6 +27,7 @@
     <script src="vendor.min.js"></script>
     <script src="vendor/angular.min.js"></script>
     <script src="vendor/angular-ui-router.min.js"></script>
+    <script src="vendor/ui-bootstrap.min.js"></script>
     <!-- @endif-->
     <!-- @if NODE_ENV='production'-->
     <link href="app.min.css"/ rel="stylesheet">
@@ -50,6 +51,7 @@
     <!-- @if NODE_ENV='development'-->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
     <!-- @endif-->
   </head>
   <body>
@@ -146,25 +148,15 @@
                             </li>
                              <li class="submenu">
                                 <a href="javascript:void(0);" class="show-submenu">Courses <i class="icon-down-open-mini"></i></a><ul>
-                                    <li><a href="all_hotels_list.html">View all courses</a></li>
-                                    <li><a href="all_hotels_grid.html">Select courses from category</a></li>
+                                    <li><a ui-sref="courses">View all courses</a></li>
                                     <li><a href="all_hotels_grid.html">Search for desired course</a></li>
                                 </ul>
                             </li>
                             <li class="submenu">
-                                <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
-                                <ul>
-                                    <li><a href="all_transfer_list.html">Who we are ?</a></li>
-                                    <li><a href="all_transfer_grid.html">What we do ?</a></li>
-                                    <li><a href="single_transfer.html">How do we operate</a></li>
-                                </ul>
+                                <a ui-sref="about" class="show-submenu">About Us</a>
                             </li>
                               <li class="submenu">
-                                <a href="javascript:void(0);" class="show-submenu">Contact Us <i class="icon-down-open-mini"></i></a>
-                                <ul>
-                                    <li><a href="all_restaurants_list.html">Have an issue ?</a></li>
-                                    <li><a href="all_restaurants_grid.html">Send a request</a></li>
-                                </ul>
+                                <a ui-sref="contact" class="show-submenu">Contact Us</a>
                             </li>
                         </ul>
                     </div><!-- End main-menu -->
@@ -248,7 +240,7 @@
                 </div>
                 <!-- LAYER NR. 3 -->
                 <div class="tp-caption customin tp-resizeme rs-parallaxlevel-0" data-x="center" data-y="center" data-hoffset="0" data-voffset="70" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="2900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-linktoslide="next" style="z-index: 12;">
-                  <a href='all_tour_list.html' class="button_intro">View All</a> 
+                  <a href='all_tour_list.html' class="button_intro">View All</a>
                   <a href='single_tour.html' class=" button_intro outline">Read more</a>
                 </div>
             </li>

@@ -1,9 +1,9 @@
 module.exports = (function() {
   var app = angular.module('app.single-activity', ['ui.router']);
-  app.constant('REST_URL', 'http://localhost:3000/api/');
-  app.controller('singleActivityCtrl', ['$scope', '$http', '$state', '$stateParams', 'REST_URL', function($scope, $http, $state, $stateParams, REST_URL) {
+
+  app.controller('singleActivityCtrl', ['$scope', '$http', '$state', '$stateParams', 'RestService', function($scope, $http, $state, $stateParams, RestService) {
     var activityID = $stateParams.activityId;
-    $http({method: 'GET', url: REST_URL + '/getActivityById/' + activityID})
+    $http({method: 'GET', url: RestService.getRESTUrl() + '/getActivityById/' + activityID})
       .then(function(response) {
         if(response.data.status === 200 && response.data.success) {
           $scope.activity = response.data.activity;

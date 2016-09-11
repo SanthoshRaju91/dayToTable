@@ -27,7 +27,50 @@ var CourseSchema = new Schema({
   scheduleType: {
     type: String,
     required: true,
-    default: 'onetime'
+    default: 'recurring'
+  },
+  includes: {
+    type: String
+  },
+  startFrom: {
+    type: String,
+    default: '',
+    required: true
+  },
+  address: {
+    type: String,
+    required: true,
+    default: ''
+  },
+  languages: {
+    type: String,
+    required: true
+  },
+  ratings: {
+    type: Number,
+    default: 0
+  },
+  parking: {
+    type: []
+  },
+  imageUrl: {
+    type: String,
+    default: ''
+  },
+  contactPerson: {
+    type: String,
+    default: '',
+    required: true
+  },
+  contactNumber: {
+    type: String,
+    default: '',
+    required: true
+  },
+  contactEmailAddress: {
+    type: String,
+    default: '',
+    required: true
   },
   createDate: {
     type: Date,

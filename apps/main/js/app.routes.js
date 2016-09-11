@@ -32,6 +32,40 @@ module.exports = (function() {
           controller: 'singleActivityCtrl',
           authenticate: false,
           show: false
+        })
+        .state('contact', {
+          url: '/contact',
+          templateUrl: 'templates/contact.html',
+          controller: 'contactCtrl',
+          authenticate: false,
+          show: false
+        })
+        .state('about', {
+          url: '/about',
+          templateUrl: 'templates/about.html',
+          authenticate: false,
+          show: false
+        })
+        .state('courses', {
+          url: '/courses',
+          templateUrl: 'templates/courses.html',
+          controller: 'CoursesCtrl',
+          authenticate: false,
+          show: false
+        })
+        .state('course', {
+          url: '/course/:courseId',
+          templateUrl: 'templates/single-course.html',
+          controller: 'singleCourseCtrl',
+          authenticate: false,
+          show: false
+        })
+        .state('confirmation', {
+          url: '/confirmation/:id',
+          templateUrl: 'templates/confirmation.html',
+          controller: 'confirmationCtrl',
+          authenticate: false,
+          show: false
         });
     });
 
@@ -41,7 +75,7 @@ module.exports = (function() {
 
     app.run(['$rootScope', '$state', '$window', 'AuthService', '$window', function($rootScope, $state, $window, AuthService, $window) {
       $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
-        $rootScope.main = toState.show;        
+        $rootScope.main = toState.show;
         if(toState.authenticate && !AuthService.isAuthenticated()) {
           $state.transitionTo('home');
           event.preventDefault();

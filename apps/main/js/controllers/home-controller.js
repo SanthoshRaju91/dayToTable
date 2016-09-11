@@ -1,8 +1,7 @@
 module.exports = (function() {
   var app = angular.module('app.home-ctrl', []);
-  app.constant('REST_URL', 'http://localhost:3000/api/');
 
-  app.controller('MainCtrl', ['$scope', '$http','AuthService', '$location', 'REST_URL', function($scope, $http, AuthService, $location, REST_URL) {
+  app.controller('MainCtrl', ['$scope', '$http','AuthService', '$location', 'RestService', function($scope, $http, AuthService, $location, RestService) {
     $scope.isAdmin = (AuthService.getRole() == 'A') ? true : false;
     $scope.isAuthenticated = (AuthService.isAuthenticated()) ? true : false;
 
@@ -14,8 +13,8 @@ module.exports = (function() {
       $location.path('register');
     }
   }]);
-  app.controller('HomeCtrl', ['$scope', '$http', 'REST_URL', '$state', function($scope, $http, REST_URL, $state) {
-    $http({method: 'GET', url: REST_URL + 'getPopularActivites'})
+  app.controller('HomeCtrl', ['$scope', '$http', 'RestService', '$state', function($scope, $http, RestService, $state) {
+    $http({method: 'GET', url: RestService.getRESTUrl() + 'getPopularActivites'})
       .then(function(response) {
         if(response.data.status === 200 || response.data.success) {
           $scope.popularActivityList = response.data.activityList;

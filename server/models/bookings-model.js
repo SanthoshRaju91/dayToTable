@@ -11,14 +11,34 @@ var BookingSchema = new Schema({
     type: String,
     required: true
   },
-  bookingReference: {
+  reference: {
     type: String,
+    required: true
+  },
+  bookingReference: {
+    type: Number,
     required: true,
-    default: ''
+    default: 0
+  },
+  totalPrice: {
+    type: Number,
+    required: true,
+    default: 0
+  },
+  adultCount: {
+    type: Number,
+    default: 0
+  },
+  childrenCount: {
+    type: Number,
+    default: 0
   },
   count: {
     type: Number,
     default: 1
+  },
+  specifiedDate: {
+    type: Date
   },
   status: {
     type: String,

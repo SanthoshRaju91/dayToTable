@@ -1,11 +1,15 @@
-module.exports = (function() {
-  var app = angular.module('app.activity-grid-component', []);
+/**
+* Course grid component.
+*/
 
-  app.component('activityGrid', {
+module.exports = (function() {
+  var app = angular.module('app.course-grid-component', []);
+
+  app.component('courseGrid', {
     bindings: {
       data: '<'
     },
-    templateUrl: '../../templates/components/activity-grid.html',
+    templateUrl: '../../templates/components/course-grid.html',
     controller: function($location) {
       this.imageURL = this.data.imageUrl || '../../img/slides/slide-4.jpg';
 
@@ -25,8 +29,8 @@ module.exports = (function() {
         self.ratings.push('icon-smile');
       }
 
-      this.goToActivity = function(activityId) {
-        $location.path('activity/' + activityId);
+      this.goToCourse = function(courseId) {
+        $location.path('course/' + courseId);
       }
     }
   });

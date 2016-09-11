@@ -47,19 +47,25 @@
 	//components scripts
 	__webpack_require__(1);
 	__webpack_require__(2);
-
-	//services scripts
 	__webpack_require__(3);
 
-	//controllers scripts
+	//services scripts
 	__webpack_require__(4);
 	__webpack_require__(5);
+
+	//controllers scripts
 	__webpack_require__(6);
 	__webpack_require__(7);
-
-	//route and main app scripts
 	__webpack_require__(8);
 	__webpack_require__(9);
+	__webpack_require__(10);
+	__webpack_require__(11);
+	__webpack_require__(12);
+	__webpack_require__(13);
+
+	//route and main app scripts
+	__webpack_require__(14);
+	__webpack_require__(15);
 
 
 /***/ },
@@ -77,7 +83,7 @@
 	    controller: function($location) {
 	      this.imageURL = this.data.imageUrl || '../../img/slides/slide-4.jpg';
 
-	      var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library'};
+	      var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library', CRICKET: 'icon-cricket'};
 
 	      this.overlayIcon = iconsArray[this.data.categoryID.categoryName.toUpperCase()];
 	      this.overlayName = this.data.categoryID.categoryName;
@@ -136,6 +142,49 @@
 
 /***/ },
 /* 3 */
+/***/ function(module, exports) {
+
+	/**
+	* Course grid component.
+	*/
+
+	module.exports = (function() {
+	  var app = angular.module('app.course-grid-component', []);
+
+	  app.component('courseGrid', {
+	    bindings: {
+	      data: '<'
+	    },
+	    templateUrl: '../../templates/components/course-grid.html',
+	    controller: function($location) {
+	      this.imageURL = this.data.imageUrl || '../../img/slides/slide-4.jpg';
+
+	      var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library', CRICKET: 'icon-cricket'};
+
+	      this.overlayIcon = iconsArray[this.data.categoryID.categoryName.toUpperCase()];
+	      this.overlayName = this.data.categoryID.categoryName;
+	      this.scheduleList = this.data.schedule.split('|');
+
+	      this.ratings = [];
+	      let self = this;
+	      for(let i=0; i<this.data.ratings; i++) {
+	        self.ratings.push('icon-smile voted');
+	      }
+
+	      for(let i=0; i<(5-this.data.ratings); i++) {
+	        self.ratings.push('icon-smile');
+	      }
+
+	      this.goToCourse = function(courseId) {
+	        $location.path('course/' + courseId);
+	      }
+	    }
+	  });
+	}());
+
+
+/***/ },
+/* 4 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -202,14 +251,32 @@
 
 
 /***/ },
-/* 4 */
+/* 5 */
+/***/ function(module, exports) {
+
+	module.exports = (function() {
+	  var app = angular.module('app.rest-service', []);
+
+	  app.service('RestService', function() {
+	    var rest = this;
+
+	    rest.getRESTUrl = function() {
+	      return 'http://45.55.232.197:3000/api/';
+	    }
+
+	    return rest;
+	  });
+	}());
+
+
+/***/ },
+/* 6 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
 	  var app = angular.module('app.home-ctrl', []);
-	  app.constant('REST_URL', 'http://localhost:3000/api/');
 
-	  app.controller('MainCtrl', ['$scope', '$http','AuthService', '$location', 'REST_URL', function($scope, $http, AuthService, $location, REST_URL) {
+	  app.controller('MainCtrl', ['$scope', '$http','AuthService', '$location', 'RestService', function($scope, $http, AuthService, $location, RestService) {
 	    $scope.isAdmin = (AuthService.getRole() == 'A') ? true : false;
 	    $scope.isAuthenticated = (AuthService.isAuthenticated()) ? true : false;
 
@@ -221,8 +288,8 @@
 	      $location.path('register');
 	    }
 	  }]);
-	  app.controller('HomeCtrl', ['$scope', '$http', 'REST_URL', '$state', function($scope, $http, REST_URL, $state) {
-	    $http({method: 'GET', url: REST_URL + 'getPopularActivites'})
+	  app.controller('HomeCtrl', ['$scope', '$http', 'RestService', '$state', function($scope, $http, RestService, $state) {
+	    $http({method: 'GET', url: RestService.getRESTUrl() + 'getPopularActivites'})
 	      .then(function(response) {
 	        if(response.data.status === 200 || response.data.success) {
 	          $scope.popularActivityList = response.data.activityList;
@@ -239,7 +306,7 @@
 
 
 /***/ },
-/* 5 */
+/* 7 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -252,23 +319,22 @@
 
 
 /***/ },
-/* 6 */
+/* 8 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
 	  var app = angular.module('app.activities-ctrl', []);
-	  app.constant('REST_URL', 'http://localhost:3000/api/');
 
-	  app.controller('ActivtiesCtrl', ['$scope', '$http', 'REST_URL', function($scope, $http, REST_URL) {
+	  app.controller('ActivtiesCtrl', ['$scope', '$http', 'RestService', function($scope, $http, RestService) {
 
 	    $scope.priceList = [{id: 'lowest,price', name: 'Lowest price'}, {id: 'highest,price', name: 'Highest price'}];
 	    $scope.ratingsList = [{id: 'lowest,ratings', name: 'Lowest ranking'}, {id: 'highest,ratings', name: 'Highest ranking'}];
 
-	    $http.get(REST_URL + 'getCategoryList')
+	    $http.get(RestService.getRESTUrl() + 'getCategoryList')
 	      .then(function(response) {
 	        if(response.data.status === 200 && response.data.success) {
 	          $scope.categories = [];
-	          var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library'};
+	          var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library', CRICKET: 'icon-cricket'};
 	          for(var i=0; i<response.data.categoryList.length; i++) {
 	            var obj = {};
 	            obj.categoryID = response.data.categoryList[i].categoryID;
@@ -281,7 +347,7 @@
 	        console.log(error);
 	      });
 
-	      $http({method: 'GET', url: REST_URL + 'getAllActivitiesForUser'})
+	      $http({method: 'GET', url: RestService.getRESTUrl() + 'getAllActivitiesForUser'})
 	        .then(function(response) {
 	          if(response.data.status === 200 && response.data.success) {
 	            $scope.count = response.data.count;
@@ -293,7 +359,7 @@
 	        });
 
 	      $scope.getSelectedCategoryList = function(categoryID) {
-	        let url = (categoryID == 'all') ? REST_URL + 'getAllActivitiesForUser' : REST_URL + 'getActivitiesByCategory/' + categoryID;
+	        let url = (categoryID == 'all') ? RestService.getRESTUrl() + 'getAllActivitiesForUser' : RestService.getRESTUrl() + 'getActivitiesByCategory/' + categoryID;
 	        $http({method: 'GET', url: url})
 	          .then(function(response) {
 	            if(response.data.status === 200 && response.data.success) {
@@ -308,7 +374,7 @@
 
 	      $scope.sortList = function(selected) {
 	        var selectConfig = selected.id.split(',');
-	        $http({method: 'GET', url: REST_URL + 'getSortedActivitiesList/' + selectConfig[1] + '/' + selectConfig[0]})
+	        $http({method: 'GET', url: RestService.getRESTUrl() + 'getSortedActivitiesList/' + selectConfig[1] + '/' + selectConfig[0]})
 	          .then(function(response) {
 	            if(response.data.status === 200 && response.data.success) {
 	              $scope.count = response.data.count;
@@ -324,15 +390,15 @@
 
 
 /***/ },
-/* 7 */
+/* 9 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
 	  var app = angular.module('app.single-activity', ['ui.router']);
-	  app.constant('REST_URL', 'http://localhost:3000/api/');
-	  app.controller('singleActivityCtrl', ['$scope', '$http', '$state', '$stateParams', 'REST_URL', function($scope, $http, $state, $stateParams, REST_URL) {
+
+	  app.controller('singleActivityCtrl', ['$scope', '$http', '$state', '$stateParams', 'RestService', function($scope, $http, $state, $stateParams, RestService) {
 	    var activityID = $stateParams.activityId;
-	    $http({method: 'GET', url: REST_URL + '/getActivityById/' + activityID})
+	    $http({method: 'GET', url: RestService.getRESTUrl() + '/getActivityById/' + activityID})
 	      .then(function(response) {
 	        if(response.data.status === 200 && response.data.success) {
 	          $scope.activity = response.data.activity;
@@ -390,7 +456,275 @@
 
 
 /***/ },
-/* 8 */
+/* 10 */
+/***/ function(module, exports) {
+
+	module.exports = (function() {
+	  var app = angular.module('app.contact-ctrl', []);
+
+	  app.controller('contactCtrl', ['$scope', '$http', 'RestService',function($scope, $http, RestService) {
+	    $scope.notification = false;
+
+	    $scope.submitQuery = function() {
+	      if($scope.verfication == (3 + 1)) {
+	        $http({method: 'post', url: RestService.getRESTUrl() + 'queryMessage',data: {firstName: $scope.firstName, lastName: $scope.lastName, emailAddress: $scope.emailAddress, phone: $scope.phone, message: $scope.message}})
+	        .then(function(response) {
+	          if(response.data.success) {
+	            $scope.alertType = 'alert-success';
+	            $scope.notification = true;
+	            $scope.notificationMessage = 'Your requested has been submitted, our team will get back to you ASAP';
+	            $scope.firstName = $scope.lastName = $scope.emailAddress = $scope.phone = $scope.message = $scope.verfication = '';
+	          }
+	        }, function(error) {
+	          $scope.alertType = 'alert-danger';
+	          $scope.notification = true;
+	          $scope.message = 'Something wen wrong, please contact the admin.';
+	        });
+	      }
+	    }
+	  }]);
+	}());
+
+
+/***/ },
+/* 11 */
+/***/ function(module, exports) {
+
+	/**
+	* Controller function for courses.
+	* to get all courses for user, to get all courses for selected category,
+	* to get the sorted courses.
+	*/
+
+	module.exports = (function() {
+	  var app = angular.module('app.course-ctrl', []);
+
+	  app.controller('CoursesCtrl', ['$scope', '$http', 'RestService', function($scope, $http, RestService) {
+
+	    // price and ratings list configuration for sorting
+	    $scope.priceList = [{id: 'lowest,price', name: 'Lowest price'}, {id: 'highest,price', name: 'Highest price'}];
+	    $scope.ratingsList = [{id: 'lowest,ratings', name: 'Lowest ranking'}, {id: 'highest,ratings', name: 'Highest ranking'}];
+
+	    /**
+	    * HTTP GET request block for retreiving all the available categories for
+	    * courses list.
+	    * @endpoint: getCategoryList
+	    */
+	    $http.get(RestService.getRESTUrl() + 'getCategoryList')
+	      .then(function(response) {
+	        if(response.data.status === 200 && response.data.success) {
+	          $scope.categories = [];
+	          var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library', CRICKET: 'icon-cricket'};
+	          for(var i=0; i<response.data.categoryList.length; i++) {
+	            var obj = {};
+	            obj.categoryID = response.data.categoryList[i].categoryID;
+	            obj.iconClass = iconsArray[response.data.categoryList[i].categoryName.toUpperCase()];
+	            obj.categoryName = response.data.categoryList[i].categoryName;
+	            $scope.categories.push(obj);
+	          }
+	        }
+	      }, function(error) {
+	        console.log(error);
+	      });
+
+	      /**
+	      * HTTP GET block for retreiving availble courses for users.
+	      * @endpoint: getAllCoursesForUser
+	      */
+	      $http({method: 'GET', url: RestService.getRESTUrl() + 'getAllCoursesForUser'})
+	        .then(function(response) {
+	          if(response.data.status === 200 && response.data.success) {
+	            $scope.count = response.data.count;
+	            $scope.showPagination = ($scope.count > 10) ? true : false;
+	            $scope.courses = response.data.courseList;
+	          }
+	        }, function(error) {
+	          console.log("Error in getting courses for user: " + error);
+	        });
+
+	      /**
+	      * Function get all the courses for the selected category.
+	      * @method: getSelectedCategoryList
+	      * @endpoint: getCoursesByCategory
+	      */
+	      $scope.getSelectedCategoryList = function(categoryID) {
+	        let url = (categoryID == 'all') ? RestService.getRESTUrl() + 'getAllCoursesForUser' : RestService.getRESTUrl() + 'getActivitiesByCategory/' + categoryID;
+	        $http({method: 'GET', url: url})
+	          .then(function(response) {
+	            if(response.data.status === 200 && response.data.success) {
+	              $scope.count = response.data.count;
+	              $scope.showPagination = ($scope.count > 10) ? true : false;
+	              $scope.courses = response.data.courseList;
+	            }
+	          }, function(error) {
+	            console.log("Error in getting selected category activities list: " + error);
+	          });
+	        };
+
+	      /**
+	      * Function to get the sorted list of courses.
+	      * @method: sortList
+	      * @endpoint: getSortedCoursesList
+	      */
+	      $scope.sortList = function(selected) {
+	        var selectConfig = selected.id.split(',');
+	        $http({method: 'GET', url: RestService.getRESTUrl() + 'getSortedCoursesList/' + selectConfig[1] + '/' + selectConfig[0]})
+	          .then(function(response) {
+	            if(response.data.status === 200 && response.data.success) {
+	              $scope.count = response.data.count;
+	              $scope.showPagination = ($scope.count > 10) ? true : false;
+	              $scope.courses = response.data.courseList;
+	            }
+	          }, function(errorResponse) {
+	            console.log("Error in fetching sorted records: " + errorResponse);
+	          });
+	      };
+	  }]);
+	}());
+
+
+/***/ },
+/* 12 */
+/***/ function(module, exports) {
+
+	/**
+	* Controller function for single course
+	*/
+
+	module.exports = (function() {
+	  var app = angular.module('app.single-course-ctrl', ['ui.bootstrap']);
+
+	  app.controller('singleCourseCtrl', ['$scope', '$http', '$state', '$stateParams', 'RestService', '$location', function($scope, $http, $state, $stateParams, RestService, $location) {
+	    let courseId = $stateParams.courseId;
+
+	    $http({method: 'GET', url: RestService.getRESTUrl() + 'getCourseById/' + courseId})
+	      .then(function(response) {
+	        if(response.data.status === 200 && response.data.success) {
+	          $scope.course = response.data.course;
+	          console.log($scope.course);
+	          $scope.ratings = [];
+	          for(let i=0; i<$scope.course.ratings; i++) {
+	            $scope.ratings.push('icon-smile voted');
+	          }
+
+	          for(let i=0; i<(5-$scope.course.ratings); i++) {
+	            $scope.ratings.push('icon-smile');
+	          }
+	          $scope.includedItems = $scope.course.includes.split(',');
+	          $scope.schedules = $scope.course.schedule.split('|');
+	          $scope.features = [];
+	          $scope.isParking = ($scope.course.parking.length > 0) ? $scope.features.push({'iconClass': 'icon_set_1_icon-27', 'name': 'Parking'}) : false;
+	          $scope.isAudio = ($scope.course.languages.length > 0) ? $scope.features.push({'iconClass': 'icon_set_1_icon-13', 'name': 'Accessibiliy'}): false;
+	          $scope.features.push({'iconClass': 'icon_set_1_icon-83', name: $scope.course.duration});
+	        }
+	      }, function(errorResponse) {
+	        console.error('Error while fetching course details' + errorResponse);
+	      });
+
+	      $scope.adultCount = 0;
+	      $scope.childrenCount = 0;
+
+	      $scope.$watchGroup(['adultCount', 'childrenCount'], function(newValues, oldValues) {
+	        $scope.count = parseInt(newValues[0]) + parseInt(newValues[1]) || 0;
+	      });
+
+	      $scope.increment = function(type) {
+	        if(type === 'adult') {
+	          if($scope.adultCount < 10) {
+	            $scope.adultCount++;
+	          }
+	        } else {
+	          if($scope.childrenCount < 10) {
+	            $scope.childrenCount++;
+	          }
+	        }
+	      }
+
+	      $scope.decrement = function(type) {
+	        if(type === 'adult') {
+	          if($scope.adultCount > 0) {
+	            $scope.adultCount--;
+	          }
+	        } else {
+	          if($scope.childrenCount > 0) {
+	            $scope.childrenCount--;
+	          }
+	        }
+	      }
+	      $scope.minDate = new Date().toISOString().split('T')[0];
+
+
+	      /**
+	      * Function to submit the form for complete the booking
+	      */
+	      $scope.errorSubmit = false;
+	      $scope.submitBooking = function() {
+	        if($scope.adultCount == 0 && $scope.childrenCount == 0) {
+	          $scope.errorSubmit = true;
+	        } else {
+	          let payload = {
+	            emailAddress: $scope.emailAddress,
+	            firstName: $scope.firstName,
+	            lastName: $scope.lastName,
+	            telephone: $scope.telephone,
+	            courseId: $scope.course.courseID,
+	            adultCount: $scope.adultCount,
+	            childrenCount: $scope.childrenCount,
+	            date: $scope.selectedDate
+	          };
+
+	          $http({method: 'POST', url: RestService.getRESTUrl() + 'addCourseBookingFromUser', data: payload})
+	            .then(function(response) {
+	              if(response.data.status == 200 && response.data.success) {
+	                $location.path('confirmation/' + response.data.course);
+	              }
+	            }, function(errorResponse) {
+	              console.log('Error while making a booking');
+	            });
+	        }
+	      }
+	  }]);
+	}());
+
+
+/***/ },
+/* 13 */
+/***/ function(module, exports) {
+
+	/**
+	* Controller for confirmation.js
+	*/
+	module.exports = (function() {
+	  var app = angular.module('app.confirmation-ctrl', []);
+
+	  app.controller('confirmationCtrl', ['$scope', '$http', 'RestService', '$location', '$state', '$stateParams', function($scope, $http, RestService, $location, $state, $stateParams) {
+	    var id = $stateParams.id;
+
+
+	    /**
+	    * Rest call to get the booking details for booking id
+	    * @endpoint: getBookingById/:id
+	    */
+	    $http({method: 'GET', url: RestService.getRESTUrl() + 'getBookingById/' + id})
+	      .then(function(response) {
+	        if(response.data.status == 200 && response.data.success) {
+	          if(response.data.reference) {
+	            $scope.booking = response.data.booking.booking;
+	            $scope.reference = response.data.booking.reference;
+	            $scope.bookingReference = response.data.bookingReference;
+	          } else {
+	            $scope.booking = response.data.booking.booking;
+	          }
+	        }
+	      }, function(errorResponse) {
+	        console.log('Error while getting the booking data by id' + errorResponse);
+	      });
+	  }]);
+	}());
+
+
+/***/ },
+/* 14 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -427,6 +761,40 @@
 	          controller: 'singleActivityCtrl',
 	          authenticate: false,
 	          show: false
+	        })
+	        .state('contact', {
+	          url: '/contact',
+	          templateUrl: 'templates/contact.html',
+	          controller: 'contactCtrl',
+	          authenticate: false,
+	          show: false
+	        })
+	        .state('about', {
+	          url: '/about',
+	          templateUrl: 'templates/about.html',
+	          authenticate: false,
+	          show: false
+	        })
+	        .state('courses', {
+	          url: '/courses',
+	          templateUrl: 'templates/courses.html',
+	          controller: 'CoursesCtrl',
+	          authenticate: false,
+	          show: false
+	        })
+	        .state('course', {
+	          url: '/course/:courseId',
+	          templateUrl: 'templates/single-course.html',
+	          controller: 'singleCourseCtrl',
+	          authenticate: false,
+	          show: false
+	        })
+	        .state('confirmation', {
+	          url: '/confirmation/:id',
+	          templateUrl: 'templates/confirmation.html',
+	          controller: 'confirmationCtrl',
+	          authenticate: false,
+	          show: false
 	        });
 	    });
 
@@ -436,7 +804,7 @@
 
 	    app.run(['$rootScope', '$state', '$window', 'AuthService', '$window', function($rootScope, $state, $window, AuthService, $window) {
 	      $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
-	        $rootScope.main = toState.show;        
+	        $rootScope.main = toState.show;
 	        if(toState.authenticate && !AuthService.isAuthenticated()) {
 	          $state.transitionTo('home');
 	          event.preventDefault();
@@ -447,12 +815,13 @@
 
 
 /***/ },
-/* 9 */
+/* 15 */
 /***/ function(module, exports) {
 
 	(function() {
 	  angular.module('App', ['app.routes', 'app.auth-service', 'app.home-ctrl', 'app.register-ctrl', 'app.activities-ctrl'
-	  , 'app.activity-grid-component', 'app.single-activity', 'app.popular-grid-component']);  
+	  , 'app.activity-grid-component', 'app.single-activity', 'app.popular-grid-component', 'app.contact-ctrl',
+	  'app.rest-service', 'app.course-ctrl', 'app.course-grid-component', 'app.single-course-ctrl', 'app.confirmation-ctrl']);  
 	}());
 
 

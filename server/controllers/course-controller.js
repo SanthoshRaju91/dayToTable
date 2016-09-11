@@ -31,10 +31,10 @@ module.exports = {
              logger.error('addCourse: requested category not found');
              res.json({ status: 404, success: false, message: 'Requested category not found'});
            } else {
-            var course = new Course({courseName: req.body.courseName, description: req.body.description, schedule: req.body.schedule, scheduleType: req.body.scheduleType, price: req.body.price, amenities: req.body.amenities, userID: user._id, categoryID: category._id});
+            var course = new Course({courseName: req.body.courseName, description: req.body.description, schedule: req.body.schedule, price: req.body.price, amenities: req.body.amenities, address: req.body.address, languages: req.body.languages, parking: req.body.parking, imageUrl: req.body.imageUrl, startFrom: req.body.startFrom, createdUserID: user._id, categoryID: category._id});
             course.save(function(err2) {
               if(err2) {
-                logger.error('addCourse: Error while inserting the course: ' + err);
+                logger.error('addCourse: Error while inserting the course: ' + err2);
                 res.json({ status: 500, success: false, message: 'Error while inserting course'});
               } else {
                 logger.info('addCourse: Course added successfully');
@@ -59,18 +59,8 @@ module.exports = {
         logger.info('getAllCourses: No courses found');
         res.json({ status: 404, success: false, message: 'No Courses found'});
       } else {
-        var coursesList = [];
-        _.forEach(courses, function(value) {
-          if(value.scheduleType === 'onetime') {
-            value["courseStatus"] = (moment() > moment.unix(value.schedule) && value.scheduleType === 'onetime') ? 'Closed' : 'Open';
-            value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-            coursesList.push(value);
-          } else {
-            coursesList.push(value);
-          }
-        });
         logger.info('Course list computed');
-        res.json({ status: 200, success: true, count: coursesList.length, courseList: coursesList});
+        res.json({ status: 200, success: true, count: courses.length, courseList: courses});
       }
     });
   },
@@ -88,15 +78,8 @@ module.exports = {
         logger.error('getUpcomingCourses: No upcoming courses');
         res.json({ status: 404, succes: false, message: 'No upcomging courses'});
       } else {
-        var upcomgingCourseList = [];
-        _.forEach(courses, function(value) {
-          if(moment.unix(value.schedule) > moment() && value.scheduleType === 'onetime') {
-            value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-            upcomgingCourseList.push(value);
-          }
-        });
         logger.info('getUpcomingCourses: Upcoming courses fetched');
-        res.json({ status: 200, success: true, count: upcomgingCourseList.length, courseList: upcomgingCourseList});
+        res.json({ status: 200, success: true, count: courses.length, courseList: courses});
       }
     });
   },
@@ -114,14 +97,8 @@ module.exports = {
         logger.error('oneTimeCourseForUser: No one-time courses found');
         res.json({status: 404, success: false, message: 'No one-time courses found'});
       } else {
-        var oneTimeCoursesList = [];
-        _.forEach(courses, function(value) {
-          value['courseStatus'] = (moment() > moment.unix(value.schedule)) ? 'Closed': 'Open';
-          value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-          oneTimeCoursesList.push(value);
-        });
         logger.info('One time course list fetched');
-        res.json({ status: 200, success: true, count: oneTimeCoursesList.length, courseList: oneTimeCoursesList});
+        res.json({ status: 200, success: true, count: courses.length, courseList: courses});
       }
     });
   },
@@ -158,18 +135,8 @@ module.exports = {
         logger.error('coursesByUser: No courses created by the user');
         res.json({ status: 404, success: false, message: 'No courses created by the user'});
       } else {
-        var coursesList = [];
-        _.forEach(courses, function(value) {
-          if(value.scheduleType === 'onetime') {
-            value["courseStatus"] = (moment() > moment.unix(value.schedule) && value.scheduleType === 'onetime') ? 'Closed' : 'Open';
-            value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-            coursesList.push(value);
-          } else {
-            coursesList.push(value);
-          }
-        });
         logger.info('coursesByUser: Courses fetched by created user');
-        res.json({ status: 200, success: true, count: coursesList.length, courseList: coursesList});
+        res.json({ status: 200, success: true, count: courses.length, courseList: courses});
       }
     });
   },
@@ -187,18 +154,8 @@ module.exports = {
         logger.error('getCoursesByCategory: No courses found for the category');
         res.json({ status: 404, success: false, message: 'No courses found for the category'});
       } else {
-        var coursesList = [];
-        _.forEach(courses, function(value) {
-          if(value.scheduleType === 'onetime') {
-            value["courseStatus"] = (moment() > moment.unix(value.schedule) && value.scheduleType === 'onetime') ? 'Closed' : 'Open';
-            value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-            coursesList.push(value);
-          } else {
-            coursesList.push(value);
-          }
-        });
         logger.info('getCoursesByCategory: Courses fetched for the category');
-        res.json({ status: 200, success: true, count: coursesList.length, courseList: coursesList});
+        res.json({ status: 200, success: true, count: courses.length, courseList: courses});
       }
     });
   },
@@ -215,6 +172,47 @@ module.exports = {
       } else {
         logger.info('inactivateCourse: Course inactivated');
         res.json({ status: 200, success: true, message: 'Course inactivated'});
+      }
+    });
+  },
+
+  /**
+  * Function to get sorted list of courses
+  * @method: getSortedCoursesList
+  */
+  getSortedCoursesList: function(req, res) {
+    var sort = (req.params.sort === 'highest') ?  "-" + req.params.type : req.params.type;
+    Course.find({status: 'A'}).sort(sort).populate('categoryID').exec(function(err, courses) {
+      if(err) {
+        logger.error('getSortedCourseList: Error while fetching sorted list of courses' + err);
+        res.json({ status: 500, success: false, message: 'Error while fetching sorted list of courses'});
+      } else if(!courses) {
+        logger.error('getSortedCourseList: No sorted courses found');
+        res.json({ status: 404, success: false, message: 'No sorted courses found'});
+      } else {
+        logger.info('getSortedCourseList: Sorted list of courses fetched');
+        res.json({ status: 200, success: true, count: courses.length, courseList: courses});
+      }
+    });
+  },
+
+  /**
+  * Function to get course details by id.
+  * @method: getCourseById
+  */
+  getCourseById: function(req, res) {
+    var courseID = req.params.id || '';
+    var populateQuery = [{path: 'createdUserID'}, {path: 'categoryID'}];
+    Course.findOne({courseID: courseID}).populate(populateQuery).exec(function(err, course) {
+      if(err) {
+        logger.error('getCourseById: Error while fetching course details by id' + err);
+        res.json({ status: 500, success: false, message: 'Error while fetching course details by id'});
+      } else if(!course) {
+        logger.error('getCourseById: No course found for id');
+        res.json({ status: 404, success: false, message: 'No course found for id'});
+      } else {
+        logger.info('getCourseById: Course details fetched for the id');
+        res.json({ status: 200, success: true, course: course});
       }
     });
   }
