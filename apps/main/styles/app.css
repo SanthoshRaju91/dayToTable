@@ -1,5 +1,10 @@
 .parallax-window {
-  background-image: url(../img/activity-bg.jpg);
+    background-image: url(../img/activity-bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .grid-img {
