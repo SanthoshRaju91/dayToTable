@@ -336,7 +336,7 @@
 	    var rest = this;
 
 	    rest.getRESTUrl = function() {
-	      return 'http://localhost:3000/api/';
+	      return 'http://45.55.232.197:3000/api/';
 	    }
 
 	    return rest;

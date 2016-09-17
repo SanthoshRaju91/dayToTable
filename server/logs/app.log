@@ -2997,3 +2997,31 @@
 [2016-09-17 09:01:48.472] [INFO] appLog - Connected to MongoDB
 [2016-09-17 09:01:55.917] [INFO] appLog - Server listening on port: 3000
 [2016-09-17 09:01:59.371] [INFO] appLog - Connected to MongoDB
+[2016-09-17 09:34:26.429] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 09:34:26.513] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 09:34:26.593] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 09:34:27.182] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 09:34:56.321] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-17 09:34:56.629] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-17 09:35:04.179] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-17 09:35:04.587] [INFO] appLog - Course list computed
+[2016-09-17 09:35:14.862] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 09:35:14.866] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 09:35:16.638] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 09:35:22.837] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 09:35:22.857] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 09:35:23.405] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 09:35:23.537] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 09:36:18.651] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-17 10:19:08.458] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 10:19:08.501] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 10:19:09.549] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 10:19:09.636] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 10:28:22.368] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 10:28:22.452] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 10:28:22.962] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 10:28:23.022] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 10:28:27.982] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 10:28:28.028] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 10:28:28.512] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 10:28:28.597] [INFO] appLog - getPopularCourses: Popular courses fetched
