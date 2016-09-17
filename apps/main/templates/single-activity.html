@@ -52,20 +52,7 @@
           <h3>Schedule</h3>
         </div>
         <div class="col-md-9">
-          <div class=" table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>From: {{activity.startFrom}}</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr ng-repeat = "schedule in schedules track by $index">
-                  <td>{{schedule}}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <h4>{{activity.schedule | date: "MMM-dd-y HH:mm"}}</h4>
         </div>
       </div> <!-- End schedule-->
     </div> <!-- End main content-->
@@ -73,14 +60,28 @@
     <aside class="col-md-4">
   		<div class="box_style_1 expose">
   			<h3 class="inner">- Booking -</h3>
-  			<div class="row">
-  				<div class="col-md-12 col-sm-12">
-  					<div class="form-group">
-  						<label><i class="icon-calendar-7"></i> Select a date</label>
-  						<input class="date-pick form-control" data-date-format="M d, D" type="text">
-  					</div>
-  				</div>
-  			</div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+						<div class="form-group">
+							<label>Name</label>
+							<input class="form-control required" name="name_booking" id="name_booking" type="text" ng-model="firstName" required>
+						</div>
+					</div>
+          <div class="col-md-6 col-sm-6">
+						<div class="form-group">
+							<label>Last name</label>
+							<input class="form-control required" name="last_name_booking" id="last_name_booking" type="text" ng-model="lastName" required>
+						</div>
+					</div>
+        </div>
+        <div class="form-group">
+					<label>Email</label>
+					<input class="form-control required" type="email" name="email_booking" id="email_booking" ng-model="emailAddress" required>
+				</div>
+        <div class="form-group">
+					<label>Telephone</label>
+					<input class="form-control required" type="text" name="phone_booking" id="phone_booking" ng-model="telephone" required>
+				</div>
   			<div class="row">
   				<div class="col-md-6 col-sm-6">
   					<div class="form-group">
@@ -138,7 +139,11 @@
   			</tr>
   			</tbody>
   			</table>
-  			<a class="btn_full" href="cart.html">Book now</a>
+  			<a class="btn_full" ng-if="isBookingAvailable" ng-click="bookActivity()">Book now</a>
+
+        <div ng-if="errorSubmit" class="alert alert-danger">
+          <p>Please select the required number of tickets, in order to proceed</p>
+        </div>
   		</div><!--/box_style_1 -->
 
   		<div class="box_style_4">

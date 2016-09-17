@@ -41,7 +41,6 @@ function getBookingsList(bookings, callback) {
 
 module.exports = {
 
-
   /**
   * Function to make a course bookings for user.
   * @method: addCourseBookingFromUser
@@ -68,15 +67,15 @@ module.exports = {
                 logger.error('addCourseBookingFromUser: No course found for the course id');
                 res.json({ status: 404, success: false, message: 'No Course found for the course id'});
               } else {
-                var totalPrice = (req.body.adultCount + req.body.childrenCount) * course.price;                
-                var courseBooking = new Booking({bookingType: 'recurring', reference: 'course', bookingReference: req.body.courseId, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), specifiedDate: req.body.date, totalPrice: totalPrice,userID: userObject._id});
-                courseBooking.save(function(err2, course) {
+                var totalPrice = (req.body.adultCount + req.body.childrenCount) * course.price;
+                var courseBooking = new Booking({bookingType: 'recurring', reference: 'course', bookingReference: course.courseID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), specifiedDate: req.body.date, totalPrice: totalPrice,userID: userObject._id});
+                courseBooking.save(function(err2, bookedCourse) {
                   if(err2) {
                     logger.error('addCourseBookingFromUser: Error while making a guest course booking' + err2);
                     res.json({ status: 500, success: false, message: 'Error while making a guest course booking'});
                   } else {
                     logger.info('addCourseBookingFromUser: Guest course booking successful');
-                    res.json({ status: 200, success: true, message: 'Guest course booking successful', course: course._id});
+                    res.json({ status: 200, success: true, message: 'Guest course booking successful', booking: bookedCourse._id});
                   }
                 });
               }
@@ -93,14 +92,14 @@ module.exports = {
             res.json({ status: 404, success: false, message: 'No Course found for the course id'});
           } else {
             var totalPrice = (req.body.adultCount + req.body.childrenCount) * course.price;
-            var courseBooking = new Booking({bookingType: 'recurring', reference: 'course', bookingReference: req.body.courseId, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), specifiedDate: req.body.date, totalPrice: totalPrice,userID: user._id});
-            courseBooking.save(function(err4, course) {
+            var courseBooking = new Booking({bookingType: 'recurring', reference: 'course', bookingReference: course.courseID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), specifiedDate: req.body.date, totalPrice: totalPrice,userID: user._id});
+            courseBooking.save(function(err4, bookedCourse) {
               if(err4) {
                 logger.error('addCourseBookingFromUser: Error while making a course booking' + err4);
                 res.json({ status: 500, success: false, message: 'Error while making a guest course booking'});
               } else {
                 logger.info('addCourseBookingFromUser: Course booking successful');
-                res.json({ status: 200, success: true, message: 'Course booking successful', course: course._id});
+                res.json({ status: 200, success: true, message: 'Course booking successful', booking: bookedCourse._id});
               }
             });
           }
@@ -108,6 +107,72 @@ module.exports = {
       }
     });
   },
+
+    /**
+    * Function to add booking for activity from user.
+    * @method: addBookingActivityFromUser
+    */
+    addBookingActivityFromUser: function(req, res) {
+      User.findOne({emailAddress: req.body.emailAddress}, function(err, user) {
+        if(err) {
+          logger.error('addBookingActivityFromUser: Error while fetching the user: ' + err);
+          res.json({ status: 500, success: false, message: 'Error while booking activity'});
+        } else if(!user) {
+          logger.info('addBookingActivityFromUser: New user booking proceed as guest user');
+          var user = new User({firstName: req.body.firstName, lastName: req.body.lastName, emailAddress: req.body.emailAddress, contact: req.body.telephone, status: 'P'});
+          user.save(function(err1, userObject) {
+            if(err1) {
+              logger.error('addBookingActivityFromUser: Error while registering the user: ' + err1);
+              res.json({ status: 500, success: false, message: 'Error while booking activity'});
+            } else {
+              Activity.findOne({activityID: req.body.activityID}, function(err2, activity) {
+                if(err2) {
+                  logger.error('addBookingActivityFromUser: Error while fetching activity in create user booking: ' + err2);
+                  res.json({ status: 500, success: false, message: 'Error while booking activity'});
+                } else if(!activity) {
+                  logger.error('addBookingActivityFromUser: No activity found for the id');
+                  res.json({ status: 404, success: false, message: 'Error while booking activity'});
+                } else {
+                  var totalPrice = (req.body.adultCount + req.body.childrenCount) * activity.price;
+                  var activityBooking = new Booking({bookingType: 'onetime', reference: 'activity', bookingReference: activity.activityID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), totalPrice: totalPrice, userID: userObject._id});
+                  activityBooking.save(function(err3, bookedActivity) {
+                    if(err3) {
+                      logger.error('addBookingActivityFromUser: Error while booking activity in new user flow: ' + err3);
+                      res.json({ status: 500, success: false, message: 'Error while making a booking'});
+                    } else {
+                      logger.info('addBookingActivityFromUser: Booking for activity done successfully');
+                      res.json({ status: 200, success: true, message: 'activity booked!', booking: bookedActivity._id});
+                    }
+                  });
+                }
+              });
+            }
+          });
+        } else {
+          Activity.findOne({activityID: req.body.activityID}, function(err4, activity) {
+            if(err4) {
+              logger.error('addBookingActivityFromUser: Error while fetching activity in registered user flow: ' + err4);
+              res.json({ status: 500, success: false, message: 'Error while booking activity'});
+            } else if(!activity) {
+              logger.error('addBookingActivityFromUser: No activity found for the id');
+              res.json({ status: 404, success: false, message: 'Error while booking activity'});
+            } else {
+              var totalPrice = (req.body.adultCount + req.body.childrenCount) * activity.price;
+              var activityBooking = new Booking({bookingType: 'onetime', reference: 'activity', bookingReference: activity.activityID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), totalPrice: totalPrice, userID: user._id});
+              activityBooking.save(function(err5, bookedActivity) {
+                if(err5) {
+                  logger.error('addBookingActivityFromUser: Error while booking activity in registered user flow: ' + err5);
+                  res.json({ status: 500, success: false, message: 'Error while booking activity'});
+                } else {
+                  logger.info('addBookingActivityFromUser: Booking for activity done');
+                  res.json({ status: 200, success: true, message: 'Activity booked!!', booking: bookedActivity._id})
+                }
+              });
+            }
+          });
+        }
+      });
+    },
 
   /**
   * Funciton to add bookings from the user
@@ -269,7 +334,7 @@ module.exports = {
               res.json({ status: 200, success: true, reference: false, bookingReference: 'Activity', booking: response});
             } else {
               logger.info('getBookingById: Activity fetched for the booking reference');
-              response.reference = course;
+              response.reference = activity;
               res.json({ status: 200, success: true, reference: true, bookingReference: 'Activity', booking: response});
             }
           });

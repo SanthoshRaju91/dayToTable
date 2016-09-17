@@ -53,7 +53,7 @@ module.exports = {
   * @method: getAllActivitiesForUser
   */
   getAllActivitiesForUser: function(req, res) {
-    Activity.find({status: 'A'}).populate('categoryID').exec(function(err, activities) {
+    Activity.find({status: 'A'}).sort('createdDate').populate('categoryID').exec(function(err, activities) {
       if(err) {
         logger.error('getAllActivitiesForUser: Error in fetching all the activities');
         res.json({ status: 500, success: false, message: 'Error in fetching all activites'});
@@ -63,9 +63,10 @@ module.exports = {
       } else {
         var oneTimeActivityList = [];
         _.forEach(activities, function(value) {
-          value['activityStatus'] = (moment() > moment.unix(value.schedule)) ? 'Closed': 'Open';
-          value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-          oneTimeActivityList.push(value);
+          var current = Object.assign({}, value);
+          current['activityStatus'] = (new Date() > value.schedule) ? 'Closed': 'Open';
+          current.schedule = moment(value.schedule).format('YYYY-MM-DD HH:mm');
+          oneTimeActivityList.push(current);
         });
         logger.info('Activity list computed' + activities[0].schedule);
         res.json({ status: 200, success: true, count: oneTimeActivityList.length, activityList: oneTimeActivityList});
@@ -78,20 +79,24 @@ module.exports = {
   * @method: getUpcomingActivites
   */
   getUpcomingActivites: function(req, res) {
-    Activity.find({status: 'A'}).populate('categoryID').exec(function(err, activities) {
+    Activity.find({status: 'A'}).where('schedule').gte(new Date()).populate('categoryID').exec(function(err, activities) {
       if(err) {
         logger.error('getUpcomingActivites: Error while fetching upcoming activites ' + err);
         res.json({ status: 500, success: false, message: 'Error while fetching upcoming activites'});
-      } else if(!courses) {
+      } else if(!activities) {
         logger.error('getUpcomingActivites: No upcoming activites');
         res.json({ status: 404, succes: false, message: 'No upcomging activites'});
       } else {
         var upcomgingActivityList = [];
-        _.forEach(courses, function(value) {
-          if(moment.unix(value.schedule) > moment() && value.scheduleType === 'onetime') {
-            value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-            upcomgingActivityList.push(value);
-          }
+        _.forEach(activities, function(value) {
+          var current = {};
+          current['activityID'] = value.activityID;
+          current['activityName'] = value.activityName;
+          current['category'] = value.categoryID.categoryName;
+          current['schedule'] = value.schedule;
+          current['price'] = value.price;
+          current['imageUrl'] = value.imageUrl;
+          upcomgingActivityList.push(current);
         });
         logger.info('getUpcomingActivites: Upcoming activities fetched');
         res.json({ status: 200, success: true, count: upcomgingActivityList.length, activityList: upcomgingActivityList});
@@ -105,7 +110,7 @@ module.exports = {
   * @method: activitiesByUser
   */
   activitiesByUser: function(req, res) {
-    Activity.find({createdUserID: req.body.userID}).populate('categoryID').exec(function(err, activities) {
+    Activity.find({createdUserID: req.body.userID}).sort('createdDate').populate('categoryID').exec(function(err, activities) {
       if(err) {
         logger.error('activitiesByUser: Error while fetching activities: ' + err);
         res.json({ status: 500, success: false, message: 'Error while fetching activities'});
@@ -113,18 +118,15 @@ module.exports = {
         logger.error('activitiesByUser: No activities created by the user');
         res.json({ status: 404, success: false, message: 'No activities created by the user'});
       } else {
-        var activitiesList = [];
+        var oneTimeActivityList = [];
         _.forEach(activities, function(value) {
-          if(value.scheduleType === 'onetime') {
-            value["activityStatus"] = (moment() > moment.unix(value.schedule) && value.scheduleType === 'onetime') ? 'Closed' : 'Open';
-            value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-            activitiesList.push(value);
-          } else {
-            activitiesList.push(value);
-          }
+          var current = Object.assign({}, value);
+          current['activityStatus'] = (new Date() > value.schedule) ? 'Closed': 'Open';
+          current.schedule = moment(value.schedule).format('YYYY-MM-DD HH:mm');
+          oneTimeActivityList.push(current);
         });
         logger.info('activitiesByUser: Activities fetched by created user');
-        res.json({ status: 200, success: true, count: activitiesList.length, activityList: activitiesList});
+        res.json({ status: 200, success: true, count: oneTimeActivityList.length, activityList: oneTimeActivityList});
       }
     });
   },
@@ -142,7 +144,7 @@ module.exports = {
         logger.error('getActivitiesByCategory: No category found for the categoryID');
         res.json({ status: 404, success: false, message: 'No category found for the categoryID'});
       } else {
-        Activity.find({categoryID: category._id, status: 'A', scheduleType: 'onetime'}).populate('categoryID').exec(function(err1, activities) {
+        Activity.find({categoryID: category._id, status: 'A', scheduleType: 'onetime'}).sort('createdDate').populate('categoryID').exec(function(err1, activities) {
           if(err1) {
             logger.error('getActivitiesByCategory: Error while fetching activites for specified category: ' + err1);
             res.json({ status: 500, success: false, message: 'Error while fetching activities for specified category'});
@@ -152,12 +154,13 @@ module.exports = {
           } else {
             var oneTimeActivityList = [];
             _.forEach(activities, function(value) {
-              value['activityStatus'] = (moment() > moment.unix(value.schedule)) ? 'Closed': 'Open';
-              value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-              oneTimeActivityList.push(value);
+              var current = Object.assign({}, value);
+              current['activityStatus'] = (new Date() > value.schedule) ? 'Closed': 'Open';
+              current.schedule = moment(value.schedule).format('YYYY-MM-DD HH:mm');
+              oneTimeActivityList.push(current);
             });
             logger.info('activitiesByUser: Activities fetched for the category');
-            res.json({ status: 200, success: true, count: activities.length, activityList: oneTimeActivityList});
+            res.json({ status: 200, success: true, count: oneTimeActivityList.length, activityList: oneTimeActivityList});
           }
         });
 
@@ -181,12 +184,10 @@ module.exports = {
         logger.error('getActivityById: No activity found for the given id');
         res.json({ status: 404, success: false, message: 'No record found'});
       } else {
-        var responseObject = {};
-        activity['activityStatus'] = (moment() > moment.unix(activity.schedule)) ? 'Closed': 'Open';
-        activity['formattedSchedule'] = moment.unix(activity.schedule).format('YYYY-MM-DD HH:mm');
-
+        activity['activityStatus'] = (new Date() > activity.schedule) ? 'Closed': 'Open';
+        activity.schedule = moment(activity.schedule).format('YYYY-MM-DD HH:mm');
         logger.info('getActivityById: Activity fetched for the specified id');
-        res.json({ status: 200, success: true, activity: responseObject});
+        res.json({ status: 200, success: true, activity: activity, activityStatus: activity.activityStatus});
       }
     });
   },
@@ -222,14 +223,14 @@ module.exports = {
       } else {
         var oneTimeActivityList = [];
         _.forEach(activities, function(value) {
-          value['activityStatus'] = (moment() > moment.unix(value.schedule)) ? 'Closed': 'Open';
-          value.schedule = moment.unix(value.schedule).format('YYYY-MM-DD HH:mm');
-          oneTimeActivityList.push(value);
+          var current = Object.assign({}, value);
+          current['activityStatus'] = (new Date() > value.schedule) ? 'Closed': 'Open';
+          current.schedule = moment(value.schedule).format('YYYY-MM-DD HH:mm');
+          oneTimeActivityList.push(current);
         });
         logger.info('getSortedActivitiesList: List fetched for the applied sort');
-        res.json({ status: 200, success: true, count: activities.length, activityList: oneTimeActivityList});
+        res.json({ status: 200, success: true, count: oneTimeActivityList.length, activityList: oneTimeActivityList});
       }
     });
   }
-
-}
+};

@@ -7,21 +7,23 @@ module.exports = (function() {
     },
     templateUrl: '../../templates/components/activity-grid.html',
     controller: function($location) {
-      this.imageURL = this.data.imageUrl || '../../img/slides/slide-4.jpg';
+      this.activity = this.data._doc;
+      this.imageURL = this.activity.imageUrl || '../../img/slides/slide-4.jpg';
 
       var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library', CRICKET: 'icon-cricket'};
+      this.overlayIcon = iconsArray[this.activity.categoryID.categoryName.toUpperCase()];
+      this.overlayName = this.activity.categoryID.categoryName;
+      this.scheduleList = this.activity.schedule.split('|');
 
-      this.overlayIcon = iconsArray[this.data.categoryID.categoryName.toUpperCase()];
-      this.overlayName = this.data.categoryID.categoryName;
-      this.scheduleList = this.data.schedule.split('|');
-
+      //checking for activity currently open / closed.
+      this.isActive = (this.data.activityStatus.toUpperCase() == 'CLOSED') ? true: false;
       this.ratings = [];
       let self = this;
-      for(let i=0; i<this.data.ratings; i++) {
+      for(let i=0; i<this.activity.ratings; i++) {
         self.ratings.push('icon-smile voted');
       }
 
-      for(let i=0; i<(5-this.data.ratings); i++) {
+      for(let i=0; i<(5-this.activity.ratings); i++) {
         self.ratings.push('icon-smile');
       }
 

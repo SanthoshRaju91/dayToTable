@@ -109,10 +109,10 @@
                                     <input type="submit" name="Sign_in" value="Sign in" id="Sign_in" class="button_drop" ng-click="login()">
                                     <input type="submit" name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline" ng-click="register()">
                                 </div>
-                            </div><!-- End Dropdown access -->
+                            </div><!-- End Dropdown access ng-if="isAuthenticated" -->
                           </li>
-                          <li ng-if="isAuthenticated">
-
+                          <li>
+                            <a ui-sref="profile">Profile</a>
                           </li>
                         </ul>
                     </div>

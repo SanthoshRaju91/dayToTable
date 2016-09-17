@@ -38,10 +38,6 @@ var ActivitySchema = new Schema({
     type: String,
     required: true
   },
-  ratings: {
-    type: Number,
-    default: 0
-  },
   parking: {
     type: []
   },
@@ -75,11 +71,6 @@ var ActivitySchema = new Schema({
   duration: {
     type: String,
     default: '1 Hour'
-  },
-  startFrom: {
-    type: String,
-    default: '',
-    required: true
   },
   categoryID: {type: Schema.Types.ObjectId, ref: 'Category'},
   creadtedUserID: {type: Schema.Types.ObjectId, ref: 'User'}

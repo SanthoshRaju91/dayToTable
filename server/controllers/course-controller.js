@@ -197,7 +197,6 @@ module.exports = {
           var current = {};
           current['courseID'] = course.courseID;
           current['courseName'] = course.courseName;
-          current['address'] = course.address;
           current['category'] = course.categoryID.categoryName;
           current['price'] = course.price;
           current['ratings'] = course.ratings;

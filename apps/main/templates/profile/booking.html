@@ -1,0 +1,28 @@
+<section class="bookings">
+  <br>
+  <div id="tools">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="styled-select-filters">
+          <select name="sort_type" id="sort_type">
+            <option value="" selected>Sort by type</option>
+            <option value="tours">Activities</option>
+            <option value="hotels">Courses</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="styled-select-filters">
+          <select name="sort_date" id="sort_date">
+            <option value="" selected>Sort by date</option>
+            <option value="oldest">Oldest</option>
+            <option value="recent">Recent</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div><!--end of sorting panel -->
+  <div class="strip_booking">
+    <booking-grid></booking-grid>
+  </div><!-- end of strip_booking -->
+</section>

@@ -3,7 +3,7 @@
 */
 
 module.exports = (function() {
-  var app = angular.module('app.single-course-ctrl', ['ui.bootstrap']);
+  var app = angular.module('app.single-course-ctrl', []);
 
   app.controller('singleCourseCtrl', ['$scope', '$http', '$state', '$stateParams', 'RestService', '$location', function($scope, $http, $state, $stateParams, RestService, $location) {
     let courseId = $stateParams.courseId;
@@ -87,7 +87,8 @@ module.exports = (function() {
           $http({method: 'POST', url: RestService.getRESTUrl() + 'addCourseBookingFromUser', data: payload})
             .then(function(response) {
               if(response.data.status == 200 && response.data.success) {
-                $location.path('confirmation/' + response.data.course);
+                debugger;
+                $location.path('confirmation/' + response.data.booking);
               }
             }, function(errorResponse) {
               console.log('Error while making a booking');

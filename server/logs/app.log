@@ -2533,3 +2533,467 @@
 [2016-09-11 15:24:04.255] [INFO] appLog - Connected to MongoDB
 [2016-09-11 15:24:10.813] [INFO] appLog - Server listening on port: 3000
 [2016-09-11 15:24:13.334] [INFO] appLog - Connected to MongoDB
+[2016-09-12 21:49:04.578] [INFO] appLog - Server listening on port: 3000
+[2016-09-12 21:49:06.223] [INFO] appLog - Connected to MongoDB
+[2016-09-12 21:49:10.719] [INFO] appLog - Server listening on port: 3000
+[2016-09-12 21:49:12.303] [INFO] appLog - Connected to MongoDB
+[2016-09-12 21:50:30.771] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-12 21:50:31.086] [INFO] appLog - Course list computed
+[2016-09-12 21:50:35.240] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-12 21:50:35.568] [INFO] appLog - Activity list computedSun Apr 22 48683 07:56:00 GMT+0530 (India Standard Time)
+[2016-09-13 09:31:46.720] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 09:31:48.389] [INFO] appLog - Connected to MongoDB
+[2016-09-13 09:31:55.033] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 09:31:57.775] [INFO] appLog - Connected to MongoDB
+[2016-09-13 09:39:39.318] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 09:39:39.913] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 09:40:41.025] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 09:40:41.044] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 09:42:36.569] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 09:43:36.077] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 09:43:37.656] [INFO] appLog - Connected to MongoDB
+[2016-09-13 09:44:31.754] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 09:44:33.491] [INFO] appLog - Connected to MongoDB
+[2016-09-13 09:44:48.660] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 09:44:50.540] [INFO] appLog - Connected to MongoDB
+[2016-09-13 09:45:00.889] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 09:45:00.933] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 09:45:00.939] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 09:45:00.943] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 09:45:49.839] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 09:45:51.649] [INFO] appLog - Connected to MongoDB
+[2016-09-13 09:47:52.162] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 09:47:53.812] [INFO] appLog - Connected to MongoDB
+[2016-09-13 09:49:08.847] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 09:49:25.864] [INFO] appLog - Connected to MongoDB
+[2016-09-13 09:49:47.424] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 09:49:47.459] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 09:49:47.955] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 09:49:48.015] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:03:11.842] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:03:11.860] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:03:12.369] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:03:12.410] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:03:59.315] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:04:02.379] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:04:07.189] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:04:07.219] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:04:07.223] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:04:07.232] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:04:50.301] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:04:50.321] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:04:50.841] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:04:50.874] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:05:08.304] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:05:08.314] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:05:08.846] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:05:08.864] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:06:16.468] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:06:16.481] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:06:17.025] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:06:17.061] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:06:23.676] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 10:06:23.952] [INFO] appLog - Course list computed
+[2016-09-13 10:06:27.789] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-13 10:06:34.069] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 10:06:34.374] [INFO] appLog - Activity list computedSun Apr 22 48683 07:56:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:07:45.712] [INFO] appLog - Activity list computedSun Apr 22 48683 07:56:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:08:12.452] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:08:14.162] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:08:21.100] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:08:22.959] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:08:31.793] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:09:57.093] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:09:58.721] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:10:15.323] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:11:14.544] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:11:16.368] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:11:33.617] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:11:35.428] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:11:58.745] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:12:01.066] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:12:06.047] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:12:45.628] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:12:47.331] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:12:51.606] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:14:04.353] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:14:06.171] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:15:16.529] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:15:18.177] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:15:21.052] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:30:36.534] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:32:39.549] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 10:32:39.823] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:36:17.526] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 10:36:17.815] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:36:43.813] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 10:36:44.064] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:37:30.091] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:37:30.130] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:37:30.618] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:37:30.684] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:37:58.498] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 10:37:58.747] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:39:50.151] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 10:39:51.943] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:40:13.672] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:41:17.428] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 10:41:17.712] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:41:28.232] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:42:28.930] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:42:30.572] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:42:57.019] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:43:04.124] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:43:05.776] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:43:17.661] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:44:00.136] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:44:02.263] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:44:05.508] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:44:17.546] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:45:49.873] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:46:19.181] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:46:27.576] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:47:07.256] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:47:16.388] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:47:37.122] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:48:38.465] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:48:40.710] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:48:45.785] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:48:45.832] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:48:46.384] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 10:48:46.397] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 10:48:52.322] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 10:48:52.600] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 10:49:32.085] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:49:33.843] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:49:47.245] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:49:48.908] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:49:59.864] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:50:01.882] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:50:10.499] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:50:12.496] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:50:28.550] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 10:51:11.772] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:51:14.807] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:51:25.696] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:51:27.778] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:51:57.030] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:51:58.948] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:52:07.166] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:52:09.110] [INFO] appLog - Connected to MongoDB
+[2016-09-13 10:52:26.912] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 10:52:28.896] [INFO] appLog - Connected to MongoDB
+[2016-09-13 11:04:46.294] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:04:47.358] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:04:58.625] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-09-13 11:05:00.954] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-09-13 11:05:14.720] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 11:06:28.875] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 11:06:40.965] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 11:07:04.453] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 11:07:40.901] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 11:07:42.516] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 11:07:50.208] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-13 11:08:06.057] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:08:06.289] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:09:19.686] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:09:20.007] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:10:01.580] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:10:01.803] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:10:10.823] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:10:11.128] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:10:21.905] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:10:22.133] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:10:42.776] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:10:43.087] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:11:28.651] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 11:11:28.682] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 11:11:29.195] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 11:11:29.275] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 11:11:40.656] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 11:11:40.683] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 11:11:41.182] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-13 11:11:41.279] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-13 11:11:49.063] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:11:49.305] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:12:21.905] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:12:22.210] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:24:41.489] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:24:41.721] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:24:58.569] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:24:58.870] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:25:19.565] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:25:19.788] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:25:42.089] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:25:42.393] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:25:52.126] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:25:52.355] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:26:26.072] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:26:27.134] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:26:50.536] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 11:26:55.095] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:27:03.607] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-13 11:27:03.855] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-13 21:41:00.924] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 21:41:02.936] [INFO] appLog - Connected to MongoDB
+[2016-09-13 21:53:57.724] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 21:53:59.687] [INFO] appLog - Connected to MongoDB
+[2016-09-13 21:55:01.064] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 21:55:04.739] [INFO] appLog - Connected to MongoDB
+[2016-09-13 22:09:03.979] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:09:25.059] [ERROR] appLog - Error in connecting to mongo DBMongoError: connect ETIMEDOUT 54.198.110.154:13216
+[2016-09-13 22:09:35.983] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:10:34.668] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:11:12.403] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:11:18.858] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:12:50.861] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:15:52.895] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:16:02.121] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:19:11.117] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:19:27.254] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:22:04.825] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:22:30.994] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:22:42.882] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:22:53.598] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:23:10.351] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:23:58.291] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:24:08.151] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:24:18.104] [INFO] appLog - Server listening on port: 3000
+[2016-09-13 22:24:33.604] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 22:57:24.200] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 22:57:25.973] [INFO] appLog - Connected to MongoDB
+[2016-09-15 22:57:32.144] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 22:57:33.941] [INFO] appLog - Connected to MongoDB
+[2016-09-15 22:58:23.514] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 22:58:23.952] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 22:58:24.211] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 22:58:24.292] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 22:58:42.905] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 22:58:43.211] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 22:58:47.646] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 22:58:57.137] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 22:58:57.469] [INFO] appLog - Course list computed
+[2016-09-15 22:59:01.051] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-15 23:01:14.510] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-15 23:01:17.032] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:01:17.344] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:01:20.617] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:01:43.862] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:01:44.162] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:01:46.833] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:01:47.237] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:01:49.898] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:02:24.505] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:02:26.744] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:02:29.701] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:02:30.203] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:02:30.575] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:02:30.583] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:02:30.595] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:02:30.603] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:02:32.806] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:02:33.074] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:02:42.538] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:03:49.953] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:03:57.635] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:03:59.556] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:04:22.377] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:04:22.821] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:04:26.481] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:04:26.881] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:04:31.384] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:04:53.193] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:05:25.960] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:06:37.178] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:06:39.619] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:06:53.243] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:07:06.306] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:07:06.619] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:09:17.788] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:09:18.096] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:09:40.727] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:09:41.031] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:10:10.008] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:10:10.320] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:10:45.957] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:10:46.225] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:11:23.733] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:11:24.041] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:11:45.236] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:11:45.544] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:12:13.661] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:12:14.013] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:00 GMT+0530 (India Standard Time)
+[2016-09-15 23:14:04.260] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:14:06.159] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:14:34.362] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:14:36.162] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:15:54.112] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:16:01.557] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:16:03.691] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:16:16.197] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:16:16.613] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:16:34.509] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:16:34.793] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:20:54.455] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:20:54.807] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:21:12.004] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:21:12.312] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:22:20.302] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:22:20.613] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:23:21.261] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:23:21.277] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:23:21.948] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:23:23.901] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:23:23.917] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:23:24.473] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:23:24.501] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:23:55.840] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:23:56.247] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:23:58.399] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:23:58.711] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:25:06.523] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:25:06.852] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:29:24.838] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:29:25.154] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:31:40.823] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:31:41.133] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:31:49.357] [ERROR] appLog - getActivityById: Error in fetching activity details: CastError: Cast to number failed for value "undefined" at path "activityID"
+[2016-09-15 23:31:55.985] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:31:56.285] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:32:10.590] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:32:10.862] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:32:15.339] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:32:24.953] [INFO] appLog - addBookingActivityFromUser: New user booking proceed as guest user
+[2016-09-15 23:32:24.989] [ERROR] appLog - addBookingActivityFromUser: Error while registering the user: ValidationError: Path `emailAddress` is required., Path `lastName` is required., Path `firstName` is required.
+[2016-09-15 23:32:27.298] [INFO] appLog - addBookingActivityFromUser: New user booking proceed as guest user
+[2016-09-15 23:32:27.313] [ERROR] appLog - addBookingActivityFromUser: Error while registering the user: ValidationError: Path `emailAddress` is required., Path `lastName` is required., Path `firstName` is required.
+[2016-09-15 23:32:28.132] [INFO] appLog - addBookingActivityFromUser: New user booking proceed as guest user
+[2016-09-15 23:32:28.132] [ERROR] appLog - addBookingActivityFromUser: Error while registering the user: ValidationError: Path `emailAddress` is required., Path `lastName` is required., Path `firstName` is required.
+[2016-09-15 23:32:28.329] [INFO] appLog - addBookingActivityFromUser: New user booking proceed as guest user
+[2016-09-15 23:32:28.344] [ERROR] appLog - addBookingActivityFromUser: Error while registering the user: ValidationError: Path `emailAddress` is required., Path `lastName` is required., Path `firstName` is required.
+[2016-09-15 23:32:31.917] [INFO] appLog - addBookingActivityFromUser: New user booking proceed as guest user
+[2016-09-15 23:32:31.921] [ERROR] appLog - addBookingActivityFromUser: Error while registering the user: ValidationError: Path `emailAddress` is required., Path `lastName` is required., Path `firstName` is required.
+[2016-09-15 23:33:29.693] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:33:31.818] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:33:41.770] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:33:42.078] [INFO] appLog - Course list computed
+[2016-09-15 23:33:45.759] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-15 23:35:15.656] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-15 23:35:19.856] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:35:20.176] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:35:22.936] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:35:27.124] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:36:17.301] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:36:19.348] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:36:22.145] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:36:22.385] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:36:22.745] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:36:23.029] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:36:28.354] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:36:28.778] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:36:32.256] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:36:48.834] [INFO] appLog - addBookingActivityFromUser: Booking for activity done
+[2016-09-15 23:38:03.580] [INFO] appLog - addBookingActivityFromUser: Booking for activity done
+[2016-09-15 23:38:59.703] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:39:26.417] [INFO] appLog - addBookingActivityFromUser: Booking for activity done
+[2016-09-15 23:40:59.405] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:41:20.037] [INFO] appLog - addBookingActivityFromUser: Booking for activity done
+[2016-09-15 23:42:08.522] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:42:08.526] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:42:09.134] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:42:09.146] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:42:14.254] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:42:14.558] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:42:32.274] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:42:32.580] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:42:42.513] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:42:42.820] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:43:58.392] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:43:58.416] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:43:58.960] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:43:58.980] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:44:04.021] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:44:07.193] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:44:07.509] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:44:09.913] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:44:33.404] [INFO] appLog - addBookingActivityFromUser: Booking for activity done
+[2016-09-15 23:44:43.953] [INFO] appLog - addBookingActivityFromUser: Booking for activity done
+[2016-09-15 23:46:04.449] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:46:20.716] [INFO] appLog - addBookingActivityFromUser: Booking for activity done
+[2016-09-15 23:46:22.053] [INFO] appLog - getBookingById: Activity fetched for the booking reference
+[2016-09-15 23:47:09.881] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:47:11.742] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:47:21.070] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:47:21.090] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:47:21.750] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:47:21.766] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:47:25.150] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:47:25.450] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:47:28.516] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-15 23:47:39.568] [INFO] appLog - addBookingActivityFromUser: Booking for activity done
+[2016-09-15 23:47:40.902] [INFO] appLog - getBookingById: Activity fetched for the booking reference
+[2016-09-15 23:48:14.586] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:48:14.894] [INFO] appLog - Course list computed
+[2016-09-15 23:48:16.043] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:48:16.427] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:48:27.387] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:48:27.695] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:48:31.584] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-15 23:48:49.094] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:48:49.402] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:49:54.129] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:50:02.103] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:50:03.876] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:50:15.614] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:50:18.218] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:50:23.985] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:50:25.771] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:50:37.155] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:50:45.954] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:50:53.278] [INFO] appLog - Server listening on port: 3000
+[2016-09-15 23:50:55.352] [INFO] appLog - Connected to MongoDB
+[2016-09-15 23:51:38.374] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:51:38.434] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:51:39.206] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-15 23:51:39.222] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-15 23:51:44.193] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:51:44.513] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-15 23:51:47.882] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-09-15 23:53:17.168] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-09-15 23:53:18.700] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-09-15 23:53:21.466] [INFO] appLog - activitiesByUser: Activities fetched for the category
+[2016-09-15 23:56:44.730] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-15 23:56:45.034] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-16 00:00:01.435] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-16 00:00:01.739] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-16 00:00:04.284] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-16 00:00:04.604] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-16 00:02:57.757] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-16 00:02:58.065] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-16 00:11:32.299] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-16 00:11:32.315] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-16 00:11:32.924] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-16 00:11:32.968] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-16 00:12:11.529] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-16 00:12:11.529] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-16 00:12:12.241] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-16 00:12:12.257] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-16 22:16:19.353] [INFO] appLog - Server listening on port: 3000
+[2016-09-16 22:16:27.213] [INFO] appLog - Server listening on port: 3000
+[2016-09-16 22:16:29.399] [INFO] appLog - Connected to MongoDB
+[2016-09-16 22:17:08.220] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-16 22:17:08.252] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-16 22:17:08.864] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-16 22:17:08.868] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-16 22:31:52.034] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-16 22:31:52.034] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-16 22:31:52.648] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-16 22:31:52.664] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-16 23:26:37.647] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-16 23:26:37.667] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-16 23:26:37.683] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-16 23:26:37.687] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 09:01:45.647] [INFO] appLog - Server listening on port: 3000
+[2016-09-17 09:01:48.472] [INFO] appLog - Connected to MongoDB
+[2016-09-17 09:01:55.917] [INFO] appLog - Server listening on port: 3000
+[2016-09-17 09:01:59.371] [INFO] appLog - Connected to MongoDB

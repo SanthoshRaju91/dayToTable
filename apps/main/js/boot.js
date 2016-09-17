@@ -2,6 +2,8 @@
 require('./components/activity-grid');
 require('./components/popular-grid');
 require('./components/course-grid');
+require('./components/upcoming-grid');
+require('./components/booking-grid');
 
 //services scripts
 require('./services/auth-service');
@@ -16,6 +18,10 @@ require('./controllers/contact-controller');
 require('./controllers/courses-controller');
 require('./controllers/single-course-ctrl');
 require('./controllers/confirmation-controller');
+require('./controllers/profile-controller');
+require('./controllers/profile-controller/booking-controller');
+require('./controllers/profile-controller/settings-controller');
+require('./controllers/profile-controller/user-profile-controller');
 
 //route and main app scripts
 require('./app.routes.js');

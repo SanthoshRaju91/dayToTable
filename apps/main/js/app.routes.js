@@ -66,6 +66,34 @@ module.exports = (function() {
           controller: 'confirmationCtrl',
           authenticate: false,
           show: false
+        })
+        .state('profile', {
+          url: '/profile',
+          templateUrl: 'templates/profile.html',
+          controller: 'profileCtrl',
+          authenticate: false,
+          show: false
+        })
+        .state('profile.bookings', {
+          url: '/bookings',
+          templateUrl: 'templates/profile/booking.html',
+          controller: 'bookingCtrl',
+          authenticate: false,
+          show: false
+        })
+        .state('profile.settings', {
+          url: '/settings',
+          templateUrl: 'templates/profile/settings.html',
+          controller: 'settingsCtrl',
+          authenticate: false,
+          show: false
+        })
+        .state('profile.profile', {
+          url: '/user-profile',
+          templateUrl: 'templates/profile/user-profile.html',
+          controller: 'userProfileCtrl',
+          authenticate: false,
+          show: false
         });
     });
 

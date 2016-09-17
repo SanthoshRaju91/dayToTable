@@ -48,24 +48,30 @@
 	__webpack_require__(1);
 	__webpack_require__(2);
 	__webpack_require__(3);
-
-	//services scripts
 	__webpack_require__(4);
 	__webpack_require__(5);
 
-	//controllers scripts
+	//services scripts
 	__webpack_require__(6);
 	__webpack_require__(7);
+
+	//controllers scripts
 	__webpack_require__(8);
 	__webpack_require__(9);
 	__webpack_require__(10);
 	__webpack_require__(11);
 	__webpack_require__(12);
 	__webpack_require__(13);
-
-	//route and main app scripts
 	__webpack_require__(14);
 	__webpack_require__(15);
+	__webpack_require__(16);
+	__webpack_require__(17);
+	__webpack_require__(18);
+	__webpack_require__(19);
+
+	//route and main app scripts
+	__webpack_require__(20);
+	__webpack_require__(21);
 
 
 /***/ },
@@ -81,21 +87,23 @@
 	    },
 	    templateUrl: '../../templates/components/activity-grid.html',
 	    controller: function($location) {
-	      this.imageURL = this.data.imageUrl || '../../img/slides/slide-4.jpg';
+	      this.activity = this.data._doc;
+	      this.imageURL = this.activity.imageUrl || '../../img/slides/slide-4.jpg';
 
 	      var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library', CRICKET: 'icon-cricket'};
+	      this.overlayIcon = iconsArray[this.activity.categoryID.categoryName.toUpperCase()];
+	      this.overlayName = this.activity.categoryID.categoryName;
+	      this.scheduleList = this.activity.schedule.split('|');
 
-	      this.overlayIcon = iconsArray[this.data.categoryID.categoryName.toUpperCase()];
-	      this.overlayName = this.data.categoryID.categoryName;
-	      this.scheduleList = this.data.schedule.split('|');
-
+	      //checking for activity currently open / closed.
+	      this.isActive = (this.data.activityStatus.toUpperCase() == 'CLOSED') ? true: false;
 	      this.ratings = [];
 	      let self = this;
-	      for(let i=0; i<this.data.ratings; i++) {
+	      for(let i=0; i<this.activity.ratings; i++) {
 	        self.ratings.push('icon-smile voted');
 	      }
 
-	      for(let i=0; i<(5-this.data.ratings); i++) {
+	      for(let i=0; i<(5-this.activity.ratings); i++) {
 	        self.ratings.push('icon-smile');
 	      }
 
@@ -121,19 +129,26 @@
 	    replace: true,
 	    templateUrl: '../../templates/components/popular-grid.html',
 	    controller: function($location) {
+	      //Icon mapper for category.
 	      let iconMapper = { MUSIC: 'icon-music-4', DANCE: 'icon_set_1_icon-30', EAT: 'icon_set_1_icon-14'};
 	      this.categoryIconClass = iconMapper[this.data.category.toUpperCase()];
+
+	      //computing ratings
 	      this.ratings = [];
 	      let self = this;
 	      for(let i=0; i<this.data.ratings; i++) {
 	        self.ratings.push('icon-smile voted');
 	      }
-
 	      for(let i=0; i<(5-this.data.ratings); i++) {
 	        self.ratings.push('icon-smile');
 	      }
-	      this.goTo = function(activityId) {
-	        $location.path('activity/' + activityId);
+
+	      /**
+	      * Function for redirecting to course details page
+	      * @method: goTo
+	      */
+	      this.goTo = function(courseId) {
+	        $location.path('course/' + courseId);
 	      }
 	    }
 	  });
@@ -185,6 +200,66 @@
 
 /***/ },
 /* 4 */
+/***/ function(module, exports) {
+
+	/**
+	* Component for upcoming grid.
+	*/
+
+	module.exports = (function() {
+	  var app = angular.module('app.upcoming-grid-component', []);
+
+	  app.component('upcomingGrid', {
+	    bindings: {
+	      data: '<'
+	    },
+	    templateUrl: '../../templates/components/upcoming-grid.html',
+	    controller: function($location) {
+	      //Icon mapper for category.
+	      let iconMapper = { MUSIC: 'icon-music-4', DANCE: 'icon_set_1_icon-30', EAT: 'icon_set_1_icon-14'};
+	      this.categoryIconClass = iconMapper[this.data.category.toUpperCase()];
+
+	      //formatting date for grid
+	      let date = new Date(this.data.schedule);
+	      this.scheduleDate = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' ' + (date.getHours() + 1) + ':' + date.getMinutes();
+
+	      /**
+	      * Function for redirecting to activity details page.
+	      * @method: goTo
+	      */
+	      this.goTo = function(activityId) {
+	        $location.path('activity/' + activityId);
+	      }
+	    }
+	  })
+	}());
+
+
+/***/ },
+/* 5 */
+/***/ function(module, exports) {
+
+	/*
+	* Component for booking grid with cancel and edit.
+	*/
+
+	module.exports = (function() {
+	  var app = angular.module('app.booking-grid-component', []);
+
+	  app.component('bookingGrid', {
+	    bindings: {
+	      data: '<'
+	    },
+	    templateUrl: '../../templates/components/booking-grid.html',
+	    controller: function() {
+
+	    }
+	  });
+	}());
+
+
+/***/ },
+/* 6 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -251,7 +326,7 @@
 
 
 /***/ },
-/* 5 */
+/* 7 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -270,7 +345,7 @@
 
 
 /***/ },
-/* 6 */
+/* 8 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -289,24 +364,42 @@
 	    }
 	  }]);
 	  app.controller('HomeCtrl', ['$scope', '$http', 'RestService', '$state', function($scope, $http, RestService, $state) {
-	    $http({method: 'GET', url: RestService.getRESTUrl() + 'getPopularActivites'})
+	    /**
+	    * HTTP get to get upcoming activites
+	    * @endpoint: getUpcomingActivites
+	    */
+	    $http({method: 'GET', url: RestService.getRESTUrl() + 'getUpcomingActivites'})
 	      .then(function(response) {
 	        if(response.data.status === 200 || response.data.success) {
-	          $scope.popularActivityList = response.data.activityList;
+	          $scope.upcomingActivities = response.data.activityList;
 	        }
 	      }, function(errorResponse) {
 	        console.log("Error response" + errorResponse);
 	      });
 
+	      /**
+	      * HTTP get to retrieve popular courses
+	      * @endpoint: getPopularCourses
+	      */
+	      $http({method: 'GET', url: RestService.getRESTUrl() + 'getPopularCourses'})
+	        .then(function(response) {
+	          if(response.data.status === 200 || response.data.success) {
+	            $scope.popularCourses = response.data.courseList;
+	          }
+	        }, function(errorResponse) {
+	          console.log('Error response while getting popular courses' + errorResponse);
+	        });
+
+	      //Indefinite fix for caurosel on the landing page.
 	      if(window.location.hash.length > 5 && $state.current.name === 'home' && $state.current.url === '/') {
-	       window.location.reload();
-	     }
+	         window.location.reload();
+	       }
 	  }]);
 	}());
 
 
 /***/ },
-/* 7 */
+/* 9 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -319,7 +412,7 @@
 
 
 /***/ },
-/* 8 */
+/* 10 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -390,13 +483,13 @@
 
 
 /***/ },
-/* 9 */
+/* 11 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
 	  var app = angular.module('app.single-activity', ['ui.router']);
 
-	  app.controller('singleActivityCtrl', ['$scope', '$http', '$state', '$stateParams', 'RestService', function($scope, $http, $state, $stateParams, RestService) {
+	  app.controller('singleActivityCtrl', ['$scope', '$http', '$state', '$stateParams', 'RestService', '$location', function($scope, $http, $state, $stateParams, RestService, $location) {
 	    var activityID = $stateParams.activityId;
 	    $http({method: 'GET', url: RestService.getRESTUrl() + '/getActivityById/' + activityID})
 	      .then(function(response) {
@@ -411,11 +504,11 @@
 	            $scope.ratings.push('icon-smile');
 	          }
 	          $scope.includedItems = $scope.activity.includes.split(',');
-	          $scope.schedules = $scope.activity.schedule.split('|');
 	          $scope.features = [];
 	          $scope.isParking = ($scope.activity.parking.length > 0) ? $scope.features.push({'iconClass': 'icon_set_1_icon-27', 'name': 'Parking'}) : false;
 	          $scope.isAudio = ($scope.activity.languages.length > 0) ? $scope.features.push({'iconClass': 'icon_set_1_icon-13', 'name': 'Accessibiliy'}): false;
 	          $scope.features.push({'iconClass': 'icon_set_1_icon-83', name: $scope.activity.duration});
+	          $scope.isBookingAvailable = (response.data.activityStatus.toUpperCase() == 'OPEN') ? true : false;
 	        }
 	      }, function(error) {
 	        console.log('Error while getting the activity details' + error);
@@ -451,12 +544,43 @@
 	          }
 	        }
 	      }
+
+	      /**
+	      * Function to book for activity.
+	      * @method: bookActivity
+	      * @method: addBookingForActivity
+	      */
+	      $scope.errorSubmit = false;
+	      $scope.bookActivity = function() {
+	        if($scope.adultCount == 0 && $scope.childrenCount == 0) {
+	          $scope.errorSubmit = true;
+	        } else {
+	          let payload = {
+	            emailAddress: $scope.emailAddress,
+	            firstName: $scope.firstName,
+	            lastName: $scope.lastName,
+	            telephone: $scope.telephone,
+	            activityID: $scope.activity.activityID,
+	            adultCount: $scope.adultCount,
+	            childrenCount: $scope.childrenCount
+	          };
+
+	          $http({method: 'POST', url: RestService.getRESTUrl() + 'addBookingActivityFromUser', data: payload})
+	            .then(function(response) {
+	              if(response.data.status === 200 || response.data.success) {
+	                $location.path('confirmation/' + response.data.booking);
+	              }
+	            }, function(errorResponse) {
+	              console.log('Error while submitting a booking : ' + errorResponse);
+	            })
+	        }
+	      }
 	  }]);
 	}());
 
 
 /***/ },
-/* 10 */
+/* 12 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -487,7 +611,7 @@
 
 
 /***/ },
-/* 11 */
+/* 13 */
 /***/ function(module, exports) {
 
 	/**
@@ -584,7 +708,7 @@
 
 
 /***/ },
-/* 12 */
+/* 14 */
 /***/ function(module, exports) {
 
 	/**
@@ -592,7 +716,7 @@
 	*/
 
 	module.exports = (function() {
-	  var app = angular.module('app.single-course-ctrl', ['ui.bootstrap']);
+	  var app = angular.module('app.single-course-ctrl', []);
 
 	  app.controller('singleCourseCtrl', ['$scope', '$http', '$state', '$stateParams', 'RestService', '$location', function($scope, $http, $state, $stateParams, RestService, $location) {
 	    let courseId = $stateParams.courseId;
@@ -676,7 +800,8 @@
 	          $http({method: 'POST', url: RestService.getRESTUrl() + 'addCourseBookingFromUser', data: payload})
 	            .then(function(response) {
 	              if(response.data.status == 200 && response.data.success) {
-	                $location.path('confirmation/' + response.data.course);
+	                debugger;
+	                $location.path('confirmation/' + response.data.booking);
 	              }
 	            }, function(errorResponse) {
 	              console.log('Error while making a booking');
@@ -688,7 +813,7 @@
 
 
 /***/ },
-/* 13 */
+/* 15 */
 /***/ function(module, exports) {
 
 	/**
@@ -724,7 +849,74 @@
 
 
 /***/ },
-/* 14 */
+/* 16 */
+/***/ function(module, exports) {
+
+	/**
+	* User Profile controller, where it gets the user details, gets the user bookings, and make password and email updates.
+	*/
+
+	module.exports = (function() {
+	  var app = angular.module('app.profile-controller', []);
+
+	  app.controller('profileCtrl', ['$scope', '$http', 'RestService', '$location', function($scope, $http, RestService, $location) {
+
+	  }]);
+	}());
+
+
+/***/ },
+/* 17 */
+/***/ function(module, exports) {
+
+	/*
+	* Controller for getting all the bookings for the registered user.
+	*/
+
+	module.exports = (function() {
+	  var app = angular.module('app.booking-profile-ctrl', []);
+	  app.controller('bookingCtrl', ['$scope', '$http', 'RestService', function($scope, $http, RestService) {
+
+	  }]);
+	}());
+
+
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	/*
+	* controller for user settings.
+	*/
+
+	module.exports = (function() {
+	  var app = angular.module('app.settings-ctrl', []);
+
+	  app.controller('settingsCtrl', ['$scope', '$http', 'RestService', function($scope, $http, RestService) {
+
+	  }]);
+	}());
+
+
+/***/ },
+/* 19 */
+/***/ function(module, exports) {
+
+	/*
+	* Controller for user profile page.
+	*/
+
+	module.exports = (function() {
+	  var app = angular.module('app.user-profile-ctrl', []);
+
+	  app.controller('userProfileCtrl', ['$scope', '$http', 'RestService', function($scope, $http, RestService) {
+
+	  }]);
+	}());
+
+
+/***/ },
+/* 20 */
 /***/ function(module, exports) {
 
 	module.exports = (function() {
@@ -795,6 +987,34 @@
 	          controller: 'confirmationCtrl',
 	          authenticate: false,
 	          show: false
+	        })
+	        .state('profile', {
+	          url: '/profile',
+	          templateUrl: 'templates/profile.html',
+	          controller: 'profileCtrl',
+	          authenticate: false,
+	          show: false
+	        })
+	        .state('profile.bookings', {
+	          url: '/bookings',
+	          templateUrl: 'templates/profile/booking.html',
+	          controller: 'bookingCtrl',
+	          authenticate: false,
+	          show: false
+	        })
+	        .state('profile.settings', {
+	          url: '/settings',
+	          templateUrl: 'templates/profile/settings.html',
+	          controller: 'settingsCtrl',
+	          authenticate: false,
+	          show: false
+	        })
+	        .state('profile.profile', {
+	          url: '/user-profile',
+	          templateUrl: 'templates/profile/user-profile.html',
+	          controller: 'userProfileCtrl',
+	          authenticate: false,
+	          show: false
 	        });
 	    });
 
@@ -815,13 +1035,15 @@
 
 
 /***/ },
-/* 15 */
+/* 21 */
 /***/ function(module, exports) {
 
 	(function() {
 	  angular.module('App', ['app.routes', 'app.auth-service', 'app.home-ctrl', 'app.register-ctrl', 'app.activities-ctrl'
-	  , 'app.activity-grid-component', 'app.single-activity', 'app.popular-grid-component', 'app.contact-ctrl',
-	  'app.rest-service', 'app.course-ctrl', 'app.course-grid-component', 'app.single-course-ctrl', 'app.confirmation-ctrl']);  
+	  , 'app.activity-grid-component', 'app.single-activity', 'app.popular-grid-component', 'app.contact-ctrl'
+	  , 'app.rest-service', 'app.course-ctrl', 'app.course-grid-component', 'app.single-course-ctrl', 'app.confirmation-ctrl'
+	  , 'app.upcoming-grid-component', 'app.profile-controller', 'app.booking-profile-ctrl', 'app.settings-ctrl'
+	  , 'app.user-profile-ctrl', 'app.booking-grid-component']);
 	}());
 
 

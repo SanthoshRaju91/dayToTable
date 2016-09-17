@@ -1,7 +1,7 @@
 module.exports = (function() {
   var app = angular.module('app.single-activity', ['ui.router']);
 
-  app.controller('singleActivityCtrl', ['$scope', '$http', '$state', '$stateParams', 'RestService', function($scope, $http, $state, $stateParams, RestService) {
+  app.controller('singleActivityCtrl', ['$scope', '$http', '$state', '$stateParams', 'RestService', '$location', function($scope, $http, $state, $stateParams, RestService, $location) {
     var activityID = $stateParams.activityId;
     $http({method: 'GET', url: RestService.getRESTUrl() + '/getActivityById/' + activityID})
       .then(function(response) {
@@ -16,11 +16,11 @@ module.exports = (function() {
             $scope.ratings.push('icon-smile');
           }
           $scope.includedItems = $scope.activity.includes.split(',');
-          $scope.schedules = $scope.activity.schedule.split('|');
           $scope.features = [];
           $scope.isParking = ($scope.activity.parking.length > 0) ? $scope.features.push({'iconClass': 'icon_set_1_icon-27', 'name': 'Parking'}) : false;
           $scope.isAudio = ($scope.activity.languages.length > 0) ? $scope.features.push({'iconClass': 'icon_set_1_icon-13', 'name': 'Accessibiliy'}): false;
           $scope.features.push({'iconClass': 'icon_set_1_icon-83', name: $scope.activity.duration});
+          $scope.isBookingAvailable = (response.data.activityStatus.toUpperCase() == 'OPEN') ? true : false;
         }
       }, function(error) {
         console.log('Error while getting the activity details' + error);
@@ -54,6 +54,37 @@ module.exports = (function() {
           if($scope.childrenCount > 0) {
             $scope.childrenCount--;
           }
+        }
+      }
+
+      /**
+      * Function to book for activity.
+      * @method: bookActivity
+      * @method: addBookingForActivity
+      */
+      $scope.errorSubmit = false;
+      $scope.bookActivity = function() {
+        if($scope.adultCount == 0 && $scope.childrenCount == 0) {
+          $scope.errorSubmit = true;
+        } else {
+          let payload = {
+            emailAddress: $scope.emailAddress,
+            firstName: $scope.firstName,
+            lastName: $scope.lastName,
+            telephone: $scope.telephone,
+            activityID: $scope.activity.activityID,
+            adultCount: $scope.adultCount,
+            childrenCount: $scope.childrenCount
+          };
+
+          $http({method: 'POST', url: RestService.getRESTUrl() + 'addBookingActivityFromUser', data: payload})
+            .then(function(response) {
+              if(response.data.status === 200 || response.data.success) {
+                $location.path('confirmation/' + response.data.booking);
+              }
+            }, function(errorResponse) {
+              console.log('Error while submitting a booking : ' + errorResponse);
+            })
         }
       }
   }]);

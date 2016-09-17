@@ -48,7 +48,7 @@ router.get('/getSortedActivitiesList/:type/:sort', activityController.getSortedA
 
 // Booking specific routes
 router.post('/addCourseBookingFromUser', bookingController.addCourseBookingFromUser);
-router.post('/addBookingFromUser', bookingController.addBookingFromUser);
+router.post('/addBookingActivityFromUser', bookingController.addBookingActivityFromUser);
 router.post('/cancelBooking', bookingController.cancelBooking);
 router.post('/getUserBookings', bookingController.getUserBookings);
 router.get('/getBookingById/:id', bookingController.getBookingById);
