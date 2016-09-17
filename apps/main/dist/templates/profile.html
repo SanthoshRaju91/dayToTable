@@ -1,0 +1,25 @@
+<section class="profile">
+  <section class="parallax-window" data-parallax="scroll" data-image-src="img/admin_top.jpg" data-natural-width="1400" data-natural-height="470">
+      <div class="parallax-content-1">
+          <div class="animated fadeInDown">
+          	<h1>Hello Clara!</h1>
+          	<p>This is your profile page, where you can view / edit / cancel your bookings and change settings of your profile.</p>
+          </div>
+      </div>
+  </section><!-- End section -->
+  <div class="margin_60 container profile-container-custom">
+    <div id="tabs" class="tabs">
+  	   <nav>
+    	    <ul class="nav nav-tabs">
+      			<li><a ui-sref="profile.bookings" class="active"><span>Bookings</span></a></li>
+      			<li><a ui-sref="profile.settings" class="icon-settings"><span>Settings</span></a></li>
+      			<li><a ui-sref="profile.profile" class="icon-profile"><span>Profile</span></a></li>
+    		  </ul>
+    	  </nav>
+    	</div><!-- End tabs -->
+      <div class="profile-container">
+        <ui-view></ui-view>
+      </div>
+    </div><!-- end container -->
+  </div>
+</section>

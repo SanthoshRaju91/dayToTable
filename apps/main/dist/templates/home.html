@@ -1,23 +1,32 @@
 <section class="home" ng-controller = "HomeCtrl">
+  <!-- Popular courses grid section -->
   <div class="container margin_60">
       <div class="main_title">
-          <h2>Our <span>Top</span> Activities / Courses</h2>
+          <h2>Our <span>Popular</span> Courses</h2>
       </div>
-
       <div class="row">
-        <popular-grid ng-repeat = "activity in popularActivityList track by $index" data="activity"></popular-grid>
+        <popular-grid ng-repeat = "course in popularCourses track by $index" data="course"></popular-grid>
       </div><!-- End row -->
   </div><!-- End container -->
 
+  <!-- Upcoming activites grid section-->
+  <div class="container margin_60">
+      <div class="main_title">
+          <h2><span>Upcoming</span> Activities</h2>
+      </div>
+      <div class="row">
+        <upcoming-grid ng-repeat="activity in upcomingActivities track by $index" data="activity"></upcoming-grid>
+      </div><!-- End row -->
+  </div><!-- End container -->
   <div class="white_bg">
       <div class="container margin_60">
-                   
+
 
           <div class="banner colored">
               <h4>Discover our Top Activites / Courses <span>from $34</span></h4>
               <div>
                 <a ui-sref="activities" class="btn_1 white" style="position:absolute; right:12em;">Activties</a>
-                <a href="single_tour.html" class="btn_1 white">Courses</a>
+                <a ui-sref="courses" class="btn_1 white">Courses</a>
               </div>
           </div>
           <div class="row">
