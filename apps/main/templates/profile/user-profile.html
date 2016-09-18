@@ -2,17 +2,38 @@
   <div class="row">
     <div class="col-md-6 col-sm-6">
       <h4>Your profile</h4>
-      <ul id="profile_summary">
-        <li>Username <span>info@clara.com</span></li>
-        <li>First name <span>Clara</span></li>
-        <li>Last name <span>Tomson</span></li>
-        <li>Phone number <span>+00 032 42366</span></li>
-        <li>Date of birth <span>13/04/1975</span></li>
-        <li>Street address <span>24 Rue de Rivoli</span></li>
-        <li>Town/City <span>Paris</span></li>
-        <li>Zip code <span>002843</span></li>
-        <li>Country <span>France</span></li>
-      </ul>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td><b>Email Address</b></td>
+            <td></td>
+            <td>{{emailAddress}}</td>
+          </tr>
+          <tr>
+            <td><b>First Name</b></td>
+            <td></td>
+            <td>{{firstName}}</td>
+          </tr>
+          <tr>
+            <td><b>Last Name</b></td>
+            <td></td>
+            <td>{{lastName}}</td>
+          </tr>
+          <tr>
+            <td><b>Contact</b></td>
+            <td></td>
+            <td>{{contact}}</td>
+          </tr>
+          <tr>
+            <td><b>Gender</b></td>
+            <td></td>
+            <td>{{gender}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6 col-sm-6 avatar">
+      <img src="" width="100" height="100"/>
     </div>
   </div><!-- End row -->
 
@@ -43,12 +64,7 @@
         <input class="form-control" name="email_2" id="email_2" type="text">
       </div>
     </div>
-    <div class="col-md-6 col-sm-6">
-      <div class="form-group">
-        <label>Date of birth <small>(dd/mm/yyyy)</small></label>
-        <input class="form-control" name="email" id="email" type="text">
-      </div>
-    </div>
   </div><!-- End row -->
-<button type="submit" class="btn_1 green">Update Profile</button>
+
+  <button type="submit" class="btn_1 green">Update Profile</button>
 </section>

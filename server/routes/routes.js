@@ -2,7 +2,10 @@
 * Contains all the routes for the project.
 */
 var express = require('express');
+var jwt =  require('express-jwt');
+var config = require('../config/');
 var router = express.Router();
+
 
 var courseController = require('../controllers/course-controller');
 var userController = require('../controllers/user-controller');
@@ -18,6 +21,7 @@ router.post('/resetPassword', userController.resetPassword);
 router.get('/getAdminUserList', userController.getAdminUserList);
 router.post('/updateToAdmin', userController.updateToAdmin);
 router.post('/removeUser', userController.removeUser);
+router.post('/login', userController.authenticateUser);
 
 // Category specific routes
 router.post('/addCategory', categoryController.addCategory);
@@ -50,8 +54,9 @@ router.get('/getSortedActivitiesList/:type/:sort', activityController.getSortedA
 router.post('/addCourseBookingFromUser', bookingController.addCourseBookingFromUser);
 router.post('/addBookingActivityFromUser', bookingController.addBookingActivityFromUser);
 router.post('/cancelBooking', bookingController.cancelBooking);
-router.post('/getUserBookings', bookingController.getUserBookings);
+router.post('/getUserBookings', jwt({secret: config.session}), bookingController.getUserBookings);
 router.get('/getBookingById/:id', bookingController.getBookingById);
+router.post('/sortBookingList/:field/:type', bookingController.sortBookingList);
 
 
 //Query / request routes

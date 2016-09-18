@@ -41,8 +41,13 @@ module.exports = {
     var user = new User({emailAddress: req.body.emailAddress, password: req.body.password, firstName: req.body.firstName, lastName: req.body.lastName, contact: req.body.contact, gender: req.body.gender });
     user.save(function(err) {
       if(err) {
-        logger.error('registerUser: Error in registering the user: ' + err);
-        res.json({status: 500, success: false, message: 'Error in registering the user'});
+        if(err.code) {
+          logger.error('registerUser: User already registered');
+          res.json({ status: 500, success: false, message: 'User already registered, please log in.'});
+        } else {
+          logger.error('registerUser: Error in registering the user: ' + err);
+          res.json({status: 500, success: false, message: 'Error in registering the user'});
+        }
       } else {
         logger.info('registerUser: User registered successfully');
         sendMail('register', req.body.emailAddress);
@@ -111,7 +116,8 @@ module.exports = {
   * @method: authenticateUser
   */
   authenticateUser: function(req, res) {
-    User.findOne({ emailAddress: req.body.emailAddress, status: 'A'}, function(err, user) {
+    console.log(req.body.emailAddress);
+    User.findOne({ emailAddress: req.body.emailAddress}, function(err, user) {
       if(err) {
         logger.error('authenticateUser: Could not fetch the user details: ' + err);
         res.json({status: 500, success: false, message: 'Error while authicating user'});
@@ -126,7 +132,7 @@ module.exports = {
           } else {
             logger.info('authenticateUser: User logged in successfully');
             var token = jwt.sign(user, config.session, {expiresIn: 6000});
-            res.json({ status: 200, success: true, message: 'User logged in!',  token: token, user: user});
+            res.json({ status: 200, success: true, message: 'User logged in!',  token: token, role: user.role, user: user});
           }
         });
       }

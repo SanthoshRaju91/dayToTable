@@ -1,3 +1,6 @@
+/*
+* Rest service generic.
+*/
 module.exports = (function() {
   var app = angular.module('app.rest-service', []);
 

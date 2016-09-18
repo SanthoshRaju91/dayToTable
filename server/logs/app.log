@@ -3025,3 +3025,769 @@
 [2016-09-17 10:28:28.028] [INFO] appLog - getPopularCourses: Popular courses fetched
 [2016-09-17 10:28:28.512] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
 [2016-09-17 10:28:28.597] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 23:07:34.017] [INFO] appLog - Server listening on port: 3000
+[2016-09-17 23:07:44.192] [INFO] appLog - Server listening on port: 3000
+[2016-09-17 23:07:46.521] [INFO] appLog - Connected to MongoDB
+[2016-09-17 23:07:51.993] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 23:07:52.022] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-17 23:07:52.317] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-17 23:07:52.344] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 10:06:36.604] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:06:38.900] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:06:45.688] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:06:47.764] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:06:58.394] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 10:06:58.693] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 10:06:58.701] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 10:06:59.249] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 10:18:33.377] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 10:18:33.686] [INFO] appLog - Course list computed
+[2016-09-18 10:21:01.212] [INFO] appLog - getUserList: user details fetched
+[2016-09-18 10:24:22.444] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:24:24.314] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:27:11.569] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:27:13.799] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:27:17.697] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 10:33:56.805] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:33:58.530] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:36:09.644] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:36:11.896] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:36:57.806] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:37:09.416] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:37:11.251] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:37:29.482] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:37:31.352] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:42:29.743] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:42:31.800] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:43:17.055] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:43:23.066] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:43:24.947] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:43:28.729] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-09-18 10:44:11.985] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:44:13.955] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:44:31.113] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:44:32.791] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:44:35.826] [INFO] appLog - getUserBookings: Bookings fetched for the user
+[2016-09-18 10:44:55.296] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:44:57.042] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:45:42.475] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:45:44.063] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:46:34.282] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:46:36.932] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:46:39.688] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 10:50:57.011] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:50:58.915] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:51:04.298] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:51:06.020] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:51:18.437] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 10:51:49.214] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:51:53.021] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:52:08.084] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:52:10.708] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:52:55.532] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:52:57.444] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:58:51.983] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:58:54.639] [INFO] appLog - Connected to MongoDB
+[2016-09-18 10:59:14.514] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 10:59:16.470] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:00:02.877] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:00:04.738] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:00:28.388] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:00:31.310] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:01:00.753] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:01:17.175] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:02:41.201] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:03:08.083] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:03:13.266] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:25:02.631] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:25:04.776] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:25:25.183] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:25:26.981] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:26:22.415] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:26:24.565] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:27:23.434] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:27:25.358] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:39:07.906] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:39:10.056] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:39:12.908] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 11:44:33.829] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:44:36.059] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:45:01.058] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:45:02.807] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:46:13.199] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:46:15.281] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:47:34.432] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:47:37.108] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:47:47.333] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 11:47:49.049] [INFO] appLog - Connected to MongoDB
+[2016-09-18 11:50:44.890] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 11:50:45.310] [INFO] appLog - Course list computed
+[2016-09-18 11:50:55.003] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-18 11:51:14.794] [INFO] appLog - addCourseBookingFromUser: Course booking successful
+[2016-09-18 11:51:16.181] [INFO] appLog - getBookingById: Course fetched for the booking reference
+[2016-09-18 11:51:30.358] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 11:53:40.703] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:00:00.699] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:00:32.780] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 12:00:33.164] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 12:00:33.188] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 12:00:33.756] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 12:00:41.274] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:01:14.219] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:01:42.146] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:02:08.284] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:02:31.424] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:06:18.232] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:06:37.075] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:06:49.860] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:07:05.437] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:07:16.808] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:10:17.537] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:10:58.390] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:11:24.602] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:12:15.281] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:12:54.308] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:13:04.338] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 12:13:04.646] [INFO] appLog - Course list computed
+[2016-09-18 12:13:12.017] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 12:13:12.341] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-18 12:13:16.328] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-18 12:13:20.618] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 12:13:20.934] [INFO] appLog - Course list computed
+[2016-09-18 12:13:24.818] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-18 12:13:41.302] [INFO] appLog - addCourseBookingFromUser: Course booking successful
+[2016-09-18 12:13:42.745] [INFO] appLog - getBookingById: Course fetched for the booking reference
+[2016-09-18 12:13:49.392] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:15:42.181] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 12:15:43.829] [INFO] appLog - Connected to MongoDB
+[2016-09-18 12:15:51.976] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:21:49.934] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:22:32.338] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:22:57.319] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:23:01.324] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-18 12:23:26.202] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-18 12:23:29.263] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:24:50.162] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:27:03.088] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:28:21.811] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:29:39.583] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:30:49.062] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:31:07.591] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:31:17.934] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:31:37.289] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:31:58.589] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:32:08.011] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:32:26.745] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:43:15.530] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:44:43.256] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:47:18.673] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 12:48:52.985] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 13:16:21.708] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 13:20:56.952] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 13:22:28.599] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 13:23:47.646] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 13:24:19.972] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-18 13:24:25.024] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:10:27.404] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 18:10:31.951] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 18:10:34.176] [INFO] appLog - Connected to MongoDB
+[2016-09-18 18:10:49.022] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 18:10:49.458] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 18:10:49.466] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 18:10:50.054] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 18:11:53.645] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:17:17.218] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:17:20.383] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:17:53.870] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:18:21.108] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:23:02.909] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:23:34.547] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:23:39.684] [INFO] appLog - cancelBooking: Record cancelled successfully
+[2016-09-18 18:23:40.281] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:24:01.170] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:24:53.426] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:25:28.721] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:26:29.748] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:26:54.536] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:27:23.302] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:28:00.272] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:28:20.645] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:29:01.563] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:29:55.366] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:30:11.721] [INFO] appLog - cancelBooking: Record cancelled successfully
+[2016-09-18 18:30:12.360] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:30:18.716] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:32:47.391] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:34:16.582] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:34:34.809] [INFO] appLog - cancelBooking: Record cancelled successfully
+[2016-09-18 18:34:35.521] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:36:58.163] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:40:10.158] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:48:05.330] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 18:48:07.434] [INFO] appLog - Connected to MongoDB
+[2016-09-18 18:50:17.498] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 18:50:19.367] [INFO] appLog - Connected to MongoDB
+[2016-09-18 18:53:38.133] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 18:53:40.459] [INFO] appLog - Connected to MongoDB
+[2016-09-18 18:55:33.521] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 18:55:35.541] [INFO] appLog - Connected to MongoDB
+[2016-09-18 18:56:21.744] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 18:56:23.688] [INFO] appLog - Connected to MongoDB
+[2016-09-18 18:56:35.543] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 18:56:38.091] [INFO] appLog - Connected to MongoDB
+[2016-09-18 18:58:11.790] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:58:16.179] [ERROR] appLog - sortBookingList: No User found
+[2016-09-18 18:58:33.178] [ERROR] appLog - sortBookingList: No User found
+[2016-09-18 18:59:31.488] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 18:59:33.316] [INFO] appLog - Connected to MongoDB
+[2016-09-18 18:59:39.848] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 18:59:54.095] [INFO] appLog - sortBookingList: User bookings in sorted fetched
+[2016-09-18 19:00:09.643] [INFO] appLog - sortBookingList: User bookings in sorted fetched
+[2016-09-18 19:00:31.553] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 19:00:34.878] [INFO] appLog - sortBookingList: User bookings in sorted fetched
+[2016-09-18 19:00:37.393] [INFO] appLog - sortBookingList: User bookings in sorted fetched
+[2016-09-18 19:00:44.863] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 19:01:29.611] [INFO] appLog - sortBookingList: User bookings in sorted fetched
+[2016-09-18 19:04:01.165] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 19:04:30.444] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 19:04:43.810] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 19:05:22.566] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 19:05:31.269] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 19:05:41.412] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 19:06:07.621] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 19:09:21.469] [INFO] appLog - getUserList: user details fetched
+[2016-09-18 19:10:16.551] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 19:14:04.610] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 19:14:06.945] [INFO] appLog - Connected to MongoDB
+[2016-09-18 21:10:09.361] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 21:10:22.899] [INFO] appLog - sortBookingList: User bookings in sorted fetched
+[2016-09-18 21:16:33.359] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 21:16:35.208] [INFO] appLog - Connected to MongoDB
+[2016-09-18 21:16:45.758] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 21:16:47.822] [INFO] appLog - Connected to MongoDB
+[2016-09-18 21:20:56.066] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 21:20:58.210] [INFO] appLog - Connected to MongoDB
+[2016-09-18 21:23:06.416] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 21:23:08.544] [INFO] appLog - Connected to MongoDB
+[2016-09-18 21:28:10.268] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:28:10.675] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:28:10.735] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:28:11.608] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:28:17.713] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:28:17.763] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:28:18.055] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:31:32.906] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:31:32.928] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:31:33.316] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:31:33.357] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:34:34.371] [ERROR] appLog - registerUser: User already registered
+[2016-09-18 21:37:09.597] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 21:37:11.466] [INFO] appLog - Connected to MongoDB
+[2016-09-18 21:37:17.478] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:37:17.513] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:37:17.829] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:37:17.886] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:37:33.013] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 21:37:33.374] [INFO] appLog - Course list computed
+[2016-09-18 21:37:38.437] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 21:37:38.872] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-18 21:37:44.134] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-09-18 21:45:11.929] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 21:45:13.883] [INFO] appLog - Connected to MongoDB
+[2016-09-18 21:47:15.477] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:47:15.805] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:47:15.839] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:47:16.431] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:47:36.788] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:47:36.843] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:47:37.101] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:47:37.178] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:48:58.881] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 21:49:05.474] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 21:49:07.538] [INFO] appLog - Connected to MongoDB
+[2016-09-18 21:49:13.434] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:49:13.512] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:49:13.775] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:49:13.784] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:49:37.555] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-09-18 21:50:29.026] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-09-18 21:51:14.392] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 21:51:16.615] [INFO] appLog - Connected to MongoDB
+[2016-09-18 21:51:19.699] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-09-18 21:52:05.067] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 21:52:06.882] [INFO] appLog - Connected to MongoDB
+[2016-09-18 21:52:13.075] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-09-18 21:52:40.725] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 21:52:42.742] [INFO] appLog - Connected to MongoDB
+[2016-09-18 21:52:45.630] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-09-18 21:53:38.963] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:53:38.979] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:53:39.342] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:53:39.388] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:54:38.680] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:54:38.695] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:54:38.991] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:54:39.156] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:55:02.946] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-09-18 21:58:07.569] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:58:07.620] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:58:07.959] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:58:07.993] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:58:38.804] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:58:38.837] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:58:39.126] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:58:39.258] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:58:50.655] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-09-18 21:59:07.471] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:59:07.483] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:59:07.797] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:59:07.873] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:59:31.867] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:59:31.906] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 21:59:32.096] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:59:32.130] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 21:59:54.759] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-09-18 22:00:23.627] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:00:23.655] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:00:23.889] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:00:23.959] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:00:40.563] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:00:40.569] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:01:49.953] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:01:50.020] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:01:50.314] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:01:50.776] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:02:09.061] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:02:09.062] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:02:17.793] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:02:18.065] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:02:18.108] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:02:18.660] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:03:02.869] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:03:02.923] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:03:03.200] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:03:03.239] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:03:23.426] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 22:06:39.845] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 22:06:47.567] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:06:47.858] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:06:47.913] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:06:49.403] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:06:49.697] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:06:49.722] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:06:51.806] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:06:51.905] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:06:52.114] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:06:52.181] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:07:06.159] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:07:06.163] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:08:42.254] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:08:42.523] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:08:42.603] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:08:43.169] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:09:01.540] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:09:01.541] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:10:21.088] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:10:21.180] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:10:21.436] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:10:22.166] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:10:38.031] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:10:38.032] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:10:51.419] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:10:51.649] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:10:51.793] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:10:52.222] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:13:26.090] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 22:13:28.487] [INFO] appLog - Connected to MongoDB
+[2016-09-18 22:13:36.392] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 22:13:38.548] [INFO] appLog - Connected to MongoDB
+[2016-09-18 22:14:09.267] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 22:14:11.367] [INFO] appLog - Connected to MongoDB
+[2016-09-18 22:15:19.245] [ERROR] appLog - getUserBookings: No User found
+[2016-09-18 22:15:50.201] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:15:50.218] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:15:50.584] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:15:54.418] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:16:13.493] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:16:13.494] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:16:17.529] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:16:17.804] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:16:17.975] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:16:18.654] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:16:48.255] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:16:48.271] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:16:48.686] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:16:50.167] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:17:19.550] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:17:19.552] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:17:28.622] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:17:28.952] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:17:28.975] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:17:29.682] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:18:36.417] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 22:18:36.756] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-18 22:18:49.396] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:18:49.671] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:18:49.687] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:18:50.372] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:18:56.858] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:18:57.184] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:18:57.188] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:18:57.877] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:19:25.901] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:19:25.903] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:19:34.294] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:19:34.559] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:19:34.637] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:19:35.258] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:20:02.649] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:20:02.742] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:20:03.130] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:20:03.137] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:20:16.455] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:20:16.457] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:20:24.956] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:20:25.230] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:20:25.348] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:20:26.072] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:21:51.872] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:21:51.931] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:21:52.202] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:22:02.414] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:22:08.177] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:22:08.179] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:22:51.406] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:22:51.622] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:22:51.774] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:22:52.228] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:23:19.118] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:23:19.413] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:23:19.806] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:23:21.295] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:26:01.235] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:26:01.237] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:26:20.425] [ERROR] appLog - getUserBookings: No User found
+[2016-09-18 22:26:31.039] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 22:27:34.381] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:27:34.413] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:27:34.680] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:27:34.769] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:27:47.332] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:27:47.334] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:29:19.460] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 22:29:21.362] [INFO] appLog - Connected to MongoDB
+[2016-09-18 22:29:25.192] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:29:25.492] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:29:25.551] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:29:26.117] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:29:32.042] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:29:32.090] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:29:32.294] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:29:32.390] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:29:43.766] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:29:43.768] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:31:09.704] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:31:09.979] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:31:09.992] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:31:10.546] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:31:21.753] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:31:22.042] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:31:22.077] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:31:22.578] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:31:29.071] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:31:29.111] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:31:29.366] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:31:29.413] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:31:51.618] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:31:51.678] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:31:51.949] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:31:52.019] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:32:08.362] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:32:08.363] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:35:28.364] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:35:28.653] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:35:28.659] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:35:29.267] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:35:35.641] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:35:35.684] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:35:35.917] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:35:35.970] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:35:53.953] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:35:53.955] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:36:12.056] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:36:12.352] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:36:12.367] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:36:12.964] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:36:57.286] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:36:57.335] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:36:57.580] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:36:57.609] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:37:04.576] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:37:04.578] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:42:17.856] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:42:18.067] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:42:18.208] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:42:18.608] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:42:27.080] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:42:27.231] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:42:27.513] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:42:27.604] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:42:42.133] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:42:42.134] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:42:53.409] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 22:44:47.157] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 22:45:00.077] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 22:46:23.491] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 22:46:34.273] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:46:34.544] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:46:34.556] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:46:35.107] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:47:02.068] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:47:02.326] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:47:02.338] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:47:02.875] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:47:16.265] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:47:16.266] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:47:19.583] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 22:47:22.346] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:47:22.632] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:47:22.674] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:47:23.257] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:47:47.015] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:47:47.289] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:47:47.293] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:47:47.840] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:48:46.346] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:48:46.347] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:48:57.484] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 22:50:20.999] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 22:50:41.499] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:50:41.558] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:50:41.879] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:50:43.053] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:50:43.328] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:50:43.469] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:50:44.169] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:51:48.090] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:51:48.091] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:51:50.178] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:51:50.536] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:51:59.935] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:52:00.217] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:52:00.250] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:52:00.772] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:52:23.847] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:52:24.130] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:52:24.167] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:52:24.770] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:52:44.462] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 22:52:44.462] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 22:52:46.791] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:52:47.097] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:52:47.104] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:52:47.678] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:52:49.943] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:52:50.207] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:52:50.216] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:52:50.753] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:52:57.774] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 22:53:01.501] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:53:01.797] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 22:53:01.801] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 22:53:02.330] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:05:19.764] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:05:20.044] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:05:20.064] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:05:20.619] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:05:30.771] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:05:30.784] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:05:31.041] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:05:31.078] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:05:37.236] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:05:37.547] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:05:37.556] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:05:38.123] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:05:47.685] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:05:47.949] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:05:47.991] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:05:48.853] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:06:40.005] [INFO] appLog - Server listening on port: 3000
+[2016-09-18 23:06:41.959] [INFO] appLog - Connected to MongoDB
+[2016-09-18 23:07:16.230] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:07:17.285] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:07:22.023] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:07:23.826] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:10:30.100] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:10:30.172] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:10:30.383] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:10:30.395] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:10:42.358] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:10:42.645] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:10:42.651] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:10:43.213] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:10:51.995] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:10:52.015] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:10:52.307] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:10:52.458] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:11:06.859] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:11:06.891] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:11:07.118] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:11:07.162] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:11:13.948] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:11:14.239] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:11:14.244] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:11:14.835] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:13:46.488] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:13:46.602] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:13:46.875] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:13:46.897] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:14:26.491] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:14:26.514] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:14:26.754] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:14:26.764] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:14:59.007] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:14:59.241] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:14:59.507] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:14:59.513] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:15:10.403] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:15:10.995] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:15:11.096] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:15:11.371] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:15:30.213] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:15:30.528] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-18 23:15:34.512] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:15:34.813] [INFO] appLog - Course list computed
+[2016-09-18 23:15:47.481] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:15:47.809] [INFO] appLog - Course list computed
+[2016-09-18 23:15:49.048] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:15:49.305] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-18 23:15:50.920] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:15:51.204] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:15:51.223] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:15:51.853] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:15:56.418] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 23:16:00.748] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:16:01.011] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:16:01.037] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:16:01.582] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:18:21.732] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:18:21.777] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:18:22.037] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:18:22.059] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:18:38.780] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-18 23:18:38.782] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-18 23:18:41.384] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 23:18:49.493] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-18 23:18:54.994] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:18:55.258] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:18:55.306] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:18:55.851] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:19:05.810] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:19:06.079] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-18 23:19:09.939] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:19:10.215] [INFO] appLog - Course list computed
+[2016-09-18 23:26:45.315] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:26:45.605] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-18 23:26:49.097] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:26:49.400] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:26:49.413] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:26:49.959] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:26:57.752] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:26:58.045] [INFO] appLog - Course list computed
+[2016-09-18 23:27:13.913] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:27:14.186] [INFO] appLog - Course list computed
+[2016-09-18 23:27:17.902] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-09-18 23:27:27.663] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:27:27.927] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:27:28.003] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:27:28.465] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:30:31.763] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:30:32.036] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:30:32.061] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:30:32.662] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:42:32.938] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:42:33.204] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:42:33.215] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:42:33.763] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:42:50.059] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:42:50.357] [INFO] appLog - Activity list computedSat Sep 17 2016 21:55:06 GMT+0530 (India Standard Time)
+[2016-09-18 23:42:53.117] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:42:53.383] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:42:53.454] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:42:53.992] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:43:38.772] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:43:38.801] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:43:39.019] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:43:39.069] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:43:56.838] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:43:57.087] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:43:57.107] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:43:57.610] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:44:41.604] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:44:41.666] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:44:41.890] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:44:41.936] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:44:47.500] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:44:47.782] [INFO] appLog - Course list computed
+[2016-09-18 23:45:32.318] [INFO] appLog - getCategoryList: category list fetched
+[2016-09-18 23:45:32.588] [INFO] appLog - Course list computed
+[2016-09-18 23:45:35.640] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:45:35.906] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:45:35.928] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:45:36.478] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:45:58.424] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:45:58.445] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:45:58.692] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:45:58.703] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:46:09.347] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:46:09.610] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:46:09.617] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:46:10.168] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:47:13.508] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:47:13.532] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:47:13.757] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:47:13.795] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:48:52.245] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:48:52.277] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:48:52.494] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:48:52.532] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:49:10.814] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:49:12.984] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:49:13.218] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:49:15.147] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:59:43.526] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:59:43.578] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-18 23:59:43.809] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-18 23:59:43.842] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:05:32.239] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:05:32.517] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:05:32.532] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:05:33.080] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:14:55.878] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-19 00:14:55.878] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-19 00:15:41.002] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-19 00:15:41.004] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-19 00:16:13.262] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-09-19 00:16:14.795] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-09-19 00:17:36.529] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-09-19 00:17:55.437] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-19 00:17:55.437] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-19 00:17:58.585] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-19 00:17:58.585] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-19 00:17:58.811] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-19 00:17:58.811] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-19 00:19:07.550] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:19:07.823] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:19:07.826] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:19:08.387] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:19:53.932] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-19 00:19:53.933] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-19 00:19:54.524] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:19:54.797] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:19:54.808] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:19:55.480] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:20:19.944] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:20:20.218] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:20:20.221] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:20:20.750] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:20:59.417] [INFO] appLog - getUserBookings: User bookings fetched

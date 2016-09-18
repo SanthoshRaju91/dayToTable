@@ -4,25 +4,19 @@
     <div class="row">
       <div class="col-md-3 col-sm-3 col-xs-6">
         <div class="styled-select-filters">
-          <select name="sort_type" id="sort_type">
-            <option value="" selected>Sort by type</option>
-            <option value="tours">Activities</option>
-            <option value="hotels">Courses</option>
+          <select name="sort_date" id="sort_date" ng-model="selectedDateSort" ng-change="sortList(selectedDateSort)" data-ng-options="item as item.name for item in dateSortList">
+            <option value="" selected>Sort by price</option>
           </select>
         </div>
       </div>
-      <div class="col-md-3 col-sm-3 col-xs-6">
-        <div class="styled-select-filters">
-          <select name="sort_date" id="sort_date">
-            <option value="" selected>Sort by date</option>
-            <option value="oldest">Oldest</option>
-            <option value="recent">Recent</option>
-          </select>
+      <div class="col-md-offset-6 col-md-3 col-sm-offset-6 col-sm-3 col-xs-offset-6 col-xs-6">
+        <div class="manage-button">
+          <button class="btn-3">Manage my bookings</button>
         </div>
       </div>
     </div>
   </div><!--end of sorting panel -->
   <div class="strip_booking" id="section-1">
-    <booking-grid></booking-grid>
+    <booking-grid ng-repeat="booking in bookingList track by $index" data="booking" cancel-booking="cancelBooking(bookingID)"></booking-grid>
   </div><!-- end of strip_booking -->
 </section>

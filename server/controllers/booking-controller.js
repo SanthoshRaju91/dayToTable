@@ -12,32 +12,6 @@ var User = require('../models/user-model');
 var Category = require('../models/category-model');
 var logger = require('../utils/logUtil').logger;
 
-function getBookingsList(bookings, callback) {
-  var bookingList = [];
-  _.forEach(bookings, function(value) {
-    if(value.bookingType == 'activity') {
-      Activity.findOne({activityID: parseInt(value.bookingReference)}, function(err, activity) {
-        if(err) {
-          logger.error('getBookingsList: Error in fetching bookings list: ' + err);
-          callback(false, null);
-        } else {
-          if(activity.scheduleType === 'onetime') {
-            activity['activityStatus'] = (moment() > moment.unix(value.schedule) && value.scheduleType === 'onetime') ? 'Closed' : 'Open';
-            activity.schedule = moment.unix(activity.schedule).format('YYYY-MM-DD HH:mm');
-            value.item = activity;
-            bookingList.push(value);
-          } else {
-            value.item = activity;
-            bookingList.push(value);
-          }
-          callback(true, bookingList);
-        }
-      });
-    } else if(value.type === 'course') {
-
-    }
-  });
-}
 
 module.exports = {
 
@@ -68,7 +42,7 @@ module.exports = {
                 res.json({ status: 404, success: false, message: 'No Course found for the course id'});
               } else {
                 var totalPrice = (req.body.adultCount + req.body.childrenCount) * course.price;
-                var courseBooking = new Booking({bookingType: 'recurring', reference: 'course', bookingReference: course.courseID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), specifiedDate: req.body.date, totalPrice: totalPrice,userID: userObject._id});
+                var courseBooking = new Booking({bookingType: 'recurring', reference: 'course', bookingReference: course.courseID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), specifiedDate: req.body.date, totalPrice: totalPrice, bookingTitle: course.courseName, imageUrl: course.imageUrl, userID: userObject._id});
                 courseBooking.save(function(err2, bookedCourse) {
                   if(err2) {
                     logger.error('addCourseBookingFromUser: Error while making a guest course booking' + err2);
@@ -92,7 +66,7 @@ module.exports = {
             res.json({ status: 404, success: false, message: 'No Course found for the course id'});
           } else {
             var totalPrice = (req.body.adultCount + req.body.childrenCount) * course.price;
-            var courseBooking = new Booking({bookingType: 'recurring', reference: 'course', bookingReference: course.courseID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), specifiedDate: req.body.date, totalPrice: totalPrice,userID: user._id});
+            var courseBooking = new Booking({bookingType: 'recurring', reference: 'course', bookingReference: course.courseID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), specifiedDate: req.body.date, totalPrice: totalPrice, bookingTitle: course.courseName, imageUrl: course.imageUrl, userID: user._id});
             courseBooking.save(function(err4, bookedCourse) {
               if(err4) {
                 logger.error('addCourseBookingFromUser: Error while making a course booking' + err4);
@@ -134,7 +108,7 @@ module.exports = {
                   res.json({ status: 404, success: false, message: 'Error while booking activity'});
                 } else {
                   var totalPrice = (req.body.adultCount + req.body.childrenCount) * activity.price;
-                  var activityBooking = new Booking({bookingType: 'onetime', reference: 'activity', bookingReference: activity.activityID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), totalPrice: totalPrice, userID: userObject._id});
+                  var activityBooking = new Booking({bookingType: 'onetime', reference: 'activity', bookingReference: activity.activityID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), totalPrice: totalPrice, bookingTitle:  activity.activityName, imageUrl: activity.imageUrl, userID: userObject._id});
                   activityBooking.save(function(err3, bookedActivity) {
                     if(err3) {
                       logger.error('addBookingActivityFromUser: Error while booking activity in new user flow: ' + err3);
@@ -158,7 +132,7 @@ module.exports = {
               res.json({ status: 404, success: false, message: 'Error while booking activity'});
             } else {
               var totalPrice = (req.body.adultCount + req.body.childrenCount) * activity.price;
-              var activityBooking = new Booking({bookingType: 'onetime', reference: 'activity', bookingReference: activity.activityID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), totalPrice: totalPrice, userID: user._id});
+              var activityBooking = new Booking({bookingType: 'onetime', reference: 'activity', bookingReference: activity.activityID, adultCount: req.body.adultCount, childrenCount: req.body.childrenCount, count: (parseInt(req.body.adultCount) + parseInt(req.body.childrenCount)), totalPrice: totalPrice, bookingTitle:  activity.activityName, imageUrl: activity.imageUrl, userID: user._id});
               activityBooking.save(function(err5, bookedActivity) {
                 if(err5) {
                   logger.error('addBookingActivityFromUser: Error while booking activity in registered user flow: ' + err5);
@@ -240,7 +214,7 @@ module.exports = {
         logger.error('getUserBookings: No User found');
         res.json({ status: 404, success: false, message: 'Error in fetching the bookings for user'});
       } else {
-        Booking.find({userID: user._id}, function(err1, bookings) {
+        Booking.find({userID: user._id}).sort('createDate').exec(function(err1, bookings) {
           if(err1) {
             logger.error('getUserBookings: Error in fetching the bookings for user: ' + err);
             res.json({ status: 500, success: false, message: 'Error in fetching the bookings for user'});
@@ -248,22 +222,38 @@ module.exports = {
             logger.error('getUserBookings: No Bookings found for the user');
             res.json({ status: 404, success: false, message: 'No bookings found for user'});
           } else {
-            getBookingsList(bookings, function(status, bookingList) {
-              if(status) {
-                var responseArray = [];
-                _.forEach(bookingList, function(value) {
-                  var obj = {};
-                  obj.booking = value;
-                  obj.item = value.item;
-                  responseArray.push(obj);
-                });
-                logger.info('getUserBookings: Bookings fetched for the user');
-                res.json({ status: 200, success: true, bookingsList: responseArray});
-              } else {
-                logger.info('getUserBookings: Error in fetching the booking details');
-                res.json({ status: 500, success: false, message: 'Error in fetching the bookings details'});
-              }
-            });
+            logger.info('getUserBookings: User bookings fetched');
+            res.json({ status: 200, success: true, bookingList: bookings});
+          }
+        });
+      }
+    });
+  },
+
+  /**
+  * Function to sort the booking list based on field and type
+  * @method: sortBookingList
+  */
+  sortBookingList: function(req, res) {
+    var sort = (req.params.type == 'asc') ? req.params.field : '-' + req.params.field;
+    User.findOne({userID: req.body.userID}, function(err, user) {
+      if(err) {
+        logger.error('sortBookingList: Error in fetching the bookings for user: ' + err);
+        res.json({ status: 500, success: false, message: 'Error in fetching the bookings for user'});
+      } else if(!user) {
+        logger.error('sortBookingList: No User found');
+        res.json({ status: 404, success: false, message: 'Error in fetching the bookings for user'});
+      } else {
+        Booking.find({userID: user._id}).sort(sort).exec(function(err1, bookings) {
+          if(err1) {
+            logger.error('sortBookingList: Error in fetching the bookings for user: ' + err);
+            res.json({ status: 500, success: false, message: 'Error in fetching the bookings for user'});
+          } else if(!bookings) {
+            logger.error('sortBookingList: No Bookings found for the user');
+            res.json({ status: 404, success: false, message: 'No bookings found for user'});
+          } else {
+            logger.info('sortBookingList: User bookings in sorted fetched');
+            res.json({ status: 200, success: true, bookingList: bookings});
           }
         });
       }

@@ -9,97 +9,93 @@ module.exports = (function() {
           url: '/',
           templateUrl: 'templates/home.html',
           controller: 'HomeCtrl',
-          authenticate: false,
-          show: true
+          authenticate: false
         })
         .state('register', {
           url: '/register',
           templateUrl: 'templates/register.html',
           controller: 'RegisterCtrl',
-          authenticate: false,
-          show: false
+          authenticate: false
         })
         .state('activities', {
           url: '/activity-list',
           templateUrl: 'templates/activity-list.html',
           controller: 'ActivtiesCtrl',
-          authenticate: false,
-          show: false
+          authenticate: false
         }).
         state('activity', {
           url: '/activity/:activityId',
           templateUrl: 'templates/single-activity.html',
           controller: 'singleActivityCtrl',
-          authenticate: false,
-          show: false
+          authenticate: false
         })
         .state('contact', {
           url: '/contact',
           templateUrl: 'templates/contact.html',
           controller: 'contactCtrl',
-          authenticate: false,
-          show: false
+          authenticate: false
         })
         .state('about', {
           url: '/about',
           templateUrl: 'templates/about.html',
-          authenticate: false,
-          show: false
+          authenticate: false
         })
         .state('courses', {
           url: '/courses',
           templateUrl: 'templates/courses.html',
           controller: 'CoursesCtrl',
-          authenticate: false,
-          show: false
+          authenticate: false
         })
         .state('course', {
           url: '/course/:courseId',
           templateUrl: 'templates/single-course.html',
           controller: 'singleCourseCtrl',
-          authenticate: false,
-          show: false
+          authenticate: false
         })
         .state('confirmation', {
           url: '/confirmation/:id',
           templateUrl: 'templates/confirmation.html',
           controller: 'confirmationCtrl',
-          authenticate: false,
-          show: false
+          authenticate: false
         })
         .state('profile', {
+          abstract: true,
           url: '/profile',
           templateUrl: 'templates/profile.html',
           controller: 'profileCtrl',
-          authenticate: false,
-          show: false
+          authenticate: true
         })
         .state('profile.bookings', {
           url: '/bookings',
           templateUrl: 'templates/profile/booking.html',
           controller: 'bookingCtrl',
-          authenticate: false,
-          show: false
+          authenticate: true
         })
         .state('profile.settings', {
           url: '/settings',
           templateUrl: 'templates/profile/settings.html',
           controller: 'settingsCtrl',
-          authenticate: false,
-          show: false
+          authenticate: true
         })
         .state('profile.profile', {
           url: '/user-profile',
           templateUrl: 'templates/profile/user-profile.html',
           controller: 'userProfileCtrl',
-          authenticate: false,
-          show: false
+          authenticate: true
+        })
+        .state('coming',{
+          url: '/coming',
+          templateUrl: 'templates/coming-soon.html',
+          controller: 'comingSoonCtrl',
+          authenticate: true
+        })
+        .state('login', {
+          url: '/login',
+          templateUrl: 'templates/login.html',
+          controller: 'loginCtrl',
+          authenticate: false
         });
     });
-
-    app.config(function($httpProvider) {
-      $httpProvider.interceptors.push('AuthInterceptor');
-    })
 
     app.run(['$rootScope', '$state', '$window', 'AuthService', '$window', function($rootScope, $state, $window, AuthService, $window) {
       $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {

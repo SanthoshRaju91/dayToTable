@@ -85,7 +85,7 @@
                             <div class="dropdown dropdown-access">
                                 <a class="dropdown-toggle" data-toggle="dropdown" id="access_link">Sign in</a>
                                 <div class="dropdown-menu">
-                                    <div class="row">
+                                    <!-- <div class="row">
                                         <div class="col-md-6 col-sm-6 col-xs-6">
                                             <a href="#" class="bt_facebook">
                                                 <i class="icon-facebook"></i>Facebook </a>
@@ -98,21 +98,27 @@
                                     <div class="login-or">
                                         <hr class="hr-or">
                                         <span class="span-or">or</span>
+                                    </div> -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputUsernameEmail" placeholder="Email" ng-model="emailAddress" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="inputUsernameEmail" placeholder="Email" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="password" required>
                                     </div>
                                     <a id="forgot_pw" href="#">Forgot password?</a>
-                                    <input type="submit" name="Sign_in" value="Sign in" id="Sign_in" class="button_drop" ng-click="login()">
+                                    <input type="submit" name="Sign_in" value="Sign in" id="Sign_in" class="button_drop" ng-click="login(emailAddress, password)">
                                     <input type="submit" name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline" ng-click="register()">
                                 </div>
                             </div><!-- End Dropdown access ng-if="isAuthenticated" -->
                           </li>
-                          <li>
-                            <a ui-sref="profile">Profile</a>
+                          <li ng-if="isAuthenticated">
+                            <a>{{fullName}}</a>
+                          </li>
+                          <li ng-if="isAuthenticated">
+                            <a ui-sref="profile.bookings">Profile</a>
+                          </li>
+                          <li ng-if="isAuthenticated">
+                            <a ng-click="logout()" class="btn-3">Logout</a>
                           </li>
                         </ul>
                     </div>
@@ -143,13 +149,13 @@
                                 <a href="javascript:void(0);" class="show-submenu">Activites <i class="icon-down-open-mini"></i></a>
                                 <ul>
                                     <li><a ui-sref="activities">View all activites</a></li>
-                                    <li><a href="all_tours_grid.html">Search for an activity</a></li>
+                                    <li><a ui-sref="coming">Search for an activity</a></li>
                                 </ul>
                             </li>
                              <li class="submenu">
                                 <a href="javascript:void(0);" class="show-submenu">Courses <i class="icon-down-open-mini"></i></a><ul>
                                     <li><a ui-sref="courses">View all courses</a></li>
-                                    <li><a href="all_hotels_grid.html">Search for desired course</a></li>
+                                    <li><a ui-sref="coming">Search for desired course</a></li>
                                 </ul>
                             </li>
                             <li class="submenu">
@@ -183,73 +189,6 @@
             </div>
         </div><!-- container -->
     </header><!-- End Header -->
-
-    <!-- SLIDER -->
-    <div class="tp-banner-container" ng-if="main">
-        <div class="tp-banner">
-          <ul>
-            <!-- SLIDE  -->
-            <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Intro Slide">
-                <!-- MAIN IMAGE -->
-                <img src="img/slides/slide_1.jpg" alt="slidebg1" data-lazyload="img/slides/slide_1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                <!-- LAYER NR. 1 -->
-                <div class="tp-caption white_heavy_40 customin customout text-center text-uppercase" data-x="center" data-y="center" data-hoffset="0" data-voffset="-20" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="1700" data-easing="Back.easeInOut" data-endspeed="300" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
-                  Fun filled activities / Best instructed courses
-                </div>
-                <!-- LAYER NR. 3 -->
-                <div class="tp-caption customin tp-resizeme rs-parallaxlevel-0" data-x="center" data-y="center" data-hoffset="0" data-voffset="70" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="2900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-linktoslide="next" style="z-index: 12;">
-                  <a ui-sref="activities" class="button_intro">View Activities</a>
-                  <a href='single_tour.html' class=" button_intro outline">View Courses</a>
-                </div>
-            </li>
-             <!-- SLIDE  -->
-            <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Intro Slide">
-                <!-- MAIN IMAGE -->
-                <img src="img/slides/slide_2.jpg" alt="slidebg1" data-lazyload="img/slides/slide_2.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                <!-- LAYER NR. 1 -->
-                <div class="tp-caption white_heavy_40 customin customout text-center text-uppercase" data-x="center" data-y="center" data-hoffset="0" data-voffset="-20" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="1700" data-easing="Back.easeInOut" data-endspeed="300" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
-                  Get the best of instructors for music.
-                </div>
-                <!-- LAYER NR. 3 -->
-                <div class="tp-caption customin tp-resizeme rs-parallaxlevel-0" data-x="center" data-y="center" data-hoffset="0" data-voffset="70" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="2900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-linktoslide="next" style="z-index: 12;">
-                  <a href='all_tour_list.html' class="button_intro">View courses</a>
-                </div>
-            </li>
-
-            <!-- SLIDE  -->
-            <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Intro Slide">
-                <!-- MAIN IMAGE -->
-                <img src="img/slides/slide_3.jpg" alt="slidebg1" data-lazyload="img/slides/slide_3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                <!-- LAYER NR. 1 -->
-                <div class="tp-caption white_heavy_40 customin customout text-center text-uppercase" data-x="center" data-y="center" data-hoffset="0" data-voffset="-20" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="1700" data-easing="Back.easeInOut" data-endspeed="300" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
-                  Discover fantastic places with fun activities
-                </div>
-                <!-- LAYER NR. 3 -->
-                <div class="tp-caption customin tp-resizeme rs-parallaxlevel-0" data-x="center" data-y="center" data-hoffset="0" data-voffset="70" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="2900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-linktoslide="next" style="z-index: 12;">
-                  <a href='all_tour_list.html' class="button_intro">View activities</a>
-                </div>
-            </li>
-
-            <!-- SLIDE  -->
-            <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Intro Slide">
-                <!-- MAIN IMAGE -->
-                <img src="img/slides/slide_4.jpg" alt="slidebg1" data-lazyload="img/slides/slide_4.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                <!-- LAYER NR. 1 -->
-                <div class="tp-caption white_heavy_40 customin customout text-center text-uppercase" data-x="center" data-y="center" data-hoffset="0" data-voffset="-20" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="1700" data-easing="Back.easeInOut" data-endspeed="300" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
-                  Family / Corporate events to enjoy the weekend.
-                </div>
-                <!-- LAYER NR. 3 -->
-                <div class="tp-caption customin tp-resizeme rs-parallaxlevel-0" data-x="center" data-y="center" data-hoffset="0" data-voffset="70" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="2900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-linktoslide="next" style="z-index: 12;">
-                  <a href='all_tour_list.html' class="button_intro">View All</a>
-                  <a href='single_tour.html' class=" button_intro outline">Read more</a>
-                </div>
-            </li>
-          </ul>
-        <div class="tp-bannertimer tp-bottom"></div>
-      </div>
-    </div>
-    <!-- End Slider -->
-
     <ui-view></ui-view>
     <footer>
         <div class="container">
@@ -262,18 +201,18 @@
                 <div class="col-md-3 col-sm-3">
                     <h3>About</h3>
                     <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Register</a></li>
-                         <li><a href="#">Terms and condition</a></li>
+                        <li><a ui-sref="about">About us</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a ui-sref="login">Login</a></li>
+                        <li><a ui-sref="register">Register</a></li>
+                         <li><a ui-sref="about">Terms and condition</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-3">
                     <h3>Discover</h3>
                     <ul>
-                        <li><a href="#">Community blog</a></li>
-                        <li><a href="#">Activity & Course guide</a></li>
+                        <li><a href="">Community blog</a></li>
+                        <li><a href="">Activity & Course guide</a></li>
                     </ul>
                 </div>
             </div><!-- End row -->

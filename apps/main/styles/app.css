@@ -35,3 +35,146 @@
 .profile-container-custom {
   padding-top: 0;
 }
+
+.booking-grid {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.booking-grid .type {
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.booking-grid .type .header {
+  background-color: #e04f67;
+  display: block;
+  color: #e04f67;
+}
+
+.booking-grid .type .content {
+  padding: 15px;
+  margin-top: 3px;
+  color: #999;
+  text-transform: uppercase;
+  display: block;
+}
+
+.booking-grid .type .content strong {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  color: #e04f67;
+  margin-bottom: 3px;
+}
+
+.booking-name {
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  top: 0px;
+  padding-left: 100px;
+  line-height: 1.1em;
+}
+
+.booking-name span {
+  color: #999;
+  display: block;
+  font-size: 11px !important;
+}
+
+.info-booking {
+  list-style: none;
+  margin: 0;
+  padding: 15px 25px 15px 0;
+  font-size: 11px;
+  color: #999;
+  line-height: 12px;
+  border-right: 1px solid #ededed;
+  text-align: right;
+}
+
+.user-profile {
+  padding: 25px;
+}
+
+.info-booking li {
+  margin-bottom: 5px;
+}
+
+.info-booking li strong {
+  text-transform: uppercase;
+  display: block;
+  color: #555;
+}
+
+.profile-container {
+  background-color: #fff;
+  padding: 0 30px 20px 30px;
+}
+
+.booking-grid-title img {
+  float: left;
+}
+
+
+.booking-buttons .btn-3 {
+  margin-top: 25px;
+}
+
+.btn-3 {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+  background: #51bce6;
+  cursor: pointer;
+  padding: 7px 8px;
+  font-size: 11px;
+  line-height: 9px;
+  display: block;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.content a {
+    cursor: pointer;
+}
+
+.booking-buttons span {
+  position: relative;
+  top: 10px;
+  padding: 7px 8px;
+  text-align: center;
+  line-height: 9px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.manage-button {
+  position: relative;
+  top: 6px;
+}
+
+.avatar {
+  text-align: center;
+}
+
+.settings {
+  padding: 25px;
+}
+
+.login {
+  background-image: url(../img/login-bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

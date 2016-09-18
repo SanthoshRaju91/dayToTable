@@ -31,7 +31,7 @@ module.exports = (function() {
     }
 
     user.getUserDetails = function() {
-      return $window.localStorage.getItem('userDetails');
+      return JSON.parse($window.localStorage.getItem('userDetails'));
     }
 
     return user;

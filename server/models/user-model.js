@@ -12,7 +12,8 @@ var logger = require('../utils/logUtil').logger;
 var UserSchema = new Schema({
   emailAddress: {
     type: String,
-    required: true
+    required: true,
+    unique: true
   },
   password: {
     type: String,

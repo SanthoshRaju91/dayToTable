@@ -20,6 +20,16 @@ var BookingSchema = new Schema({
     required: true,
     default: 0
   },
+  bookingTitle: {
+    type: String,
+    required: true,
+    default: ''
+  },
+  imageUrl: {
+    type: String,
+    required: true,
+    default: ''
+  },
   totalPrice: {
     type: Number,
     required: true,

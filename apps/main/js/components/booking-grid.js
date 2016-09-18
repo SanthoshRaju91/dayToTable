@@ -7,11 +7,23 @@ module.exports = (function() {
 
   app.component('bookingGrid', {
     bindings: {
-      data: '<'
+      data: '<',
+      cancelBooking: '&'
     },
     templateUrl: '../../templates/components/booking-grid.html',
-    controller: function() {
+    controller: function($http, $location, $scope) {
 
+      let statuses = {A: 'Active', I: 'Cancelled'};
+      this.bookingStatus = statuses[this.data.status];
+      this.isCancelled = (this.data.status == 'I') ? true : false;
+
+      this.cancelBooking = function(bookingID) {
+        $scope.$emit('CANCEL_BOOKING', bookingID);
+      }
+
+      this.goTo = function() {
+        $location.path('/' + this.data.reference + '/' + this.data.bookingReference);
+      }
     }
   });
 }());

@@ -1,3 +1,6 @@
+//directives
+require('./directives/carousel-directive');
+
 //components scripts
 require('./components/activity-grid');
 require('./components/popular-grid');
@@ -22,6 +25,8 @@ require('./controllers/profile-controller');
 require('./controllers/profile-controller/booking-controller');
 require('./controllers/profile-controller/settings-controller');
 require('./controllers/profile-controller/user-profile-controller');
+require('./controllers/coming-controller');
+require('./controllers/login-controller');
 
 //route and main app scripts
 require('./app.routes.js');
