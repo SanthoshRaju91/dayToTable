@@ -3791,3 +3791,38 @@
 [2016-09-19 00:20:20.221] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
 [2016-09-19 00:20:20.750] [INFO] appLog - getPopularCourses: Popular courses fetched
 [2016-09-19 00:20:59.417] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-19 00:28:40.117] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:28:40.394] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:28:40.444] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:28:41.052] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:28:54.058] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:28:54.329] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:28:54.337] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:28:54.871] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:29:18.284] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-19 00:29:18.286] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-19 00:29:26.395] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-19 00:29:33.876] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:29:34.143] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:29:34.156] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:29:34.690] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:36:12.155] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:36:12.419] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:36:12.433] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:36:12.955] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:52:39.962] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:52:40.237] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:52:40.253] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:52:40.792] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:53:13.907] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-09-19 00:53:13.910] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-09-19 00:53:17.766] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-19 00:53:34.029] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-09-19 00:53:44.294] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:53:44.580] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:53:44.585] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:53:45.139] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:57:05.787] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:57:06.095] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 00:57:06.102] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-09-19 00:57:08.177] [INFO] appLog - getPopularCourses: Popular courses fetched
