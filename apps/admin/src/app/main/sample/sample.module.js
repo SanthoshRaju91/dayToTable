@@ -11,7 +11,7 @@
     {
         // State
         $stateProvider
-            .state('app.activity', {
+            .state('app.sample', {
                 url    : '/sample',
                 views  : {
                     'content@app': {
@@ -35,20 +35,20 @@
 
         // Navigation
         msNavigationServiceProvider.saveItem('fuse', {
-            title : 'ACTIVITY',
+            title : 'Sample',
             group : true,
-            weight: 1
+            weight: 3
         });
 
         msNavigationServiceProvider.saveItem('fuse.sample', {
-            title    : 'Add activity',
+            title    : 'Sample',
             icon     : 'icon-tile-four',
-            state    : 'app.activity',
+            state    : 'app.sample',
             /*stateParams: {
                 'param1': 'page'
              },*/
             translate: 'ACTIVITY.ACTIVITY_NAV',
-            weight   : 1
+            weight   : 3
         });
     }
 })();

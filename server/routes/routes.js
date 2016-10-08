@@ -17,7 +17,7 @@ var queryController = require('../controllers/query-controller');
 // User specific routes
 router.post('/registerUser', userController.registerUser);
 router.get('/getUserList', userController.getUserList);
-router.post('/resetPassword', userController.resetPassword);
+router.post('/resetPassword', jwt({secret: config.session}), userController.resetPassword);
 router.get('/getAdminUserList', userController.getAdminUserList);
 router.post('/updateToAdmin', userController.updateToAdmin);
 router.post('/removeUser', userController.removeUser);

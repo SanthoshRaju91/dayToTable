@@ -28,7 +28,7 @@
                                      class="icon status s16">
                             </md-icon>
                         </div>
-                        <span class="username" hide show-gt-sm>John Snow</span>
+                        <span class="username" hide show-gt-sm>{{vm.user}}</span>
                         <md-icon md-font-icon="icon-chevron-down"
                                  class="icon s16" hide-xs></md-icon>
                     </div>
@@ -40,10 +40,10 @@
                         <md-button>My Profile</md-button>
                     </md-menu-item>
 
-                    <md-menu-item class="md-indent" ui-sref="app.mail">
+                    <!-- <md-menu-item class="md-indent" ui-sref="app.mail">
                         <md-icon md-font-icon="icon-email" class="icon"></md-icon>
                         <md-button>Inbox</md-button>
-                    </md-menu-item>
+                    </md-menu-item> -->
 
                     <md-menu-item class="md-indent">
                         <md-icon md-font-icon ng-class="vm.userStatus.icon"

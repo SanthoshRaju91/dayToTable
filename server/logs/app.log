@@ -3826,3 +3826,140 @@
 [2016-09-19 00:57:06.095] [INFO] appLog - getPopularCourses: Popular courses fetched
 [2016-09-19 00:57:06.102] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
 [2016-09-19 00:57:08.177] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-09-19 16:50:44.836] [INFO] appLog - Server listening on port: 3000
+[2016-09-19 16:50:52.848] [INFO] appLog - Server listening on port: 3000
+[2016-09-19 16:53:42.848] [INFO] appLog - Server listening on port: 3000
+[2016-09-20 13:01:58.044] [INFO] appLog - Server listening on port: 3000
+[2016-09-20 13:02:05.912] [INFO] appLog - Server listening on port: 3000
+[2016-09-20 13:04:34.917] [INFO] appLog - Server listening on port: 3000
+[2016-09-20 13:04:55.991] [ERROR] appLog - Error in connecting to mongo DBMongoError: connect ETIMEDOUT 54.198.110.154:13216
+[2016-09-26 21:11:51.213] [INFO] appLog - Server listening on port: 3000
+[2016-09-26 21:11:53.285] [INFO] appLog - Connected to MongoDB
+[2016-09-26 21:12:00.297] [INFO] appLog - Server listening on port: 3000
+[2016-09-26 21:12:02.520] [INFO] appLog - Connected to MongoDB
+[2016-10-05 14:49:45.889] [INFO] appLog - Server listening on port: 3000
+[2016-10-05 14:49:54.662] [INFO] appLog - Server listening on port: 3000
+[2016-10-05 14:50:15.697] [ERROR] appLog - Error in connecting to mongo DBMongoError: connect ETIMEDOUT 54.198.110.154:13216
+[2016-10-05 15:00:45.816] [INFO] appLog - Server listening on port: 3000
+[2016-10-05 16:52:23.034] [INFO] appLog - Server listening on port: 3000
+[2016-10-05 16:52:23.162] [INFO] appLog - Connected to MongoDB
+[2016-10-05 17:05:14.720] [INFO] appLog - addCategory: new category added successfully
+[2016-10-05 17:05:27.471] [INFO] appLog - addCategory: new category added successfully
+[2016-10-05 17:05:47.270] [ERROR] appLog - registerUser: User already registered
+[2016-10-05 17:06:16.584] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-10-05 17:06:16.586] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-10-05 17:10:59.039] [INFO] appLog - Server listening on port: 3000
+[2016-10-05 17:10:59.146] [INFO] appLog - Connected to MongoDB
+[2016-10-05 17:14:21.534] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-10-05 17:14:21.535] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-10-05 17:14:22.129] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-05 17:14:22.139] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-05 17:14:22.547] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-05 17:14:22.558] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-05 17:14:47.252] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-05 17:14:47.439] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-05 17:14:54.598] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-05 17:14:54.624] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-05 17:15:20.425] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-05 17:15:20.462] [INFO] appLog - Course list computed
+[2016-10-05 17:15:31.013] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-05 17:15:31.043] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-05 17:15:49.642] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-05 17:15:49.663] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-05 17:16:52.184] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-05 17:16:52.188] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-05 17:16:52.201] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-05 17:16:52.338] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-05 17:17:18.003] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-05 17:18:23.160] [INFO] appLog - Server listening on port: 3000
+[2016-10-05 17:18:23.309] [INFO] appLog - Connected to MongoDB
+[2016-10-05 17:18:31.980] [INFO] appLog - Server listening on port: 3000
+[2016-10-05 17:18:32.098] [INFO] appLog - Connected to MongoDB
+[2016-10-05 17:20:22.182] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-05 17:22:01.252] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-06 11:06:45.380] [INFO] appLog - Server listening on port: 3000
+[2016-10-06 11:06:54.226] [INFO] appLog - Server listening on port: 3000
+[2016-10-06 11:08:12.937] [INFO] appLog - Server listening on port: 3000
+[2016-10-06 11:08:13.062] [INFO] appLog - Connected to MongoDB
+[2016-10-06 11:16:25.153] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:16:25.157] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:16:25.178] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:16:25.185] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:16:36.810] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:16:36.813] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:16:36.834] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:16:36.840] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:17:27.570] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-10-06 11:17:27.572] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-10-06 11:17:29.725] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-06 11:24:28.582] [INFO] appLog - Server listening on port: 3000
+[2016-10-06 11:24:28.946] [INFO] appLog - Connected to MongoDB
+[2016-10-06 11:39:41.515] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:39:41.572] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:39:41.579] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:39:41.612] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:40:49.688] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-06 11:46:19.648] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:46:19.666] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:46:19.932] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:46:19.949] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:46:22.446] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:46:22.454] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:46:22.485] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:46:22.513] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:46:28.969] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-06 11:49:24.510] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:49:24.535] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:49:24.549] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:49:24.557] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:56:29.246] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:56:29.466] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:56:29.473] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-06 11:56:29.480] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-06 11:56:34.117] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-07 19:49:53.010] [INFO] appLog - Server listening on port: 3000
+[2016-10-07 19:50:42.173] [INFO] appLog - Server listening on port: 3000
+[2016-10-07 19:50:42.224] [INFO] appLog - Connected to MongoDB
+[2016-10-07 19:50:54.376] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-07 19:50:54.384] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-07 19:50:54.390] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-07 19:50:54.404] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-07 19:51:25.621] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-10-07 19:51:25.623] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-10-07 19:51:27.563] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-07 19:58:19.201] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-07 20:11:28.003] [INFO] appLog - Server listening on port: 3000
+[2016-10-07 20:11:28.134] [INFO] appLog - Connected to MongoDB
+[2016-10-07 20:19:31.636] [INFO] appLog - deleteCategory: Category deleted successfully
+[2016-10-07 20:19:46.414] [INFO] appLog - deleteCategory: Category deleted successfully
+[2016-10-07 20:19:55.928] [INFO] appLog - deleteCategory: Category deleted successfully
+[2016-10-07 20:20:24.430] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-07 20:20:47.100] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-08 14:23:21.760] [INFO] appLog - Server listening on port: 3000
+[2016-10-08 14:23:21.876] [INFO] appLog - Connected to MongoDB
+[2016-10-08 14:23:31.320] [INFO] appLog - Server listening on port: 3000
+[2016-10-08 14:23:31.435] [INFO] appLog - Connected to MongoDB
+[2016-10-08 20:41:40.379] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:42:39.048] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:44:25.947] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:45:07.920] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:45:46.140] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:46:15.063] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:48:31.946] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:48:41.228] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:49:03.478] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:49:54.841] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:50:01.737] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:52:42.925] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:54:15.439] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:55:09.610] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:55:48.534] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:56:00.809] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:57:34.480] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 20:59:23.382] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 21:06:15.740] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 21:08:11.907] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 21:08:57.973] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 22:37:46.562] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 22:37:57.310] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 22:38:17.470] [INFO] appLog - getCategoryList: category list fetched

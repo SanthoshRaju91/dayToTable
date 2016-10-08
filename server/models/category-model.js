@@ -10,7 +10,8 @@ var autoIncrement = require('mongoose-auto-increment');
 var CategorySchema = new Schema({
   categoryName: {
     type: String,
-    required: true
+    required: true,
+    unique: true
   },
   createDate: {
     type: Date,

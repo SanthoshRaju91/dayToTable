@@ -23,8 +23,8 @@ module.exports = {
   },
   loggerFileLocation: 'logs/app.log',
   mongodb: {
-    url: 'mongodb://root:root@ds013216.mlab.com:13216/daytotable'
-    //url: 'mongodb://localhost:27017/daytotable'
+    //url: 'mongodb://root:root@ds013216.mlab.com:13216/daytotable'
+    url: 'mongodb://localhost:27017/daytotable'
   },
   session: 'veryverysecret',
   mail: {

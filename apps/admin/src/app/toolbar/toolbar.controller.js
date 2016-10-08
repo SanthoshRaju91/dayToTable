@@ -7,7 +7,7 @@
         .controller('ToolbarController', ToolbarController);
 
     /** @ngInject */
-    function ToolbarController($rootScope, $q, $state, $timeout, $mdSidenav, $translate, $mdToast, msNavigationService)
+    function ToolbarController($rootScope, $q, $state, $timeout, $mdSidenav, $translate, $mdToast, msNavigationService, ToolBarService)
     {
         var vm = this;
 
@@ -16,6 +16,9 @@
             search: ''
         };
 
+        vm.userDetails = ToolBarService.getUserDetails();
+        vm.user = ToolBarService.getUser();
+                
         vm.bodyEl = angular.element('body');
         vm.userStatusOptions = [
             {
