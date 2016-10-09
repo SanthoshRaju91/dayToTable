@@ -26,12 +26,12 @@
             <h2>Course Name</h2>
             <md-input-container>
              <label>Name</label>
-             <input type="text" ng-model="vm.courseName" required md-maxlength="100">
+             <input type="text" ng-model="vm.courseName" required md-maxlength="100" name="courseName">
            </md-input-container>
           </md-card-content>
           <md-card-footer>
             <md-button class="md-accent" step-previous>Previous</md-button>
-            <md-button class="md-primary  md-raised" step-next="vm.computeCourseName()">Next Step</md-button>
+            <md-button class="md-primary  md-raised" step-next="vm.computeCourseName()" ng-disabled="courseForm.courseName.$invalid">Next Step</md-button>
           </md-card-footer>
         </md-card>
       </step>
@@ -43,13 +43,13 @@
            <h2>Course Description</h2>
            <md-input-container>
             <label>Description</label>
-            <textarea rows="3" cols="100" ng-model="vm.courseDesc" required md-maxlength="100">
+            <textarea rows="3" cols="100" ng-model="vm.courseDesc" required md-maxlength="500" name="courseDesc">
             </textarea>
           </md-input-container>
          </md-card-content>
          <md-card-footer>
            <md-button class="md-accent" step-previous>Previous</md-button>
-           <md-button class="md-primary  md-raised" step-next="vm.computeCourseDescription()">Next Step</md-button>
+           <md-button class="md-primary  md-raised" step-next="vm.computeCourseDescription()" ng-disabled="courseForm.courseDesc.$invalid">Next Step</md-button>
          </md-card-footer>
         </md-card>
       </step>
@@ -60,14 +60,14 @@
           <md-card-content>
             <h2>Choose Course Genre</h2>
             <md-input-container>
-              <select ng-model="vm.selectedCourseCategory" data-ng-options="item as item.categoryName for item in vm.categoryList">
+              <select ng-model="vm.selectedCourseCategory" data-ng-options="item as item.categoryName for item in vm.categoryList" name="courseCategory" required>
                 <option value="" selected>Choose Category</option>
               </select>
             </md-input-container>
           </md-card-content>
           <md-card-footer>
             <md-button class="md-accent" step-previous>Previous</md-button>
-            <md-button class="md-primary  md-raised" step-next="vm.computeCourseCategory()">Next Step</md-button>
+            <md-button class="md-primary  md-raised" step-next="vm.computeCourseCategory()" ng-disabled="courseForm.courseCategory.$invalid">Next Step</md-button>
           </md-card-footer>
         </md-card>
       </step>
@@ -140,7 +140,7 @@
             <h2>Paste Image URL</h2>
             <md-input-container>
              <label>Image URL</label>
-             <input type="text" ng-model="vm.courseImageUrl" required md-maxlength="100">
+             <input type="text" ng-model="vm.courseImageUrl" md-maxlength="100">
            </md-input-container>
           </md-card-content>
           <md-card-footer>
@@ -157,12 +157,12 @@
            <h2>Specify Course Price (HKD)</h2>
            <md-input-container>
             <label>Price</label>
-            <input type="number" ng-model="vm.coursePrice" required md-maxlength="100">
+            <input type="number" ng-model="vm.coursePrice" required name="coursePrice">
           </md-input-container>
          </md-card-content>
          <md-card-footer>
            <md-button class="md-accent" step-previous>Back</md-button>
-           <md-button class="md-primary  md-raised" step-next="vm.computeCoursePrice()">Next Step</md-button>
+           <md-button class="md-primary  md-raised" step-next="vm.computeCoursePrice()" ng-disabled="courseForm.coursePrice.$invalid">Next Step</md-button>
          </md-card-footer>
        </md-card>
       </step>
@@ -173,11 +173,25 @@
          <md-card-content>
            <h2>Mention Course Schedule</h2>
            <p>Since this is a recuring Course, please specify your desired course schedule as a normal sentence, press enter to keep adding your desired schedule and finally press finish</p>
-           <md-chips ng-model="vm.courseSchedule" placeholder="Add Course Schedule" md-max-chips="5"></md-chips>
+           <md-chips ng-model="vm.courseSchedule" placeholder="Add Course Schedule" md-max-chips="5" required name="courseSchedule" ></md-chips>
          </md-card-content>
          <md-card-footer>
            <md-button class="md-accent" step-previous>Previous</md-button>
-           <md-button class="md-primary  md-raised" step-next="vm.computeCourseSchedule()">Next Step</md-button>
+           <md-button class="md-primary  md-raised" step-next="vm.computeCourseSchedule()" ng-disabled="courseForm.courseSchedule.$invalid">Next Step</md-button>
+         </md-card-footer>
+       </md-card>
+      </step>
+
+      <!-- Start From Step-->
+      <step>
+        <md-card>
+         <md-card-content>
+           <h2>When is the Course commencing ?</h2>
+           <md-datepicker ng-model="vm.courseStartDate" ng-required name="courseStartDate" ng-min-date="{{vm.minDate}}"></md-datepicker>
+         </md-card-content>
+         <md-card-footer>
+           <md-button class="md-accent" step-previous>Previous</md-button>
+           <md-button class="md-primary  md-raised" step-next="vm.computeStartFrom()" ng-disabled="courseForm.courseStartDate.$invalid">Next Step</md-button>
          </md-card-footer>
        </md-card>
       </step>
@@ -201,51 +215,83 @@
   <div class="form-summary">
     <md-card>
       <md-card-content>
-
+        <h3>Course Summary.</h3>
         <md-list>
           <md-list-item class="md-2-line" ng-if="vm.isAddress">
-            <h2>Selected Address</h2>
-            <h4>{{vm.address}}</h4>
+            <h4><b>Selected Address</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.address}}</h4>
           </md-list-item>
+
+          <md-divider></md-divider>
 
           <md-list-item class="md-2-line" ng-if="vm.isCourseName">
-            <h2>Given Course Name</h2>
-            <h4>{{vm.courseName}}</h4>
+            <h4><b>Given Course Name</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.courseName}}</h4>
           </md-list-item>
+
+          <md-divider></md-divider>
 
           <md-list-item class="md-2-line" ng-if="vm.isCourseDesc">
-            <h2>Given Course Description</h2>
-            <h4>{{vm.courseDesc}}</h4>
+            <h4><b>Given Course Description</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.courseDesc}}</h4>
           </md-list-item>
+
+          <md-divider></md-divider>
 
           <md-list-item class="md-2-line" ng-if="vm.isCourseCategory">
-            <h2>Selected Course Genre</h2>
-            <h4>{{vm.courseCategory}}</h4>
+            <h4><b>Selected Course Genre</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.selectedCourseCategory.categoryName}}</h4>
           </md-list-item>
+
+          <md-divider></md-divider>
 
           <md-list-item class="md-2-line" ng-if="vm.isCourseLang">
-            <h2>Supported Course languages</h2>
-            <h4>{{vm.courseLanguages}}</h4>
+            <h4><b>Supported Course languages</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.courseLanguages}}</h4>
           </md-list-item>
+
+          <md-divider></md-divider>
 
           <md-list-item class="md-2-line" ng-if="vm.isCourseAmenities">
-            <h2>Provide Amenities to the Course</h2>
-            <h4>{{vm.courseAmenities}}</h4>
+            <h4><b>Provide Amenities to the Course</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.courseAmenities}}</h4>
           </md-list-item>
+
+          <md-divider></md-divider>
 
           <md-list-item class="md-2-line" ng-if="vm.isCourseImageUrl">
-            <h2>Selected Course Display Image</h2>
-            <img ng-src="vm.courseImageUrl" alt="Course Display Image" width="50" height="50">
+            <h4><b>Selected Course Display Image</b></h4>
+            <img class="second-cell" src="vm.courseImageUrl" alt="Course Display Image" width="50" height="50">
           </md-list-item>
+
+          <md-divider></md-divider>
 
           <md-list-item class="md-2-line" ng-if="vm.isCoursePrice">
-            <h2>Finalized Course Price</h2>
-            <h4>{{vm.coursePrice}}</h4>
+            <h4><b>Finalized Course Price</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.coursePrice}}</h4>
           </md-list-item>
 
+          <md-divider></md-divider>
+
           <md-list-item class="md-2-line" ng-if="vm.isCourseSchedule">
-            <h2>Finalized Course Schedule</h2>
-            <h4>{{vm.courseSchedule}}</h4>
+            <h4><b>Finalized Course Schedule</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.courseSchedule}}</h4>
+          </md-list-item>
+
+          <md-divider></md-divider>
+
+          <md-list-item class="md-2-line" ng-if="vm.isCourseStartFrom">
+            <h4><b>Course Commence Date</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.courseStartDate}}</h4>
           </md-list-item>
 
         </md-list>

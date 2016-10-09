@@ -1,0 +1,294 @@
+<section class="activity">
+  <h3>Adding Activity, please fill the below create a Event / Activity.</h3>
+  <form name="activityForm">
+    <steps>
+
+      <!-- Address Step-->
+      <step>
+        <md-card>
+         <md-card-content>
+           <h2>Let us know the address.</h2>
+           <md-input-container>
+            <label>Address</label>
+            <input type="text" ng-model="vm.address" name="address" required md-maxlength="100">
+          </md-input-container>
+         </md-card-content>
+         <md-card-footer>
+           <md-button class="md-accent">Cancel</md-button>
+           <md-button class="md-primary  md-raised" step-next="vm.computeAddress()" ng-disabled="activityForm.address.$invalid">Next Step</md-button>
+         </md-card-footer>
+        </md-card>
+      </step>
+
+      <step>
+        <md-card>
+          <md-card-content>
+            <h2>Activity / Event Name</h2>
+            <md-input-container>
+             <label>Name</label>
+             <input type="text" ng-model="vm.activityName" required md-maxlength="100" name="activityName">
+           </md-input-container>
+          </md-card-content>
+          <md-card-footer>
+            <md-button class="md-accent" step-previous>Previous</md-button>
+            <md-button class="md-primary  md-raised" step-next="vm.computeActivityName()" ng-disabled="activityForm.activityName.$invalid">Next Step</md-button>
+          </md-card-footer>
+        </md-card>
+      </step>
+
+      <step>
+        <md-card>
+         <md-card-content>
+           <h2>Course Description</h2>
+           <md-input-container>
+            <label>Description</label>
+            <textarea rows="3" cols="100" ng-model="vm.activityDesc" required md-maxlength="500" name="activityDesc">
+            </textarea>
+          </md-input-container>
+         </md-card-content>
+         <md-card-footer>
+           <md-button class="md-accent" step-previous>Previous</md-button>
+           <md-button class="md-primary  md-raised" step-next="vm.computeActivityDescription()" ng-disabled="activityForm.activityDesc.$invalid">Next Step</md-button>
+         </md-card-footer>
+        </md-card>
+      </step>
+
+      <step>
+        <md-card>
+          <md-card-content>
+            <h2>Choose Course Genre</h2>
+            <md-input-container>
+              <select ng-model="vm.selectedActivityCategory" data-ng-options="item as item.categoryName for item in vm.categoryList" name="activityCategory">
+                <option value="" selected>Choose Category</option>
+              </select>
+            </md-input-container>
+          </md-card-content>
+          <md-card-footer>
+            <md-button class="md-accent" step-previous>Previous</md-button>
+            <md-button class="md-primary  md-raised" step-next="vm.computeActivityCategory()" ng-disabled="activityForm.activityCategory.$invalid">Next Step</md-button>
+          </md-card-footer>
+        </md-card>
+      </step>
+
+      <step>
+        <md-card>
+         <md-card-content>
+           <h2>When do you want the Activity / Event to happen ?</h2>
+           <md-datepicker ng-model="vm.schedule" ng-required name="schedule" md-min-date="vm.minDate"></md-datepicker>
+         </md-card-content>
+         <md-card-footer>
+           <md-button class="md-accent" step-previous>Previous</md-button>
+           <md-button class="md-primary  md-raised" step-next="vm.computeSchedule()" ng-disabled="activityForm.schedule.$invalid">Next Step</md-button>
+         </md-card-footer>
+       </md-card>
+      </step>
+
+      <step>
+        <md-card>
+         <md-card-content>
+           <h2>Event </h2>
+           <md-input-container>
+            <label>Duration</label>
+            <input type="number" ng-model="vm.duration" required name="duration">
+          </md-input-container>
+         </md-card-content>
+         <md-card-footer>
+           <md-button class="md-accent" step-previous>Previous</md-button>
+           <md-button class="md-primary  md-raised" step-next="vm.computeDuration()" ng-disabled="activityForm.duration.$invalid">Next Step</md-button>
+         </md-card-footer>
+       </md-card>
+      </step>
+
+      <step>
+        <md-card>
+         <md-card-content>
+           <h2>Specify Course Price (HKD)</h2>
+           <md-input-container>
+            <label>Price</label>
+            <input type="number" ng-model="vm.activityPrice" required name="activityPrice">
+          </md-input-container>
+         </md-card-content>
+         <md-card-footer>
+           <md-button class="md-accent" step-previous>Back</md-button>
+           <md-button class="md-primary  md-raised" step-next="vm.computeActivityPrice()" ng-disabled="activityForm.activityPrice.$invalid">Next Step</md-button>
+         </md-card-footer>
+       </md-card>
+      </step>
+
+      <step>
+        <md-card>
+          <md-card-content>
+            <h2>Paste Image URL</h2>
+            <md-input-container>
+             <label>Image URL</label>
+             <input type="text" ng-model="vm.activityImageUrl" md-maxlength="100">
+           </md-input-container>
+          </md-card-content>
+          <md-card-footer>
+            <md-button class="md-accent" step-previous>Previous</md-button>
+            <md-button class="md-primary  md-raised" step-next="vm.computeActivityImageUrl()">Next Step</md-button>
+          </md-card-footer>
+        </md-card>
+      </step>
+
+      <step>
+        <md-card>
+         <md-card-content>
+           <h2>Select Activity supported languages</h2>
+           <md-input-container>
+             <md-checkbox ng-model="vm.isEnglishChecked" aria-label="Finished?">
+              English
+            </md-checkbox>
+            <md-checkbox ng-model="vm.isChineseChecked" aria-label="Finished?">
+             Chinese
+           </md-checkbox>
+           <md-checkbox ng-model="vm.isSpanishChecked" aria-label="Finished?">
+            Spanish
+          </md-checkbox>
+          <md-checkbox ng-model="vm.isFrenchChecked" aria-label="Finished?">
+           French
+         </md-checkbox>
+          <md-checkbox ng-model="vm.isOtherChecked" aria-label="Finished?">
+            Others
+          </md-checkbox>
+          <br>
+          </md-input-container>
+          <br>
+
+          <md-chips ng-if="vm.isOtherChecked" ng-model="vm.otherLanguages" placeholder="Add Languages" md-max-chips="5"></md-chips>
+
+         </md-card-content>
+         <md-card-footer>
+           <md-button class="md-accent" step-previous>Previous</md-button>
+           <md-button class="md-primary  md-raised" step-next=vm.computeActivityLang()>Next Step</md-button>
+         </md-card-footer>
+        </md-card>
+      </step>
+
+      <step>
+        <md-card>
+         <md-card-content>
+           <h2>Select Course provided amenities</h2>
+            <md-input-container>
+              <md-checkbox ng-model="vm.isParkingChecked" aria-label="Finished?">
+                Parking
+              </md-checkbox>
+              <md-checkbox ng-model="vm.isWaterChecked" aria-label="Finished?">
+                Water
+              </md-checkbox>
+              <md-checkbox ng-model="vm.isOtherChecked" aria-label="Finished?">
+                Others
+              </md-checkbox>
+            </md-input-container>
+            <br>
+            <md-chips ng-if="vm.isOtherChecked" ng-model="vm.otherAmenities" placeholder="Add Amentities" md-max-chips="5"></md-chips>
+         </md-card-content>
+         <md-card-footer>
+           <md-button class="md-accent" step-previous>Previous</md-button>
+           <md-button class="md-primary  md-raised" step-next="vm.computeActivityAmenities()">Next Step</md-button>
+         </md-card-footer>
+       </md-card>
+      </step>
+
+      <step>
+        <md-card>
+          <md-card-content>
+            <h2>Final Step</h2>
+            <p>Please check the final Activity details and press submit to continue.</p>
+          </md-card-content>
+          <md-card-footer>
+            <md-button class="md-accent" step-previous>Previous</md-button>
+            <md-button class="md-primary  md-raised" step-next="vm.submitActivity()">Submit</md-button>
+          </md-card-footer>
+        </md-card>
+      </step>
+    </steps>
+  </form>
+
+  <div class="form-summary">
+    <md-card>
+      <md-card-content>
+        <h3>Activity Summary.</h3>
+        <md-list>
+          <md-list-item class="md-2-line" ng-if="vm.isAddress">
+            <h4><b>Selected Address</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.address}}</h4>
+          </md-list-item>
+
+          <md-divider></md-divider>
+
+          <md-list-item class="md-2-line" ng-if="vm.isActivityName">
+            <h4><b>Given Activity Name</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.activityName}}</h4>
+          </md-list-item>
+
+          <md-divider></md-divider>
+
+          <md-list-item class="md-2-line" ng-if="vm.isActivityDesc">
+            <h4><b>Given Activity Description</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.activityDesc}}</h4>
+          </md-list-item>
+
+          <md-divider></md-divider>
+
+          <md-list-item class="md-2-line" ng-if="vm.isActivityCategory">
+            <h4><b>Selected Activity Genre</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.selectedActivityCategory.categoryName}}</h4>
+          </md-list-item>
+
+          <md-divider></md-divider>
+
+          <md-list-item class="md-2-line" ng-if="vm.isSchedule">
+            <h4><b>Finalized Activity Schedule</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.schedule}}</h4>
+          </md-list-item>
+
+          <md-divider></md-divider>
+
+          <md-list-item class="md-2-line" ng-if="vm.isDuration">
+            <h4><b>Finalized Activity Duration</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.duration}}</h4>
+          </md-list-item>
+
+          <md-divider></md-divider>
+
+          <md-list-item class="md-2-line" ng-if="vm.isPrice">
+            <h4><b>Finalized Activity Price</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.activityPrice}}</h4>
+          </md-list-item>
+
+          <md-divider></md-divider>
+
+          <md-list-item class="md-2-line" ng-if="vm.isImageUrl">
+            <h4><b>Selected Activity Display Image</b></h4>
+            <img class="second-cell" src="{{vm.activityImageUrl}}" alt="Activity Display Image" width="50" height="50">
+          </md-list-item>
+
+          <md-divider></md-divider>
+
+          <md-list-item class="md-2-line" ng-if="vm.isActivityLang">
+            <h4><b>Supported Activity languages</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.activityLanguages}}</h4>
+          </md-list-item>
+
+          <md-divider></md-divider>
+
+          <md-list-item class="md-2-line" ng-if="vm.isActivityAmenities">
+            <h4><b>Provided Amenities to the Activity</b></h4>
+            <h4>:</h4>
+            <h4 class="second-cell">{{vm.activityAmenities}}</h4>
+          </md-list-item>
+
+        </md-list>
+      </md-card-content>
+    </md-card>
+  </div>
+</section>

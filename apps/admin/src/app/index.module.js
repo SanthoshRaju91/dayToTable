@@ -20,11 +20,12 @@
             // Quick panel
             'app.quick-panel',
 
-            // Sample
-            'app.sample',
+            'angular-steps',
 
             'app.course',
 
-            'angular-steps'
+            'app.activity',
+
+            'app.dashboard'
         ]);
 })();

@@ -39,6 +39,7 @@ router.get('/getCoursesByCategory', courseController.getCoursesByCategory);
 router.get('/getSortedCoursesList/:type/:sort', courseController.getSortedCoursesList);
 router.get('/getCourseById/:id', courseController.getCourseById);
 router.get('/getPopularCourses', courseController.getPopularCourses);
+router.get('/coursesCountByUser/:userID', courseController.coursesCountByUser);
 
 // Activity specific routes
 router.post('/addActivity', activityController.addActivity);
@@ -49,6 +50,7 @@ router.post('/inactivateActivity', activityController.inactivateActivity);
 router.get('/getActivitiesByCategory/:categoryID', activityController.getActivitiesByCategory);
 router.get('/getActivityById/:id', activityController.getActivityById);
 router.get('/getSortedActivitiesList/:type/:sort', activityController.getSortedActivitiesList);
+router.get('/activitesCountByUser/:userID', activityController.activitesCountByUser);
 
 // Booking specific routes
 router.post('/addCourseBookingFromUser', bookingController.addCourseBookingFromUser);

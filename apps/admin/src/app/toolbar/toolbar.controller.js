@@ -18,7 +18,7 @@
 
         vm.userDetails = ToolBarService.getUserDetails();
         vm.user = ToolBarService.getUser();
-                
+
         vm.bodyEl = angular.element('body');
         vm.userStatusOptions = [
             {

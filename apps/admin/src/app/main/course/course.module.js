@@ -32,24 +32,25 @@
         $translatePartialLoaderProvider.addPart('app/main/course');
 
         // Api
-        //msApiProvider.register('course', ['app/data/course/course.json']);
+        msApiProvider.register('getCategoryList', ['http://localhost:3000/api/getCategoryList']);
+        msApiProvider.register('addCourse', ['http://localhost:3000/api/addCourse']);
 
         // Navigation
         msNavigationServiceProvider.saveItem('fuse', {
-            title : 'Course',
+            title : 'COURSE',
             group : true,
-            weight: 2
+            weight: 3
         });
 
         msNavigationServiceProvider.saveItem('fuse.course', {
-            title    : 'Add Course',
+            title    : 'Course',
             icon     : 'icon-tile-four',
             state    : 'app.course',
             /*stateParams: {
                 'param1': 'page'
              },*/
             translate: 'COURSE.COURSE_NAV',
-            weight   : 2
+            weight   : 3
         });
     }
 })();

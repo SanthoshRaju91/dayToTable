@@ -193,8 +193,7 @@
 	      var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library', CRICKET: 'icon-cricket'};
 	      this.overlayIcon = iconsArray[this.activity.categoryID.categoryName.toUpperCase()];
 	      this.overlayName = this.activity.categoryID.categoryName;
-	      this.scheduleList = this.activity.schedule.split('|');
-
+	      
 	      //checking for activity currently open / closed.
 	      this.isActive = (this.data.activityStatus.toUpperCase() == 'CLOSED') ? true: false;
 	      this.ratings = [];
@@ -892,7 +891,7 @@
 	          for(let i=0; i<(5-$scope.course.ratings); i++) {
 	            $scope.ratings.push('icon-smile');
 	          }
-	          $scope.includedItems = $scope.course.includes.split(',');
+	          //$scope.includedItems = $scope.course.includes.split(',');
 	          $scope.schedules = $scope.course.schedule.split('|');
 	          $scope.features = [];
 	          $scope.isParking = ($scope.course.parking.length > 0) ? $scope.features.push({'iconClass': 'icon_set_1_icon-27', 'name': 'Parking'}) : false;

@@ -13,8 +13,7 @@ module.exports = (function() {
       var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library', CRICKET: 'icon-cricket'};
       this.overlayIcon = iconsArray[this.activity.categoryID.categoryName.toUpperCase()];
       this.overlayName = this.activity.categoryID.categoryName;
-      this.scheduleList = this.activity.schedule.split('|');
-
+      
       //checking for activity currently open / closed.
       this.isActive = (this.data.activityStatus.toUpperCase() == 'CLOSED') ? true: false;
       this.ratings = [];

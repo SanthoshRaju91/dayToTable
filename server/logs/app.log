@@ -3963,3 +3963,317 @@
 [2016-10-08 22:37:46.562] [INFO] appLog - getCategoryList: category list fetched
 [2016-10-08 22:37:57.310] [INFO] appLog - getCategoryList: category list fetched
 [2016-10-08 22:38:17.470] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 22:45:35.997] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-08 23:25:48.166] [INFO] appLog - Server listening on port: 3000
+[2016-10-08 23:25:48.277] [INFO] appLog - Connected to MongoDB
+[2016-10-08 23:35:17.169] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-08 23:35:17.176] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-08 23:35:17.195] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-08 23:35:17.209] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-08 23:35:35.328] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-08 23:35:35.333] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-08 23:35:35.351] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-08 23:35:35.365] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-08 23:35:53.370] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-10-08 23:35:53.372] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-10-08 23:35:55.427] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-09 00:00:01.664] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 00:00:01.744] [INFO] appLog - Connected to MongoDB
+[2016-10-09 00:54:27.113] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 00:59:27.958] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 00:59:47.225] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:00:22.936] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:00:44.691] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:01:07.770] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:01:27.532] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:01:56.678] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:04:56.585] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:05:29.441] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:06:09.313] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:06:43.672] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:07:06.015] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:07:24.910] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:10:35.273] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:14:24.480] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:15:15.387] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:17:04.243] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:19:46.737] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:20:43.374] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:21:42.434] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:21:46.239] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:21:55.979] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:21:58.968] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:24:10.515] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:24:16.168] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:29:59.850] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:30:30.681] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:30:58.808] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:31:44.876] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:36:26.888] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:37:03.186] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:37:46.157] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:38:00.299] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:38:48.247] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:40:49.353] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:41:23.092] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:42:30.622] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:43:24.121] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:44:32.212] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:46:05.248] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:47:49.500] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:48:26.136] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:49:06.879] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:49:40.691] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:51:18.721] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:52:49.268] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:57:45.126] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 01:59:22.647] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 02:01:45.454] [ERROR] appLog - addCourse: Error while inserting the course: ValidationError: Path `contactPerson` is required., Path `contactNumber` is required., Path `contactEmailAddress` is required.
+[2016-10-09 08:04:53.935] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:07:10.206] [ERROR] appLog - addCourse: Error while inserting the course: ValidationError: Path `contactPerson` is required., Path `contactNumber` is required., Path `contactEmailAddress` is required.
+[2016-10-09 08:07:55.425] [ERROR] appLog - addCourse: requested category not found
+[2016-10-09 08:08:02.734] [ERROR] appLog - addCourse: Error while inserting the course: ValidationError: Path `contactPerson` is required., Path `contactNumber` is required., Path `contactEmailAddress` is required.
+[2016-10-09 08:10:18.512] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 08:10:18.642] [INFO] appLog - Connected to MongoDB
+[2016-10-09 08:10:31.275] [INFO] appLog - addCourse: Course added successfully
+[2016-10-09 08:11:38.902] [INFO] appLog - Course list computed
+[2016-10-09 08:18:49.110] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:19:15.596] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:22:46.790] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:24:28.428] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:28:00.992] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:28:13.067] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:28:53.908] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:29:22.748] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:30:05.734] [ERROR] appLog - addCourse: Error while inserting the course: ValidationError: Path `contactEmailAddress` is required.
+[2016-10-09 08:31:59.446] [ERROR] appLog - addCourse: Error while inserting the course: ValidationError: Path `contactEmailAddress` is required.
+[2016-10-09 08:32:42.151] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:35:01.172] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:35:16.284] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:35:30.212] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:35:46.420] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:36:00.706] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:36:25.238] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:37:25.615] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:37:57.930] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:38:06.957] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:38:28.783] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:38:53.515] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:39:07.791] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:39:56.658] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:41:23.663] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:41:36.561] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:44:14.813] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:44:45.201] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:55:03.690] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 08:55:03.809] [INFO] appLog - Connected to MongoDB
+[2016-10-09 08:57:10.874] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:57:47.790] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:58:29.449] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:58:53.841] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:59:48.075] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 08:59:53.888] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:00:51.082] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:01:20.759] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:13:58.913] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 09:13:59.032] [INFO] appLog - Connected to MongoDB
+[2016-10-09 09:14:07.129] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 09:14:07.233] [INFO] appLog - Connected to MongoDB
+[2016-10-09 09:23:30.665] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:23:30.673] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:23:30.686] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:23:30.700] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:24:05.711] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:24:05.714] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:24:05.755] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:24:05.772] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:24:33.366] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:24:33.463] [INFO] appLog - Course list computed
+[2016-10-09 09:24:47.622] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:24:56.308] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:24:56.341] [INFO] appLog - Course list computed
+[2016-10-09 09:24:58.774] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:25:02.736] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:25:02.755] [INFO] appLog - Course list computed
+[2016-10-09 09:25:05.998] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:25:17.046] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:25:17.070] [INFO] appLog - Course list computed
+[2016-10-09 09:25:20.747] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:25:20.752] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:25:20.764] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:25:20.774] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:25:38.264] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-10-09 09:25:38.266] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-10-09 09:25:39.725] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-09 09:25:49.043] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:25:59.600] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-09 09:26:08.824] [INFO] appLog - cancelBooking: Record cancelled successfully
+[2016-10-09 09:26:08.866] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-09 09:26:13.698] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:26:13.749] [INFO] appLog - Course list computed
+[2016-10-09 09:26:17.181] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:26:45.958] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:26:46.077] [INFO] appLog - Course list computed
+[2016-10-09 09:27:03.086] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:27:35.791] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:27:35.882] [INFO] appLog - Course list computed
+[2016-10-09 09:30:29.008] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:30:29.041] [INFO] appLog - Course list computed
+[2016-10-09 09:30:33.875] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:30:57.853] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:31:05.662] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:31:28.699] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:33:21.204] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:34:35.659] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:35:45.088] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:35:45.169] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:35:45.228] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:35:45.252] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:35:57.216] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:35:57.241] [INFO] appLog - Course list computed
+[2016-10-09 09:35:59.945] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:36:04.742] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:36:04.755] [INFO] appLog - Course list computed
+[2016-10-09 09:36:10.496] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:36:59.479] [INFO] appLog - getCourseById: Course details fetched for the id
+[2016-10-09 09:37:23.765] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:37:23.771] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:37:23.834] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:37:23.839] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:37:45.419] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:37:45.467] [INFO] appLog - Course list computed
+[2016-10-09 09:37:47.025] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:37:47.033] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:37:47.045] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 09:37:47.055] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 09:37:52.460] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:37:52.523] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-09 09:38:29.711] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:38:29.734] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-09 09:40:03.087] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:40:03.101] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-09 09:40:30.535] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:40:30.549] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-09 09:42:31.628] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-10-09 09:42:41.143] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 09:42:41.164] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-09 09:54:13.103] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:10:50.201] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:16:33.338] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:16:45.854] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:20:39.960] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:20:50.919] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:21:22.690] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:21:31.617] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:23:10.664] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:24:22.627] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:26:08.504] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:26:44.654] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:28:32.099] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:29:35.332] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:30:03.240] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:30:53.173] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:32:36.169] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:32:45.175] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:32:47.718] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:35:43.030] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:36:25.629] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:37:27.791] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:41:53.537] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:42:09.442] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 10:42:09.562] [INFO] appLog - Connected to MongoDB
+[2016-10-09 10:43:23.971] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:44:15.335] [INFO] appLog - addActivity: Activity added successfully
+[2016-10-09 10:44:33.719] [INFO] appLog - addActivity: Activity added successfully
+[2016-10-09 10:47:13.454] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-09 10:48:06.982] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 10:48:07.043] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 10:48:07.061] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 10:48:07.068] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 10:48:18.526] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 10:48:18.621] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-09 10:48:22.074] [INFO] appLog - getActivityById: Activity fetched for the specified id
+[2016-10-09 17:25:57.595] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 17:25:57.741] [INFO] appLog - Connected to MongoDB
+[2016-10-09 17:26:07.676] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 17:26:07.744] [INFO] appLog - Connected to MongoDB
+[2016-10-09 17:28:11.368] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 17:28:11.376] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 17:28:11.417] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 17:28:11.438] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 17:28:18.839] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 17:28:18.858] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 17:28:18.872] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-09 17:28:18.898] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-09 17:28:37.475] [ERROR] appLog - Error while matching password: Error: Illegal arguments: string, undefined
+[2016-10-09 17:28:37.476] [INFO] appLog - authenticateUser: User logged in successfully
+[2016-10-09 17:28:40.147] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-09 17:28:48.858] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 17:29:09.983] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 17:30:47.520] [INFO] appLog - addActivity: Activity added successfully
+[2016-10-09 17:31:21.476] [INFO] appLog - addActivity: Activity added successfully
+[2016-10-09 17:32:25.074] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 17:32:25.721] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:11:32.598] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:11:34.410] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:13:13.172] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:13:14.705] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:28:29.558] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 22:28:29.651] [INFO] appLog - Connected to MongoDB
+[2016-10-09 22:29:22.263] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:30:25.268] [ERROR] appLog - addCourse: Error while inserting the course: ValidationError: Path `contactEmailAddress` is required.
+[2016-10-09 22:30:48.269] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:31:13.533] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:31:14.592] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:35:44.385] [ERROR] appLog - addCourse: Error while inserting the course: ValidationError: Path `contactEmailAddress` is required.
+[2016-10-09 22:35:53.970] [ERROR] appLog - addCourse: Error while inserting the course: ValidationError: Path `contactEmailAddress` is required.
+[2016-10-09 22:37:56.390] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:39:00.468] [INFO] appLog - addCourse: Course added successfully
+[2016-10-09 22:42:17.904] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:44:13.253] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 22:44:18.675] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 23:03:44.446] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 23:03:44.698] [INFO] appLog - Connected to MongoDB
+[2016-10-09 23:04:02.523] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:05:00.380] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:05:25.677] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 23:05:25.776] [INFO] appLog - Connected to MongoDB
+[2016-10-09 23:06:09.003] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:06:09.025] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:09:23.563] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:09:23.592] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:10:29.286] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:10:29.292] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:11:02.965] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:11:02.968] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:11:48.287] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:11:48.306] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:12:25.197] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:12:25.200] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:14:07.636] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:14:07.642] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:14:14.280] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:14:14.338] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:14:20.750] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:14:20.755] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:14:30.909] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:14:30.925] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:15:02.283] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:15:02.288] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:15:25.253] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:15:25.259] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:15:46.828] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:15:46.832] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:16:46.268] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:16:46.271] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:17:16.334] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:17:16.338] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:17:29.853] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:17:29.862] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:17:46.701] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:17:46.715] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:19:36.465] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:19:36.468] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:19:52.955] [INFO] appLog - coursesCountByUser: Count fetched
+[2016-10-09 23:19:52.961] [INFO] appLog - activitesCountByUser: Count fetched
+[2016-10-09 23:28:25.029] [INFO] appLog - getCategoryList: category list fetched

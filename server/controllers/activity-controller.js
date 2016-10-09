@@ -32,7 +32,7 @@ module.exports = {
              logger.error('addActivity: requested category not found');
              res.json({ status: 404, success: false, message: 'Requested category not found'});
            } else {
-             var activity = new Activity({activityName: req.body.activityName, description: req.body.description, schedule: req.body.schedule, scheduleType: req.body.scheduleType, price: req.body.price, amenities: req.body.amenities, address: req.body.address, languages: req.body.languages, parking: req.body.parking, imageUrl: req.body.imageUrl, categoryID: category._id, creadtedUserID: user._id});
+             var activity = new Activity({activityName: req.body.activityName, description: req.body.description, schedule: req.body.schedule, scheduleType: req.body.scheduleType, price: req.body.price, amenities: req.body.amenities, address: req.body.address, languages: req.body.languages, parking: req.body.parking, imageUrl: req.body.imageUrl, duration: req.body.duration, categoryID: category._id, creadtedUserID: user._id});
              activity.save(function(err2) {
                if(err2) {
                  logger.error('addActivity: Error while inserting the activity: ' + err);
@@ -106,7 +106,7 @@ module.exports = {
 
 
   /**
-  * Function to activities created by admin users
+  * Function to retreive activities created by admin users
   * @method: activitiesByUser
   */
   activitiesByUser: function(req, res) {
@@ -114,7 +114,7 @@ module.exports = {
       if(err) {
         logger.error('activitiesByUser: Error while fetching activities: ' + err);
         res.json({ status: 500, success: false, message: 'Error while fetching activities'});
-      } else if(!courses) {
+      } else if(!activities) {
         logger.error('activitiesByUser: No activities created by the user');
         res.json({ status: 404, success: false, message: 'No activities created by the user'});
       } else {
@@ -127,6 +127,25 @@ module.exports = {
         });
         logger.info('activitiesByUser: Activities fetched by created user');
         res.json({ status: 200, success: true, count: oneTimeActivityList.length, activityList: oneTimeActivityList});
+      }
+    });
+  },
+
+  /**
+  * Function to retreive the count of activities created by user
+  * @method: activitesCountByUser
+  */
+  activitesCountByUser: function(req, res) {
+    Activity.find({createdUserID: req.params.userID}, function(err, activities) {
+      if(err) {
+        logger.error('activitesCountByUser: Error while fetching activities count: ' + err);
+        res.json({status: 500, success: false, message: 'Error while fetching activities count'});
+      } else if(!activities) {
+        logger.error('activitesCountByUser: No records found');
+        res.json({status: 200, success: true, count: 0});
+      } else {
+        logger.info('activitesCountByUser: Count fetched');
+        res.json({status: 200, success: true, count: activities.length});
       }
     });
   },

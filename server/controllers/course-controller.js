@@ -31,7 +31,7 @@ module.exports = {
              logger.error('addCourse: requested category not found');
              res.json({ status: 404, success: false, message: 'Requested category not found'});
            } else {
-            var course = new Course({courseName: req.body.courseName, description: req.body.description, schedule: req.body.schedule, price: req.body.price, amenities: req.body.amenities, address: req.body.address, languages: req.body.languages, parking: req.body.parking, imageUrl: req.body.imageUrl, startFrom: req.body.startFrom, createdUserID: user._id, categoryID: category._id});
+            var course = new Course({courseName: req.body.courseName, description: req.body.description, schedule: req.body.schedule, price: req.body.price, amenities: req.body.amenities, address: req.body.address, languages: req.body.languages, parking: req.body.parking, imageUrl: req.body.imageUrl, startFrom: req.body.startFrom, contactPerson: req.body.contactPerson, contactNumber: req.body.contactNumber, contactEmailAddress: req.body.contactEmailAddress, createdUserID: user._id, categoryID: category._id});
             course.save(function(err2) {
               if(err2) {
                 logger.error('addCourse: Error while inserting the course: ' + err2);
@@ -85,7 +85,7 @@ module.exports = {
   },
 
   /**
-  * Function to courses created by admin users
+  * Function to retreive courses created by admin users
   * @method: coursesByUser
   */
   coursesByUser:  function(req, res) {
@@ -102,6 +102,27 @@ module.exports = {
       }
     });
   },
+
+  /**
+  * Function to retrieve count of courses created by user
+  * @method: coursesCountByUser
+  */
+  coursesCountByUser: function(req, res) {
+    Course.find({createdUserID: req.params.userID}, function(err, courses) {
+      if(err) {
+        logger.error('coursesCountByUser: Error while fetching courses count: ' + err);
+        res.json({status: 500, success: false, message: 'Error while fetching courses count'});
+      } else if(!courses) {
+        logger.error('coursesCountByUser: No records found');
+        res.json({status: 200, success: true, count: 0});
+      } else {
+        logger.info('coursesCountByUser: Count fetched');
+        res.json({status: 200, success: true, count: courses.length});
+      }
+    });
+  },
+
+
 
   /**
   * Function to get courses by category.
