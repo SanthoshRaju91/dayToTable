@@ -163,7 +163,7 @@ var browser = platform === 'linux' ? 'google-chrome': (platform === 'darwin' ? '
 */
 gulp.task('open', function() {
   var options = {
-    uri: 'http://localhost:9000',
+    uri: 'http://104.131.49.30:9000',
     app: browser
   };
   gulp.src('./index.html')

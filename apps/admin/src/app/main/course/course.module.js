@@ -32,8 +32,8 @@
         $translatePartialLoaderProvider.addPart('app/main/course');
 
         // Api
-        msApiProvider.register('getCategoryList', ['http://localhost:3000/api/getCategoryList']);
-        msApiProvider.register('addCourse', ['http://localhost:3000/api/addCourse']);
+        msApiProvider.register('getCategoryList', ['http://104.131.49.30:3000/api/getCategoryList']);
+        msApiProvider.register('addCourse', ['http://104.131.49.30:3000/api/addCourse']);
 
         // Navigation
         msNavigationServiceProvider.saveItem('fuse', {

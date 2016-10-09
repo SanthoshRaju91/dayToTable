@@ -4277,3 +4277,7 @@
 [2016-10-09 23:19:52.955] [INFO] appLog - coursesCountByUser: Count fetched
 [2016-10-09 23:19:52.961] [INFO] appLog - activitesCountByUser: Count fetched
 [2016-10-09 23:28:25.029] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 23:35:50.598] [INFO] appLog - Server listening on port: 3000
+[2016-10-09 23:35:50.716] [INFO] appLog - Connected to MongoDB
+[2016-10-09 23:37:19.982] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-09 23:37:29.106] [INFO] appLog - Server listening on port: 3000

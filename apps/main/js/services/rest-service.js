@@ -8,7 +8,7 @@ module.exports = (function() {
     var rest = this;
 
     rest.getRESTUrl = function() {
-      return 'http://localhost:3000/api/'; 
+      return 'http://104.131.49.30:3000/api/'; 
     }
 
     return rest;
