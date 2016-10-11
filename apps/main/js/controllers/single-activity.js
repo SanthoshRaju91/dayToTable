@@ -15,7 +15,8 @@ module.exports = (function() {
           for(let i=0; i<(5-$scope.activity.ratings); i++) {
             $scope.ratings.push('icon-smile');
           }
-          $scope.includedItems = $scope.activity.includes.split(',');
+
+          $scope.includedItems = ($scope.activity.includes) ? $scope.activity.includes.split(',') : [];
           $scope.features = [];
           $scope.isParking = ($scope.activity.parking.length > 0) ? $scope.features.push({'iconClass': 'icon_set_1_icon-27', 'name': 'Parking'}) : false;
           $scope.isAudio = ($scope.activity.languages.length > 0) ? $scope.features.push({'iconClass': 'icon_set_1_icon-13', 'name': 'Accessibiliy'}): false;
