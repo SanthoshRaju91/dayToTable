@@ -51,7 +51,8 @@ var VENDOR_PATH = {
 var bower_files = [
   "bower_components/angular/angular.min.js",
   "bower_components/angular-ui-router/release/angular-ui-router.min.js",
-  "bower_components/angular-bootstrap/ui-bootstrap.min.js"];
+  "bower_components/angular-bootstrap/ui-bootstrap.min.js",
+  "bower_components/angular-img-fallback/angular.dcb-img-fallback.js"];
 
 /**
 * @task: build:bower
@@ -163,7 +164,7 @@ var browser = platform === 'linux' ? 'google-chrome': (platform === 'darwin' ? '
 */
 gulp.task('open', function() {
   var options = {
-    uri: 'http://104.131.49.30:9000',
+    uri: 'http://localhost:9000',
     app: browser
   };
   gulp.src('./index.html')

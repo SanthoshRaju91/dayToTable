@@ -179,7 +179,7 @@
 /***/ function(module, exports) {
 
 	module.exports = (function() {
-	  var app = angular.module('app.activity-grid-component', []);
+	  var app = angular.module('app.activity-grid-component', ['dcbImgFallback']);
 
 	  app.component('activityGrid', {
 	    bindings: {
@@ -193,7 +193,7 @@
 	      var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library', CRICKET: 'icon-cricket'};
 	      this.overlayIcon = iconsArray[this.activity.categoryID.categoryName.toUpperCase()];
 	      this.overlayName = this.activity.categoryID.categoryName;
-	      
+
 	      //checking for activity currently open / closed.
 	      this.isActive = (this.data.activityStatus.toUpperCase() == 'CLOSED') ? true: false;
 	      this.ratings = [];
@@ -263,7 +263,7 @@
 	*/
 
 	module.exports = (function() {
-	  var app = angular.module('app.course-grid-component', []);
+	  var app = angular.module('app.course-grid-component', ['dcbImgFallback']);
 
 	  app.component('courseGrid', {
 	    bindings: {
@@ -450,7 +450,7 @@
 	    var rest = this;
 
 	    rest.getRESTUrl = function() {
-	      return 'http://104.131.49.30:3000/api/'; 
+	      return 'http://localhost:3000/api/'; 
 	    }
 
 	    return rest;
@@ -1340,7 +1340,7 @@
 	  , 'app.activity-grid-component', 'app.single-activity', 'app.popular-grid-component', 'app.contact-ctrl'
 	  , 'app.rest-service', 'app.course-ctrl', 'app.course-grid-component', 'app.single-course-ctrl', 'app.confirmation-ctrl'
 	  , 'app.upcoming-grid-component', 'app.profile-controller', 'app.booking-profile-ctrl', 'app.settings-ctrl'
-	  , 'app.user-profile-ctrl', 'app.booking-grid-component', 'app.carousel-directive', 'app.coming-ctrl', 'app.login-ctrl']);
+	  , 'app.user-profile-ctrl', 'app.booking-grid-component', 'app.carousel-directive', 'app.coming-ctrl', 'app.login-ctrl', 'dcbImgFallback']);
 	}());
 
 

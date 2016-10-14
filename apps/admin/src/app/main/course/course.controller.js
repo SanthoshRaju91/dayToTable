@@ -27,7 +27,7 @@
         vm.otherAmenities = [];
         vm.courseSchedule = [];
 
-        // $http({method: 'GET', url: 'http://104.131.49.30:3000/api/getCategoryList'})
+        // $http({method: 'GET', url: 'http://localhost:3000/api/getCategoryList'})
         //   .then(function(response) {
         //     if(response.data.status === 200 && response.data.success) {
         //       vm.categoryList = response.data.categoryList;
@@ -142,7 +142,7 @@
             contactEmailAddress: user.emailAddress
           };
 
-          $http({method: 'POST', url: 'http://104.131.49.30:3000/api/addCourse', data: payload})
+          $http({method: 'POST', url: 'http://localhost:3000/api/addCourse', data: payload})
             .then(function(response) {
               if(response.data.status === 200 && response.data.success) {
                 $mdToast.show($mdToast.simple().textContent('Course added successfully, please check after a few minutes.'));

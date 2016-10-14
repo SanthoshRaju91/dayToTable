@@ -1,5 +1,5 @@
 module.exports = (function() {
-  var app = angular.module('app.activity-grid-component', []);
+  var app = angular.module('app.activity-grid-component', ['dcbImgFallback']);
 
   app.component('activityGrid', {
     bindings: {
@@ -13,7 +13,7 @@ module.exports = (function() {
       var iconsArray = { MUSIC: 'icon-music-3', DANCE: 'icon-pitch', SOCCER: 'icon-soccer', SPORTS: 'icon-skiing', EDUCATION: 'icon-library', CRICKET: 'icon-cricket'};
       this.overlayIcon = iconsArray[this.activity.categoryID.categoryName.toUpperCase()];
       this.overlayName = this.activity.categoryID.categoryName;
-      
+
       //checking for activity currently open / closed.
       this.isActive = (this.data.activityStatus.toUpperCase() == 'CLOSED') ? true: false;
       this.ratings = [];

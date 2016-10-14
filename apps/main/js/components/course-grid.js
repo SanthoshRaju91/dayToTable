@@ -3,7 +3,7 @@
 */
 
 module.exports = (function() {
-  var app = angular.module('app.course-grid-component', []);
+  var app = angular.module('app.course-grid-component', ['dcbImgFallback']);
 
   app.component('courseGrid', {
     bindings: {

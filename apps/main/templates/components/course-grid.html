@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4">
       <div class="img_list">
-        <img ng-src="{{$ctrl.imageURL}}" alt="Image">
+        <img ng-src="{{$ctrl.imageURL}}" alt="Image" fallback-src="{{'http://wgnhs.uwex.edu/wp-content/plugins/ajax-search-pro/img/default.jpg'}}">
         <div class="short_info"><i class="{{$ctrl.overlayIcon}}"></i> {{$ctrl.overlayName}} </div></a>
       </div>
     </div>
@@ -13,7 +13,7 @@
             <i ng-repeat="rating in $ctrl.ratings track by $index" class="{{rating}}"></i>
           </div>
             <h3><strong>{{$ctrl.data.courseName}}</strong></h3>
-              <p>{{$ctrl.data.description}}</p>
+              <p>{{$ctrl.data.description | limitTo: 200}}...</p>
               <ul class="add_info">
                 <li>
                   <div class="tooltip_styled tooltip-effect-4">

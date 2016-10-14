@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4">
       <div class="img_list">
-        <img ng-src="{{$ctrl.imageURL}}" alt="Image">
+        <img ng-src="{{$ctrl.imageURL}}" alt="Image" fallback-src="{{'http://wgnhs.uwex.edu/wp-content/plugins/ajax-search-pro/img/default.jpg'}}">
         <div class="short_info"><i class="{{$ctrl.overlayIcon}}"></i> {{$ctrl.overlayName}} </div></a>
       </div>
     </div>
@@ -14,7 +14,7 @@
         <div class="tour_list_desc">
           <br>
             <h3><strong>{{$ctrl.activity.activityName}}</strong></h3>
-            <p>{{$ctrl.activity.description}}</p>
+            <p>{{$ctrl.activity.description | limitTo: 200}}...</p>
             <h5><strong>Event Date: </strong>{{$ctrl.activity.schedule | date: "MMM-dd-y HH:mm"}}</h5>
               <ul class="add_info">
                 <li>

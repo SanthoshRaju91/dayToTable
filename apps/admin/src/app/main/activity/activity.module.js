@@ -28,7 +28,7 @@
           $translatePartialLoaderProvider.addPart('app/main/activity');
 
           // Api
-          msApiProvider.register('getCategoryList', ['http://104.131.49.30:3000/api/getCategoryList']);
+          msApiProvider.register('getCategoryList', ['http://localhost:3000/api/getCategoryList']);
 
           // Navigation
           msNavigationServiceProvider.saveItem('fuse', {

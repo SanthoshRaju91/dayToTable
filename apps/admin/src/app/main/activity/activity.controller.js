@@ -125,7 +125,7 @@
           duration: vm.duration
         }
 
-        $http({method: 'POST', url: 'http://104.131.49.30:3000/api/addActivity', data: payload})
+        $http({method: 'POST', url: 'http://localhost:3000/api/addActivity', data: payload})
           .then(function(response) {
             if(response.data.status === 200 && response.data.success) {
               $mdToast.show($mdToast.simple().textContent('Course added successfully, please check after a few minutes.'));
