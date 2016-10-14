@@ -4360,3 +4360,16 @@
 [2016-10-14 13:17:19.418] [INFO] appLog - getPopularCourses: Popular courses fetched
 [2016-10-14 13:17:22.123] [INFO] appLog - getCategoryList: category list fetched
 [2016-10-14 13:17:22.149] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-14 13:27:22.586] [INFO] appLog - getSortedActivitiesList: List fetched for the applied sort
+[2016-10-14 13:30:36.510] [ERROR] appLog - authenticateUser: Could not fetch the specified user: 
+[2016-10-14 13:41:24.030] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-14 13:41:24.071] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-14 13:41:24.082] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-14 13:41:24.269] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-14 13:41:37.221] [INFO] appLog - getUserBookings: User bookings fetched
+[2016-10-14 13:41:42.530] [INFO] appLog - getCategoryList: category list fetched
+[2016-10-14 13:41:42.591] [INFO] appLog - Activity list computedWed Aug 24 2016 08:03:09 GMT+0530 (India Standard Time)
+[2016-10-14 13:47:13.762] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-14 13:47:13.767] [INFO] appLog - getPopularCourses: Popular courses fetched
+[2016-10-14 13:47:13.774] [INFO] appLog - getUpcomingActivites: Upcoming activities fetched
+[2016-10-14 13:47:13.778] [INFO] appLog - getPopularCourses: Popular courses fetched
