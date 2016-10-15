@@ -12,7 +12,7 @@ module.exports = {
     charset: 'utf8'
   },
   mongodb: {
-    url: 'mongodb://localhost:27017/prod'
+    url: 'mongodb://104.131.49.30:27017/prod'
   },
   session: 'veryverysecret'
 }
